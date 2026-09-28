@@ -68,6 +68,12 @@ So ChatGPT Search, Perplexity, Gemini and Google AI Overviews can read, trust an
   Google-Extended, etc.) and points to the sitemap.
 - Existing hand-added JSON-LD (Organization on index, Course on courses) is left untouched.
 
+## Deploying
+`.github/workflows/deploy.yml` uploads the site to the web server with `rsync` on every push to
+`main` (and on demand from the Actions tab). It needs four repository secrets — `SSH_HOST`,
+`SSH_USER`, `SSH_KEY`, `DEPLOY_PATH` — and `rsync` on the server. Build scripts, `README.md` and
+`.git`/`.github` are not uploaded; files on the server that aren't in the repo are left alone.
+
 ## Updating assets (cache-busting)
 `global.css` and `site.js` are referenced with a `?v=…` version so browsers fetch the newest
 copy after a deploy. **After editing the CSS or JS, run this before deploying:**
