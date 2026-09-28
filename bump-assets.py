@@ -11,7 +11,7 @@ so visitors' browsers fetch the new files instead of an old cached copy.
 import glob, re, sys, datetime
 
 ver = sys.argv[1] if len(sys.argv) > 1 else datetime.date.today().strftime("%Y%m%d")
-pat = re.compile(r'(/assets/(?:css/global\.css|js/site\.js))(?:\?v=[^"]*)?"')
+pat = re.compile(r'(/assets/(?:css/global\.css|js/site\.js|img/(?:logo[a-z-]*|og-image)\.(?:png|jpg)))(?:\?v=[^"]*)?"')
 changed = 0
 for f in glob.glob("*.html"):
     t = open(f, encoding="utf-8").read()
