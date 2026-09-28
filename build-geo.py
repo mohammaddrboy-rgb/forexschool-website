@@ -57,17 +57,17 @@ def website_schema(lang):
     desc = {"en": "Free forex education in Dari and English for the Afghan community.",
             "fa": "آموزش رایگان فارکس به دری و انگلیسی برای جامعهٔ افغان."}[lang]
     return {"@context": "https://schema.org", "@type": "WebSite",
-            "name": "Maktab Forex", "alternateName": "مکتب فارکس",
+            "name": "Forex School", "alternateName": "مکتب فارکس",
             "url": SITE + "/", "inLanguage": ["fa", "en"], "description": desc,
-            "publisher": {"@type": "Organization", "name": "Maktab Forex", "url": SITE + "/"}}
+            "publisher": {"@type": "Organization", "name": "Forex School", "url": SITE + "/"}}
 
 def person_schema(lang):
-    desc = {"en": "Founder of Maktab Forex, in the forex industry since 2012, specialising in market analysis and in educating, training and mentoring traders. Holds a Bachelor's in Business Administration and is pursuing an MBA.",
+    desc = {"en": "Founder of Forex School, in the forex industry since 2012, specialising in market analysis and in educating, training and mentoring traders. Holds a Bachelor's in Business Administration and is pursuing an MBA.",
             "fa": "بنیان‌گذار مکتب فارکس، فعال در صنعت فارکس از سال ۲۰۱۲، متخصص در تحلیل بازار و آموزش، تربیت و راهنمایی معامله‌گران. دارای لیسانس مدیریت بازرگانی و در حال تحصیل کارشناسی ارشد (MBA)."}[lang]
     return {"@context": "https://schema.org", "@type": "Person",
             "name": "Mohammad Akhondzadeh", "alternateName": "محمد آخوندزاده",
             "jobTitle": "Founder & Instructor",
-            "worksFor": {"@type": "Organization", "name": "Maktab Forex", "url": SITE + "/"},
+            "worksFor": {"@type": "Organization", "name": "Forex School", "url": SITE + "/"},
             "knowsAbout": ["Forex", "Technical analysis", "Price action", "Risk management", "Trading psychology", "Islamic finance"],
             "knowsLanguage": ["Dari", "Persian", "English"],
             "url": SITE + "/about.html", "image": SITE + "/assets/img/founder.jpg",
@@ -83,7 +83,7 @@ def termset_schema(items, lang):
     return {"@context": "https://schema.org", "@type": "DefinedTermSet", "name": name, "inLanguage": lang,
             "hasDefinedTerm": [{"@type": "DefinedTerm", "name": it["n"][lang], "description": it["d"][lang]} for it in items]}
 
-GEO_RE = re.compile(r'\n?  <!-- geo:jsonld -->.*?<!-- /geo:jsonld -->', re.S)
+GEO_RE = re.compile(r'\n?  <!-- geo:jsonld -->.*?<!-- /geo:jsonld -->\n?', re.S)
 
 def inject(path, schema):
     t = io.open(path, encoding="utf-8").read()

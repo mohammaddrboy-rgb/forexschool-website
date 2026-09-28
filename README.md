@@ -1,4 +1,4 @@
-# forexschool.store — مکتب فارکس (Maktab Forex)
+# forexschool.store — مکتب فارکس (Forex School)
 
 Static **bilingual** website — **English (primary, LTR)** and **Farsi/Dari (secondary, RTL)**.
 No framework, no build step — plain HTML/CSS/JS. Based on `forextradechi-website-brief.md`
@@ -29,7 +29,7 @@ Added: `landing.html` · `faq.html` · `glossary.html` · `how-to-start.html` ·
 - `assets/css/global.css` — full design-token system, RTL defaults, components, responsive
 - `assets/js/site.js` — sticky nav, mobile menu, accordion, language toggle
 - `assets/fonts/byekan.{woff2,woff,ttf}` — B Yekan, self-hosted (converted from the source TTF)
-- `assets/img/logo.png` — Maktab Forex circular badge (transparent)
+- `assets/img/logo.png` — Forex School logo (navy on orange); `logo-mark.png` — icon-only mark for the nav/footer
 - `assets/img/og-image.jpg` — 1200×630 social share image (navy + gold)
 - `assets/img/favicon.ico`, `favicon-32.png`, `favicon-16.png`, `apple-touch-icon.png` — favicon set
 - `sitemap.xml`, `robots.txt` — SEO; JSON-LD structured data is inline in `index.html` (Organization) and `courses.html` (Courses)

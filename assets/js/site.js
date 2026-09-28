@@ -1,4 +1,4 @@
-/* مکتب فارکس — Maktab Forex | shared site behaviour. Vanilla JS, no dependencies. */
+/* مکتب فارکس — Forex School | shared site behaviour. Vanilla JS, no dependencies. */
 (function () {
   'use strict';
 

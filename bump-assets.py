@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Cache-busting helper for the Maktab Forex static site.
+"""Cache-busting helper for the Forex School static site.
 
 Run this AFTER editing assets/css/global.css or assets/js/site.js and BEFORE deploying.
 It stamps a fresh version onto the CSS/JS <link>/<script> references in every .html file,
