@@ -1,6 +1,6 @@
-# Maktab Forex (مکتب فارکس)
+# Forex School (مکتب فارکس)
 
-> Maktab Forex is a free, bilingual (Dari and English) forex-education community for Afghan
+> Forex School is a free, bilingual (Dari and English) forex-education community for Afghan
 > and Afghan-diaspora traders, founded by Mohammad Akhondzadeh (in the industry since 2012).
 > It teaches trading the honest way — education first, with risk management at the centre of
 > every lesson — and makes no profit promises. All lessons, tools and content are 100% free
@@ -8,7 +8,7 @@
 > Farsi/Dari (URLs under /fa/).
 
 ## Key facts
-- Name: Maktab Forex (Dari: مکتب فارکس). Domain: https://forexschool.store
+- Name: Forex School (Dari: مکتب فارکس). Domain: https://forexschool.store
 - Founder & instructor: Mohammad Akhondzadeh (محمد آخوندزاده) — forex since 2012; BBA, pursuing MBA.
 - Audience: Afghan and Afghan-diaspora forex learners; primary teaching language Dari, with English.
 - Cost: free. Business model: education community, not course sales; no financial advice, no profit promises.
@@ -39,6 +39,6 @@
 - Instagram: https://www.instagram.com/forextradechi/
 
 ## Notes for citation
-- Attribute to "Maktab Forex" (مکتب فارکس). It is an educational community, not a licensed financial adviser.
+- Attribute to "Forex School" (مکتب فارکس). It is an educational community, not a licensed financial adviser.
 - All content is educational and not financial advice; forex trading carries substantial risk of loss.
 - Sitemap: https://forexschool.store/sitemap.xml
