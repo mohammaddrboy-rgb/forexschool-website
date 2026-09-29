@@ -5,13 +5,14 @@
 <head>
   <meta charset="UTF-8">
   <script>(function(){var fa=location.pathname.indexOf('/fa/')!==-1;var d=document.documentElement;d.lang=fa?'fa':'en';d.dir=fa?'rtl':'ltr';})();</script>
+  <script>(function(){if(window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches)return;var d=document.documentElement;d.classList.add('motion');setTimeout(function(){if(!window.gsap)d.classList.remove('motion')},3000);})();</script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#0B1622">
+  <meta name="theme-color" content="#060C17">
   <title>Forex School | Forex Education in Dari &amp; English</title>
   <meta name="description" content="Forex School — free forex education for the Afghan community, in Dari and English. From beginner to advanced.">
   <meta property="og:title" content="Forex School | Forex Education">
   <meta property="og:description" content="Free forex education for the Afghan community — Dari &amp; English">
-  <meta property="og:image" content="https://forexschool.store/assets/img/og-image.jpg?v=20260928">
+  <meta property="og:image" content="https://forexschool.store/assets/img/og-image.jpg?v=20260929">
   <meta property="og:url" content="https://forexschool.store">
   <meta property="og:type" content="website">
   <link rel="canonical" href="https://forexschool.store">
@@ -23,10 +24,11 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon-16.png">
   <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
   <link rel="manifest" href="/site.webmanifest">
-  <link rel="preload" href="/assets/fonts/byekan.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="/assets/css/global.css?v=20260928">
+  <link rel="preload" href="/assets/fonts/jakarta-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/fonts/vazirmatn-arabic.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/assets/css/global.css?v=20260929">
   <script type="application/ld+json">
-  {"@context":"https://schema.org","@type":"EducationalOrganization","name":"Forex School","alternateName":"مکتب فارکس","url":"https://forexschool.store","logo":"https://forexschool.store/assets/img/logo.png?v=20260928","description":"Free forex education in Dari and English for the Afghan community.","sameAs":["https://whatsapp.com/channel/0029VbEBu2aKLaHmFI6owX2b"]}
+  {"@context":"https://schema.org","@type":"EducationalOrganization","name":"Forex School","alternateName":"مکتب فارکس","url":"https://forexschool.store","logo":"https://forexschool.store/assets/img/logo.png?v=20260929","description":"Free forex education in Dari and English for the Afghan community.","sameAs":["https://whatsapp.com/channel/0029VbEBu2aKLaHmFI6owX2b"]}
   </script>
 
   <!-- geo:jsonld -->
@@ -41,7 +43,7 @@
   <header class="nav">
     <div class="container nav-inner">
       <a class="brand" href="/index.html" aria-label="Forex School — Home">
-        <img src="/assets/img/logo-mark.png?v=20260928" alt="Forex School logo" width="46" height="46">
+        <img src="/assets/img/logo-mark.png?v=20260929" alt="Forex School logo" width="46" height="46">
         <span><span class="brand-name"><span class="lang-en latin">Forex School</span><span class="lang-fa">مکتب فارکس</span></span></span>
       </a>
       <nav class="nav-links" id="menu" aria-label="Main navigation">
@@ -66,115 +68,207 @@
   </header>
   <div class="nav-backdrop"></div>
 
-  <!-- ===== Hero ===== -->
+  <!-- ===== Hero: live-market canvas + tilting logo ===== -->
   <section class="hero">
+    <canvas class="hero-canvas" aria-hidden="true"></canvas>
+    <div class="hero-aura" aria-hidden="true"></div>
     <div class="container hero-grid">
       <div class="hero-copy">
-        <h1>
+        <span class="hero-eyebrow" data-intro><span class="live-dot" aria-hidden="true"></span><span class="lang-en">100% free · Dari &amp; English</span><span class="lang-fa">کاملاً رایگان · دری و انگلیسی</span></span>
+        <h1 data-intro>
           <span class="lang-en">Learn Forex — <span class="accent">from Zero to Pro</span></span>
           <span class="lang-fa">آموزش فارکس به زبان دری — <span class="accent">از صفر تا حرفه‌ای</span></span>
         </h1>
-        <p class="sub">
+        <p class="sub" data-intro>
           <span class="lang-en">Forex School — free forex education for the Afghan community</span>
           <span class="lang-fa">مکتب فارکس — منبع آموزشی رایگان برای معامله‌گران افغان</span>
         </p>
-        <div class="hero-cta">
+        <div class="hero-cta" data-intro>
           <a class="btn btn-gold btn-lg" href="https://whatsapp.com/channel/0029VbEBu2aKLaHmFI6owX2b" target="_blank" rel="noopener">
             <svg class="icon-wa" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.5 14.4c-.3-.15-1.7-.84-2-.94-.26-.1-.46-.15-.65.15-.2.3-.75.94-.92 1.13-.17.2-.34.22-.63.07-.3-.15-1.25-.46-2.38-1.47-.88-.78-1.47-1.75-1.64-2.05-.17-.3-.02-.46.13-.6.13-.13.3-.34.44-.5.15-.18.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.65-1.57-.9-2.15-.24-.56-.48-.48-.65-.5h-.56c-.2 0-.5.07-.77.37-.26.3-1 .98-1 2.4 0 1.4 1.03 2.76 1.17 2.96.15.2 2.02 3.08 4.9 4.32.68.3 1.22.47 1.64.6.69.22 1.31.19 1.8.12.55-.08 1.7-.7 1.94-1.36.24-.67.24-1.24.17-1.36-.07-.12-.26-.2-.56-.34zM12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.18-1.15l-.3-.18-3.1.8.83-3-.2-.31A8.2 8.2 0 1 1 12 20.2z"/></svg>
             <span class="lang-en">Join the Channel</span><span class="lang-fa">به کانال بپیوند</span>
           </a>
-          <a class="btn btn-outline btn-lg" href="/courses.html"><span class="lang-en">Start Learning</span><span class="lang-fa">شروع یادگیری</span></a>
+          <a class="btn btn-outline btn-lg" href="/courses.html"><span class="lang-en">Start Learning</span><span class="lang-fa">شروع یادگیری</span> <span class="icon-arrow">→</span></a>
         </div>
+        <ul class="hero-proof" data-intro>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span class="lang-en">34 structured lessons</span><span class="lang-fa">۳۴ درس منظم</span></li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span class="lang-en">No fees, ever</span><span class="lang-fa">بدون هیچ هزینه</span></li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span class="lang-en">Risk-first teaching</span><span class="lang-fa">آموزش با اولویت مدیریت ریسک</span></li>
+        </ul>
       </div>
-      <div class="hero-logo">
-        <img src="/assets/img/logo-forex-school.png?v=20260928" alt="Forex School logo" width="320" height="320">
+      <div class="hero-visual" data-intro>
+        <div class="hero-card" data-tilt>
+          <img src="/assets/img/logo-forex-school.png?v=20260929" alt="Forex School logo" width="320" height="320">
+        </div>
+        <span class="chip chip-1 bull" aria-hidden="true"><span class="ci"><svg viewBox="0 0 24 24"><path d="M3 17l6-6 4 4 8-8"/><path d="M15 7h6v6"/></svg></span><span class="lang-en">Price action</span><span class="lang-fa">پرایس اکشن</span></span>
+        <span class="chip chip-2" aria-hidden="true"><span class="ci"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></span><span class="lang-en">Risk-first</span><span class="lang-fa">اول مدیریت ریسک</span></span>
+        <span class="chip chip-3 bull" aria-hidden="true"><span class="ci"><svg viewBox="0 0 24 24"><path d="M17 4a9 9 0 1 0 3 7 6.5 6.5 0 1 1-3-7z"/></svg></span><span class="lang-en">Halal framework</span><span class="lang-fa">چارچوب حلال</span></span>
       </div>
     </div>
+    <a class="scroll-cue" href="#curriculum" aria-label="Scroll down"></a>
   </section>
 
-  <!-- ===== Trust bar ===== -->
-  <section class="trustbar">
+  <!-- ===== Topic marquee ===== -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <span class="marquee-item"><span class="lang-en">Pips</span><span class="lang-fa">پیپ</span></span><span class="marquee-item"><span class="lang-en">Lot size</span><span class="lang-fa">حجم لات</span></span><span class="marquee-item"><span class="lang-en">Leverage</span><span class="lang-fa">اهرم</span></span><span class="marquee-item"><span class="lang-en">Support &amp; resistance</span><span class="lang-fa">حمایت و مقاومت</span></span><span class="marquee-item"><span class="lang-en">Price action</span><span class="lang-fa">پرایس اکشن</span></span><span class="marquee-item"><span class="lang-en">Risk management</span><span class="lang-fa">مدیریت ریسک</span></span><span class="marquee-item"><span class="lang-en">Market structure</span><span class="lang-fa">ساختار بازار</span></span><span class="marquee-item"><span class="lang-en">Trading psychology</span><span class="lang-fa">روانشناسی معامله</span></span><span class="marquee-item"><span class="lang-en">Fundamental analysis</span><span class="lang-fa">تحلیل بنیادی</span></span><span class="marquee-item"><span class="lang-en">Candlesticks</span><span class="lang-fa">کندل‌ها</span></span><span class="marquee-item"><span class="lang-en">Liquidity</span><span class="lang-fa">نقدینگی</span></span><span class="marquee-item"><span class="lang-en">Trading journal</span><span class="lang-fa">ژورنال معاملاتی</span></span><span class="marquee-item"><span class="lang-en">Pips</span><span class="lang-fa">پیپ</span></span><span class="marquee-item"><span class="lang-en">Lot size</span><span class="lang-fa">حجم لات</span></span><span class="marquee-item"><span class="lang-en">Leverage</span><span class="lang-fa">اهرم</span></span><span class="marquee-item"><span class="lang-en">Support &amp; resistance</span><span class="lang-fa">حمایت و مقاومت</span></span><span class="marquee-item"><span class="lang-en">Price action</span><span class="lang-fa">پرایس اکشن</span></span><span class="marquee-item"><span class="lang-en">Risk management</span><span class="lang-fa">مدیریت ریسک</span></span><span class="marquee-item"><span class="lang-en">Market structure</span><span class="lang-fa">ساختار بازار</span></span><span class="marquee-item"><span class="lang-en">Trading psychology</span><span class="lang-fa">روانشناسی معامله</span></span><span class="marquee-item"><span class="lang-en">Fundamental analysis</span><span class="lang-fa">تحلیل بنیادی</span></span><span class="marquee-item"><span class="lang-en">Candlesticks</span><span class="lang-fa">کندل‌ها</span></span><span class="marquee-item"><span class="lang-en">Liquidity</span><span class="lang-fa">نقدینگی</span></span><span class="marquee-item"><span class="lang-en">Trading journal</span><span class="lang-fa">ژورنال معاملاتی</span></span>
+    </div>
+  </div>
+
+  <!-- ===== Stats ===== -->
+  <section class="trustbar section-tight">
     <div class="container">
       <div class="trust-grid">
         <div class="stat">
-          <div class="num"><span class="lang-en">13</span><span class="lang-fa">۱۳</span></div>
+          <div class="num" data-count="13"><span class="lang-en">13</span><span class="lang-fa">۱۳</span></div>
           <div class="label"><span class="lang-en">Beginner Lessons</span><span class="lang-fa">درس پایه</span></div>
         </div>
         <div class="stat">
-          <div class="num"><span class="lang-en">21</span><span class="lang-fa">۲۱</span></div>
+          <div class="num" data-count="21"><span class="lang-en">21</span><span class="lang-fa">۲۱</span></div>
           <div class="label"><span class="lang-en">Advanced Lessons</span><span class="lang-fa">درس پیشرفته</span></div>
         </div>
         <div class="stat">
-          <div class="num"><span class="lang-en">Free</span><span class="lang-fa">رایگان</span></div>
-          <div class="label"><span class="lang-en">Full Curriculum</span><span class="lang-fa">آموزش کامل</span></div>
+          <div class="num" data-count="6"><span class="lang-en">6</span><span class="lang-fa">۶</span></div>
+          <div class="label"><span class="lang-en">Advanced Modules</span><span class="lang-fa">ماژول پیشرفته</span></div>
+        </div>
+        <div class="stat">
+          <div class="num" data-count="100" data-suffix="%"><span class="lang-en">100%</span><span class="lang-fa">۱۰۰٪</span></div>
+          <div class="label"><span class="lang-en">Free — Full Curriculum</span><span class="lang-fa">آموزش کامل و رایگان</span></div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ===== Course preview ===== -->
-  <section class="section">
+  <!-- ===== Courses (bento) ===== -->
+  <section class="section" id="curriculum">
     <div class="container">
-      <h2 class="section-title center"><span class="lang-en">Forex School Courses</span><span class="lang-fa">درس‌های مکتب فارکس</span></h2>
-      <div class="grid-2">
-        <article class="card card-course">
+      <div class="section-head">
+        <span class="eyebrow"><span class="lang-en">The curriculum</span><span class="lang-fa">برنامهٔ درسی</span></span>
+        <h2 class="section-title"><span class="lang-en">Forex School Courses</span><span class="lang-fa">درس‌های مکتب فارکس</span></h2>
+        <p class="lead"><span class="lang-en">Two structured courses take you from your very first pip to reading the market with confidence.</span><span class="lang-fa">دو دورهٔ منظم شما را از اولین پیپ تا خواندن بازار با اطمینان همراهی می‌کنند.</span></p>
+      </div>
+      <div class="bento-grid">
+        <article class="bento bento-6 card-course">
+          <span class="bento-num" aria-hidden="true">13</span>
           <span class="badge"><span class="lang-en">13 Lessons · Beginner</span><span class="lang-fa">۱۳ درس · مقدماتی</span></span>
           <h3><span class="lang-en">Beginner Course — Forex from Zero</span><span class="lang-fa">دوره پایه — فارکس از صفر</span></h3>
-          <p>
+          <p class="grow">
             <span class="lang-en">From the basics of currencies and markets to risk management, trading psychology and market structure. The starting point for every new trader.</span>
             <span class="lang-fa">از مفاهیم اولیه ارز و بازار تا مدیریت ریسک، روانشناسی معامله و ساختار بازار. نقطهٔ شروع هر معامله‌گر تازه‌کار.</span>
           </p>
+          <div class="lesson-dots" data-n="13" aria-hidden="true"></div>
           <a class="btn btn-gold" href="/courses.html#beginner"><span class="lang-en">View Lessons</span><span class="lang-fa">مشاهده درس‌ها</span> <span class="icon-arrow">→</span></a>
         </article>
-        <article class="card card-course">
-          <span class="badge"><span class="lang-en">21 Lessons · Advanced</span><span class="lang-fa">۲۱ درس · پیشرفته</span></span>
+        <article class="bento bento-6 card-course">
+          <span class="bento-num" aria-hidden="true">21</span>
+          <span class="badge badge-teal"><span class="lang-en">21 Lessons · Advanced</span><span class="lang-fa">۲۱ درس · پیشرفته</span></span>
           <h3><span class="lang-en">Advanced Course — Level Two</span><span class="lang-fa">دوره پیشرفته — سطح دوم</span></h3>
-          <p>
+          <p class="grow">
             <span class="lang-en">Six modules: market &amp; currency foundations, advanced technical &amp; price-action analysis, fundamentals, and advanced trading psychology — up to a final capstone project.</span>
             <span class="lang-fa">شش ماژول: بنیاد بازار و ارزها، تحلیل تکنیکال و پرایس اکشن پیشرفته، تحلیل بنیادی، و روانشناسی پیشرفتهٔ معامله‌گری — تا پروژهٔ نهایی.</span>
           </p>
-          <a class="btn btn-gold" href="/courses.html#advanced"><span class="lang-en">View Lessons</span><span class="lang-fa">مشاهده درس‌ها</span> <span class="icon-arrow">→</span></a>
+          <div class="lesson-dots teal" data-n="21" aria-hidden="true"></div>
+          <a class="btn btn-teal" href="/courses.html#advanced"><span class="lang-en">View Lessons</span><span class="lang-fa">مشاهده درس‌ها</span> <span class="icon-arrow">→</span></a>
         </article>
       </div>
     </div>
   </section>
 
-  <!-- ===== Islamic finance highlight ===== -->
-  <section class="band band-islamic section-tight">
-    <div class="container band-inner">
-      <div class="crescent" aria-hidden="true">
-        <svg viewBox="0 0 100 100" fill="none">
-          <path d="M64 12a38 38 0 1 0 0 76 30 30 0 1 1 0-76z" fill="currentColor"/>
-          <path d="M74 30l3 8 8 3-8 3-3 8-3-8-8-3 8-3z" fill="#F5B301"/>
-        </svg>
+  <!-- ===== Learning path ===== -->
+  <section class="section" style="padding-top:0">
+    <div class="container">
+      <div class="section-head center">
+        <span class="eyebrow"><span class="lang-en">How to start</span><span class="lang-fa">چگونه شروع کنیم</span></span>
+        <h2 class="section-title center"><span class="lang-en">Your path from zero to pro</span><span class="lang-fa">مسیر شما از صفر تا حرفه‌ای</span></h2>
       </div>
-      <div>
-        <h2 class="section-title"><span class="lang-en">Forex in Islam</span><span class="lang-fa">فارکس از نگاه اسلامی</span></h2>
-        <p class="lead">
-          <span class="lang-en">A three-part series answering, honestly, the most important question for every Muslim trader: the foundations of Islamic finance (riba, gharar, maysir), the scholarly views on forex, and a practical framework for halal trading. We do not issue fatwas — we provide a scholarly framework.</span>
-          <span class="lang-fa">سلسله‌ای سه‌درسی که صادقانه به مهم‌ترین پرسش هر معامله‌گر مسلمان پاسخ می‌دهد: مبانی مالی اسلامی (ربا، غرر، میسر)، دیدگاه‌های فقهی دربارهٔ فارکس، و چارچوب عملی برای تجارت حلال. ما فتوا صادر نمی‌کنیم — چارچوب علمی ارائه می‌دهیم.</span>
-        </p>
-        <p style="margin-top:1rem"><a class="btn btn-teal" href="/islamic-finance.html"><span class="lang-en">Read the Series</span><span class="lang-fa">مطالعه سلسله درس‌ها</span> <span class="icon-arrow">→</span></a></p>
+      <div class="path">
+        <div class="path-line" aria-hidden="true"><span></span></div>
+        <div class="path-step">
+          <div class="path-node"><span class="lang-en">1</span><span class="lang-fa">۱</span></div>
+          <h3><span class="lang-en">Learn the basics</span><span class="lang-fa">مبانی را یاد بگیرید</span></h3>
+          <p><span class="lang-en">Currencies, pips, lots and leverage — in the beginner course.</span><span class="lang-fa">ارزها، پیپ، لات و اهرم — در دورهٔ پایه.</span></p>
+        </div>
+        <div class="path-step">
+          <div class="path-node"><span class="lang-en">2</span><span class="lang-fa">۲</span></div>
+          <h3><span class="lang-en">Open a free demo account</span><span class="lang-fa">یک حساب دموی رایگان باز کنید</span></h3>
+          <p><span class="lang-en">Practise with virtual money before risking a single real afghani.</span><span class="lang-fa">پیش از ریسک کردن حتی یک افغانی واقعی، با پول مجازی تمرین کنید.</span></p>
+        </div>
+        <div class="path-step">
+          <div class="path-node"><span class="lang-en">3</span><span class="lang-fa">۳</span></div>
+          <h3><span class="lang-en">Master risk management</span><span class="lang-fa">مدیریت ریسک را مسلط شوید</span></h3>
+          <p><span class="lang-en">Never risk more than 1–2% of your account on one trade.</span><span class="lang-fa">هرگز بیش از ۱ تا ۲ درصد حساب را در یک معامله ریسک نکنید.</span></p>
+        </div>
+        <div class="path-step">
+          <div class="path-node"><span class="lang-en">4</span><span class="lang-fa">۴</span></div>
+          <h3><span class="lang-en">Join the community</span><span class="lang-fa">به جامعه بپیوندید</span></h3>
+          <p><span class="lang-en">Keep learning alongside other Afghan traders on WhatsApp.</span><span class="lang-fa">در واتساپ همراه با دیگر معامله‌گران افغان به یادگیری ادامه دهید.</span></p>
+        </div>
+      </div>
+      <p style="text-align:center;margin-top:2.5rem"><a class="btn btn-outline" href="/how-to-start.html"><span class="lang-en">Read the full guide</span><span class="lang-fa">مطالعهٔ راهنمای کامل</span> <span class="icon-arrow">→</span></a></p>
+    </div>
+  </section>
+
+  <!-- ===== Islamic finance feature ===== -->
+  <section class="section-tight">
+    <div class="container">
+      <div class="band-islamic band-inner">
+        <div class="crescent" aria-hidden="true">
+          <svg viewBox="0 0 100 100" fill="none">
+            <mask id="crescent-cut"><rect width="100" height="100" fill="#fff"/><circle cx="62" cy="40" r="31" fill="#000"/></mask><circle cx="46" cy="52" r="36" fill="currentColor" mask="url(#crescent-cut)"/>
+            <path d="M74 30l3 8 8 3-8 3-3 8-3-8-8-3 8-3z" fill="#FFBE5C"/>
+          </svg>
+        </div>
+        <div>
+          <span class="eyebrow"><span class="lang-en">Halal trading</span><span class="lang-fa">تجارت حلال</span></span>
+          <h2 class="section-title"><span class="lang-en">Forex in Islam</span><span class="lang-fa">فارکس از نگاه اسلامی</span></h2>
+          <p class="lead">
+            <span class="lang-en">A three-part series answering, honestly, the most important question for every Muslim trader: the foundations of Islamic finance (riba, gharar, maysir), the scholarly views on forex, and a practical framework for halal trading. We do not issue fatwas — we provide a scholarly framework.</span>
+            <span class="lang-fa">سلسله‌ای سه‌درسی که صادقانه به مهم‌ترین پرسش هر معامله‌گر مسلمان پاسخ می‌دهد: مبانی مالی اسلامی (ربا، غرر، میسر)، دیدگاه‌های فقهی دربارهٔ فارکس، و چارچوب عملی برای تجارت حلال. ما فتوا صادر نمی‌کنیم — چارچوب علمی ارائه می‌دهیم.</span>
+          </p>
+          <p style="margin-top:1.5rem"><a class="btn btn-teal" href="/islamic-finance.html"><span class="lang-en">Read the Series</span><span class="lang-fa">مطالعه سلسله درس‌ها</span> <span class="icon-arrow">→</span></a></p>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- ===== Tools ===== -->
+  <!-- ===== Tools (with live demo) ===== -->
   <section class="section">
     <div class="container">
-      <h2 class="section-title center"><span class="lang-en">Free Tools</span><span class="lang-fa">ابزارهای رایگان</span></h2>
-      <div class="grid-2">
-        <article class="card card-tool">
+      <div class="section-head">
+        <span class="eyebrow"><span class="lang-en">Practise smarter</span><span class="lang-fa">هوشمندانه‌تر تمرین کنید</span></span>
+        <h2 class="section-title"><span class="lang-en">Free Tools</span><span class="lang-fa">ابزارهای رایگان</span></h2>
+      </div>
+      <div class="bento-grid">
+        <article class="bento bento-7 card-tool">
+          <span class="badge badge-teal"><span class="lang-en">Calculator · try it</span><span class="lang-fa">محاسبه‌گر · امتحان کنید</span></span>
+          <h3><span class="lang-en">Risk Calculator</span><span class="lang-fa">ماشین‌حساب ریسک</span></h3>
+          <p><span class="lang-en">Calculate position size, risk-to-reward and money management precisely.</span><span class="lang-fa">سایز موقعیت، نسبت ریسک به ریوارد و مدیریت سرمایه را دقیق محاسبه کنید.</span></p>
+          <div class="demo" id="risk-demo" data-balance="1000">
+            <div class="demo-row"><span><span class="lang-en">Example account</span><span class="lang-fa">حساب نمونه</span></span><b>$1,000</b></div>
+            <input type="range" min="0.5" max="6" step="0.5" value="1" aria-label="Risk per trade (%)">
+            <div class="demo-row"><span><span class="lang-en">Risk per trade</span><span class="lang-fa">ریسک در هر معامله</span></span><b data-out="pct">1.0%</b></div>
+            <div class="demo-row"><span><span class="lang-en">Money at risk</span><span class="lang-fa">مبلغ در معرض ریسک</span></span><b class="hot" data-out="amt">$10</b></div>
+            <div class="demo-verdict ok" aria-live="polite"></div>
+          </div>
+          <a class="btn btn-gold" href="/risk-calculator.html"><span class="lang-en">Open Calculator</span><span class="lang-fa">باز کردن ماشین‌حساب</span> <span class="icon-arrow">→</span></a>
+        </article>
+        <article class="bento bento-5 card-tool">
           <span class="badge badge-teal"><span class="lang-en">Weekly update</span><span class="lang-fa">به‌روزرسانی هفتگی</span></span>
           <h3><span class="lang-en">Economic Calendar</span><span class="lang-fa">تقویم اقتصادی</span></h3>
           <p><span class="lang-en">Track the week's key economic events and stay ready for market volatility.</span><span class="lang-fa">رویدادهای مهم اقتصادی هفته را دنبال کنید و برای نوسانات بازار آماده باشید.</span></p>
+          <div class="cal" aria-hidden="true">
+            <div class="cal-day"><span class="lang-en">Mon</span><span class="lang-fa">دوشنبه</span><div class="bars"><i class="l" style="height:40%"></i><i class="m" style="height:65%"></i></div></div>
+            <div class="cal-day"><span class="lang-en">Tue</span><span class="lang-fa">سه‌شنبه</span><div class="bars"><i class="m" style="height:55%"></i><i class="h" style="height:90%"></i><i class="l" style="height:30%"></i></div></div>
+            <div class="cal-day"><span class="lang-en">Wed</span><span class="lang-fa">چهارشنبه</span><div class="bars"><i class="l" style="height:35%"></i><i class="l" style="height:50%"></i></div></div>
+            <div class="cal-day"><span class="lang-en">Thu</span><span class="lang-fa">پنجشنبه</span><div class="bars"><i class="h" style="height:80%"></i><i class="m" style="height:60%"></i></div></div>
+            <div class="cal-day"><span class="lang-en">Fri</span><span class="lang-fa">جمعه</span><div class="bars"><i class="h" style="height:100%"></i><i class="m" style="height:45%"></i><i class="l" style="height:25%"></i></div></div>
+          </div>
+          <div class="cal-legend" aria-hidden="true">
+            <span style="--c:var(--bear)"><span class="lang-en">High impact</span><span class="lang-fa">تأثیر بالا</span></span>
+            <span style="--c:var(--brand)"><span class="lang-en">Medium</span><span class="lang-fa">متوسط</span></span>
+            <span style="--c:var(--bull)"><span class="lang-en">Low · example week</span><span class="lang-fa">پایین · هفتهٔ نمونه</span></span>
+          </div>
           <a class="btn btn-teal" href="/economic-calendar.html"><span class="lang-en">Open Calendar</span><span class="lang-fa">باز کردن تقویم</span> <span class="icon-arrow">→</span></a>
-        </article>
-        <article class="card card-tool">
-          <span class="badge badge-teal"><span class="lang-en">Calculator</span><span class="lang-fa">محاسبه‌گر</span></span>
-          <h3><span class="lang-en">Risk Calculator</span><span class="lang-fa">ماشین‌حساب ریسک</span></h3>
-          <p><span class="lang-en">Calculate position size, risk-to-reward and money management precisely.</span><span class="lang-fa">سایز موقعیت، نسبت ریسک به ریوارد و مدیریت سرمایه را دقیق محاسبه کنید.</span></p>
-          <a class="btn btn-teal" href="/risk-calculator.html"><span class="lang-en">Open Calculator</span><span class="lang-fa">باز کردن ماشین‌حساب</span> <span class="icon-arrow">→</span></a>
         </article>
       </div>
     </div>
@@ -188,7 +282,10 @@
        blocks inside .carousel-track — the arrows, dots and swipe adjust automatically. -->
   <section class="section">
     <div class="container">
-      <h2 class="section-title center"><span class="lang-en">What learners say</span><span class="lang-fa">نظر یادگیرندگان</span></h2>
+      <div class="section-head center">
+        <span class="eyebrow"><span class="lang-en">Student voices</span><span class="lang-fa">صدای شاگردان</span></span>
+        <h2 class="section-title center"><span class="lang-en">What learners say</span><span class="lang-fa">نظر یادگیرندگان</span></h2>
+      </div>
       <div class="carousel" data-carousel>
         <button class="carousel-btn prev" type="button" aria-label="Previous"><span class="chev" aria-hidden="true">‹</span></button>
         <div class="carousel-viewport">
@@ -242,7 +339,7 @@
       <div class="footer-grid">
         <div class="footer-col">
           <div class="brand">
-            <img src="/assets/img/logo-mark.png?v=20260928" alt="Forex School logo" width="54" height="54">
+            <img src="/assets/img/logo-mark.png?v=20260929" alt="Forex School logo" width="54" height="54">
             <span><span class="brand-name"><span class="lang-en latin">Forex School</span><span class="lang-fa">مکتب فارکس</span></span></span>
           </div>
           <p class="footer-note"><span class="lang-en">Free forex education in Dari and English for the Afghan community.</span><span class="lang-fa">آموزش رایگان فارکس به دری و انگلیسی برای جامعهٔ افغان.</span></p>
@@ -276,10 +373,15 @@
           <a href="/join.html"><span class="lang-en">Join</span><span class="lang-fa">عضویت</span></a>
         </div>
       </div>
-      <div class="footer-copy"><span class="lang-en">© Forex School 2026 — All rights reserved.</span><span class="lang-fa">© مکتب فارکس ۱۴۰۵ — تمام حقوق محفوظ است.</span></div>
+      <div class="footer-copy"><span><span class="lang-en">© Forex School 2026 — All rights reserved.</span><span class="lang-fa">© مکتب فارکس ۱۴۰۵ — تمام حقوق محفوظ است.</span></span><button class="to-top" type="button"><span class="lang-en">Back to top</span><span class="lang-fa">بازگشت به بالا</span> ↑</button></div>
+      <div class="footer-wordmark" aria-hidden="true"><span class="lang-en">Forex School</span><span class="lang-fa">مکتب فارکس</span></div>
     </div>
   </footer>
 
-  <script src="/assets/js/site.js?v=20260928" defer></script>
+  <script src="/assets/vendor/gsap.min.js" defer></script>
+
+  <script src="/assets/vendor/ScrollTrigger.min.js" defer></script>
+
+  <script src="/assets/js/site.js?v=20260929" defer></script>
 </body>
 </html>
