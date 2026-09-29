@@ -107,7 +107,7 @@ python -m http.server 8080
 Then visit http://127.0.0.1:8080/ . On the real host, the document root is this folder and SSL/`/` routing are handled by the provider.
 
 ## Social links (live)
-Footer of every page: WhatsApp, Telegram (`t.me/+Ek6wSd8_64Y1Nzg0`), Facebook (group `1009705208203191`), Instagram (`@forextradechi`), Email. Managed in `scratchpad/normalize.py` — edit + re-run to change site-wide.
+Footer of every page: WhatsApp, Telegram (`t.me/+Ek6wSd8_64Y1Nzg0`), Facebook (group `1009705208203191`), Instagram (`@forexmaktab`), Email. Managed in `scratchpad/normalize.py` — edit + re-run to change site-wide.
 
 ## Placeholders to fill before launch
 | Item | Where | Current |
