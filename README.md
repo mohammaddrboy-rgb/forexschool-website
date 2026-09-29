@@ -16,7 +16,7 @@ No framework, no build step — plain HTML/CSS/JS. Based on `forextradechi-websi
 
 ## Pages
 Core: `index.html` · `courses.html` · `islamic-finance.html` · `tools.html` · `about.html` · `join.html` · `disclaimer.html`
-Added: `landing.html` · `faq.html` · `glossary.html` · `how-to-start.html` · `articles.html` · `risk-calculator.html` · `economic-calendar.html` · `404.html`
+Added: `landing.html` · `faq.html` · `glossary.html` · `how-to-start.html` · `articles.html` · `podcast.html` · `risk-calculator.html` · `economic-calendar.html` · `404.html`
 
 - **`landing.html`** — a catchy, conversion-focused landing page (animated gradient hero, gradient headline, benefit cards, stats, testimonial highlight, strong CTAs). Standalone; to make it the site's front door, rename it to `index.html` (rename the current home first) or point the domain root at it.
 
@@ -115,6 +115,7 @@ Footer of every page: WhatsApp, Telegram (`t.me/+Ek6wSd8_64Y1Nzg0`), Facebook (g
 | Student testimonials | `index.html` ("What learners say") | now a **carousel** (arrows + dots + swipe, RTL/LTR-aware); 6 cards with bracketed `[...]` placeholder quotes/names — add/remove `<article class="card testimonial">` blocks inside `.carousel-track` and the controls adjust automatically |
 | Contact email | footer of every page | `mailto:info@forexschool.store` (change if different) |
 | Articles | `articles.html` | 3 placeholder "coming soon" cards |
+| Podcast episodes | `podcast.html` | "coming soon" note — replace the `.empty-state` block with the episodes |
 | Lesson PDFs | `courses.html`, `islamic-finance.html` | all buttons link to the WhatsApp channel |
 
 Done: Founder section (photo `assets/img/founder.jpg` + bio, EN/FA); Telegram/Facebook/Instagram links; economic calendar and risk calculator are real pages.
