@@ -5,8 +5,9 @@
 <head>
   <meta charset="UTF-8">
   <script>(function(){try{var l=localStorage.getItem('mf-lang');if(l!=='fa')l='en';var d=document.documentElement;d.lang=l;d.dir=l==='fa'?'rtl':'ltr';}catch(e){}})();</script>
+  <script>(function(){if(window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches)return;var d=document.documentElement;d.classList.add('motion');setTimeout(function(){if(!window.gsap)d.classList.remove('motion')},3000);})();</script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#0B1622">
+  <meta name="theme-color" content="#060C17">
   <title>Page Not Found | Forex School</title>
   <meta name="description" content="This page could not be found. Return to Forex School — free forex education in Dari and English.">
   <meta name="robots" content="noindex">
@@ -15,15 +16,16 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon-16.png">
   <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
   <link rel="manifest" href="/site.webmanifest">
-  <link rel="preload" href="/assets/fonts/byekan.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="/assets/css/global.css?v=20260928">
+  <link rel="preload" href="/assets/fonts/jakarta-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/fonts/vazirmatn-arabic.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/assets/css/global.css?v=20260929">
 </head>
 <body>
 
   <header class="nav">
     <div class="container nav-inner">
       <a class="brand" href="/index.html" aria-label="Forex School — Home">
-        <img src="/assets/img/logo-mark.png?v=20260928" alt="Forex School logo" width="46" height="46">
+        <img src="/assets/img/logo-mark.png?v=20260929" alt="Forex School logo" width="46" height="46">
         <span><span class="brand-name"><span class="lang-en latin">Forex School</span><span class="lang-fa">مکتب فارکس</span></span></span>
       </a>
       <nav class="nav-links" id="menu" aria-label="Main navigation">
@@ -65,7 +67,7 @@
       <div class="footer-grid">
         <div class="footer-col">
           <div class="brand">
-            <img src="/assets/img/logo-mark.png?v=20260928" alt="Forex School logo" width="54" height="54">
+            <img src="/assets/img/logo-mark.png?v=20260929" alt="Forex School logo" width="54" height="54">
             <span><span class="brand-name"><span class="lang-en latin">Forex School</span><span class="lang-fa">مکتب فارکس</span></span></span>
           </div>
           <p class="footer-note"><span class="lang-en">Free forex education in Dari and English for the Afghan community.</span><span class="lang-fa">آموزش رایگان فارکس به دری و انگلیسی برای جامعهٔ افغان.</span></p>
@@ -99,10 +101,15 @@
           <a href="/join.html"><span class="lang-en">Join</span><span class="lang-fa">عضویت</span></a>
         </div>
       </div>
-      <div class="footer-copy"><span class="lang-en">© Forex School 2026 — All rights reserved.</span><span class="lang-fa">© مکتب فارکس ۱۴۰۵ — تمام حقوق محفوظ است.</span></div>
+      <div class="footer-copy"><span><span class="lang-en">© Forex School 2026 — All rights reserved.</span><span class="lang-fa">© مکتب فارکس ۱۴۰۵ — تمام حقوق محفوظ است.</span></span><button class="to-top" type="button"><span class="lang-en">Back to top</span><span class="lang-fa">بازگشت به بالا</span> ↑</button></div>
+      <div class="footer-wordmark" aria-hidden="true"><span class="lang-en">Forex School</span><span class="lang-fa">مکتب فارکس</span></div>
     </div>
   </footer>
 
-  <script src="/assets/js/site.js?v=20260928" defer></script>
+  <script src="/assets/vendor/gsap.min.js" defer></script>
+
+  <script src="/assets/vendor/ScrollTrigger.min.js" defer></script>
+
+  <script src="/assets/js/site.js?v=20260929" defer></script>
 </body>
 </html>
