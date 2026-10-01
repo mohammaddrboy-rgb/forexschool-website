@@ -542,7 +542,8 @@
     var words = splitWords(h);
     gsap.from(words, { yPercent: 110, duration: 1.1, ease: 'power4.out', stagger: 0.05, delay: 0.1 });
   });
-  gsap.from('.page-head p, .lp-hero .lp-eyebrow, .lp-hero .lp-sub, .lp-hero .lp-cta-row, .lp-hero .lp-note', {
+  var headBits = gsap.utils.toArray('.page-head p, .lp-hero .lp-eyebrow, .lp-hero .lp-sub, .lp-hero .lp-cta-row, .lp-hero .lp-note');
+  if (headBits.length) gsap.from(headBits, {
     y: 24, opacity: 0, duration: 1, ease: 'power3.out', stagger: 0.1, delay: 0.35
   });
 
@@ -568,7 +569,7 @@
       gsap.to(els, { y: 0, opacity: 1, duration: 0.9, ease: 'power3.out', stagger: 0.08, overwrite: true, clearProps: 'transform,opacity,transition' });
     }
   });
-  gsap.from('.carousel', { y: 40, opacity: 0, duration: 1, ease: 'power3.out', scrollTrigger: { trigger: '.carousel', start: 'top 90%', once: true } });
+  if (document.querySelector('.carousel')) gsap.from('.carousel', { y: 40, opacity: 0, duration: 1, ease: 'power3.out', scrollTrigger: { trigger: '.carousel', start: 'top 90%', once: true } });
 
   /* Lesson dots fill one by one */
   document.querySelectorAll('.lesson-dots').forEach(function (d) {
@@ -596,11 +597,11 @@
   }
 
   /* Crescent rotates into place */
-  gsap.from('.crescent svg', { rotate: -90, scale: 0.6, opacity: 0, duration: 1.4, ease: 'expo.out',
+  if (document.querySelector('.crescent')) gsap.from('.crescent svg', { rotate: -90, scale: 0.6, opacity: 0, duration: 1.4, ease: 'expo.out',
     scrollTrigger: { trigger: '.crescent', start: 'top 85%', once: true } });
 
   /* Footer wordmark rises */
-  gsap.from('.footer-wordmark', { yPercent: 40, opacity: 0, ease: 'none',
+  if (document.querySelector('.footer-wordmark')) gsap.from('.footer-wordmark', { yPercent: 40, opacity: 0, ease: 'none',
     scrollTrigger: { trigger: '.footer', start: 'top bottom', end: 'bottom bottom', scrub: true } });
 
   window.addEventListener('load', function () { ScrollTrigger.refresh(); });

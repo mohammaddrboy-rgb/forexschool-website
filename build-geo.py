@@ -68,7 +68,7 @@ def person_schema(lang):
             "name": "Mohammad Akhondzadeh", "alternateName": "محمد آخوندزاده",
             "jobTitle": "Founder & Instructor",
             "worksFor": {"@type": "Organization", "name": "Forex School", "url": SITE + "/"},
-            "knowsAbout": ["Forex", "Technical analysis", "Price action", "Risk management", "Trading psychology", "Islamic finance"],
+            "knowsAbout": ["Forex", "Technical analysis", "Price action", "Risk management", "Trading psychology"],
             "knowsLanguage": ["Dari", "Persian", "English"],
             "url": SITE + "/about.html", "image": SITE + "/assets/img/founder.jpg",
             "description": desc}
