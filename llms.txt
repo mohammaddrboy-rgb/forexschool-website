@@ -14,24 +14,22 @@
 - Cost: free. Business model: education community, not course sales; no financial advice, no profit promises.
 - Curriculum: Beginner course — 13 lessons (00–12); Advanced course — 21 lessons across 6 modules (F, A, AS, B, C, D). Total 34 lessons.
 - Free tools: risk calculator; live economic calendar.
-- Distinctive: a neutral, scholarly "Forex in Islam" series (riba, gharar, maysir; Islamic-account checklist) — educational, not a fatwa.
 
 ## Core pages (English)
 - [Home](https://forexschool.store/index.html): overview of the free Dari-and-English forex school.
 - [Courses](https://forexschool.store/courses.html): the 13-lesson beginner course and 21-lesson (6-module) advanced course.
-- [Islamic Finance](https://forexschool.store/islamic-finance.html): forex from an Islamic viewpoint; riba/gharar/maysir and an Islamic-account checklist.
 - [Tools](https://forexschool.store/tools.html): free risk calculator and economic calendar.
 - [Podcast](https://forexschool.store/podcast.html): the Forex School podcast (episodes coming soon).
 - [Risk Calculator](https://forexschool.store/risk-calculator.html): compute position size, amount at risk and risk-to-reward.
 - [Economic Calendar](https://forexschool.store/economic-calendar.html): the week's high-impact economic events.
-- [FAQ](https://forexschool.store/faq.html): is forex halal, is it free, how to start, how much is needed, is it risky.
+- [FAQ](https://forexschool.store/faq.html): is it free, how to start, how much is needed, is it risky.
 - [Glossary](https://forexschool.store/glossary.html): key forex terms (pip, lot, leverage, margin, spread…) in Dari and English.
 - [How to Start](https://forexschool.store/how-to-start.html): a safe step-by-step path for beginners.
 - [About](https://forexschool.store/about.html): mission and founder (Mohammad Akhondzadeh).
 - [Join](https://forexschool.store/join.html): join the free WhatsApp channel.
 
 ## Core pages (Farsi / Dari)
-- [خانه](https://forexschool.store/fa/index.html), [درس‌ها](https://forexschool.store/fa/courses.html), [فارکس اسلامی](https://forexschool.store/fa/islamic-finance.html), [ابزارها](https://forexschool.store/fa/tools.html), [پادکست](https://forexschool.store/fa/podcast.html), [پرسش‌های متداول](https://forexschool.store/fa/faq.html), [واژه‌نامه](https://forexschool.store/fa/glossary.html), [درباره ما](https://forexschool.store/fa/about.html)
+- [خانه](https://forexschool.store/fa/index.html), [درس‌ها](https://forexschool.store/fa/courses.html), [ابزارها](https://forexschool.store/fa/tools.html), [پادکست](https://forexschool.store/fa/podcast.html), [پرسش‌های متداول](https://forexschool.store/fa/faq.html), [واژه‌نامه](https://forexschool.store/fa/glossary.html), [درباره ما](https://forexschool.store/fa/about.html)
 
 ## Contact & community
 - WhatsApp channel: https://whatsapp.com/channel/0029VbEBu2aKLaHmFI6owX2b

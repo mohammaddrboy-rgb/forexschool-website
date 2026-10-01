@@ -127,20 +127,6 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://forexschool.store/islamic-finance.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://forexschool.store/islamic-finance.html"/>
-    <xhtml:link rel="alternate" hreflang="fa" href="https://forexschool.store/fa/islamic-finance.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://forexschool.store/islamic-finance.html"/>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://forexschool.store/fa/islamic-finance.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://forexschool.store/islamic-finance.html"/>
-    <xhtml:link rel="alternate" hreflang="fa" href="https://forexschool.store/fa/islamic-finance.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://forexschool.store/islamic-finance.html"/>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://forexschool.store/join.html</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://forexschool.store/join.html"/>
     <xhtml:link rel="alternate" hreflang="fa" href="https://forexschool.store/fa/join.html"/>
