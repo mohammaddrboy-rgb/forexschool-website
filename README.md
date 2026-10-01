@@ -114,7 +114,7 @@ Footer of every page: WhatsApp, Telegram (`t.me/+Ek6wSd8_64Y1Nzg0`), Facebook (g
 ## Placeholders to fill before launch
 | Item | Where | Current |
 |------|-------|---------|
-| Student testimonials | `index.html` ("What learners say") | now a **carousel** (arrows + dots + swipe, RTL/LTR-aware); 6 cards with bracketed `[...]` placeholder quotes/names — add/remove `<article class="card testimonial">` blocks inside `.carousel-track` and the controls adjust automatically |
+| Student testimonials | `index.html` ("What learners say") | now a **carousel** (arrows + dots + swipe, RTL/LTR-aware); 12 real student testimonials (English + Dari) — add/remove `<article class="card testimonial">` blocks inside `.carousel-track` and the controls adjust automatically |
 | Contact email | footer of every page | `mailto:info@forexschool.store` (change if different) |
 | Articles | `articles.html` | 3 placeholder "coming soon" cards |
 | Podcast episodes | `podcast.html` | "coming soon" note — replace the `.empty-state` block with the episodes |
