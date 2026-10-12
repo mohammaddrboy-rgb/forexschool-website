@@ -17,7 +17,13 @@ Run it after editing any lesson (or the nav/footer), BEFORE build-fa.py:
 import io, os, re, sys, json, html
 
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), "_lessons"))
-import beginner, advanced, diagrams  # noqa: E402
+import beginner, advanced, diagrams, intros  # noqa: E402
+
+# The owner decided (2026-10-12) that the website shows only a SHORT INTRODUCTION per lesson
+# (_lessons/intros.py) and a call to join — the full lessons are an incentive
+# to join the online classes. The full text stays in _lessons/ (and on branch archive/full-lessons);
+# set PUBLISH_FULL = True to publish complete lesson pages again (key points, diagrams, quiz…).
+PUBLISH_FULL = False
 
 BASE = "https://forexschool.store"
 FA_DIGITS = str.maketrans("0123456789", "۰۱۲۳۴۵۶۷۸۹")
@@ -247,6 +253,9 @@ def build_page(L, prev, nxt, idx, total, shell):
         "anchor": course["anchor"], "back": bi(("↑ All lessons of the " + course["short"][0].lower(), "↑ همهٔ درس‌های " + course["short"][1])),
     }
 
+    if not PUBLISH_FULL:
+        body = intro_body(L, crumbs, where, num_en, num_fa, pager_link(prev, "prev"), pager_link(nxt, "next"), course)
+
     head = shell["head"]
     head = head.replace("__TITLE_EN__", html.escape(title_en)).replace("__TITLE_FA__", html.escape(title_fa))
     head = head.replace("__DESC__", html.escape(desc_en)).replace("__DESC_FA__", html.escape(desc_fa))
@@ -257,6 +266,55 @@ def build_page(L, prev, nxt, idx, total, shell):
     write(fn, page)
     return fn
 
+def intro_body(L, crumbs, where, num_en, num_fa, prev_html, next_html, course):
+    """The public lesson page: a short introduction and a call to join the online classes."""
+    topics = "".join("<li>%s</li>" % bi(h) for h, _ in L["sections"])
+    return """
+  <section class="page-head lesson-head">
+    <div class="container">
+      %(crumbs)s
+      <span class="badge">%(badge)s</span>
+      <h1>%(h1)s</h1>
+      <p>%(sub)s</p>
+      <div class="lmeta"><span class="chip-lite">%(where)s</span><span class="chip-lite">%(live)s</span></div>
+    </div>
+  </section>
+
+  <section class="section lesson-main" data-lesson="%(id)s">
+    <div class="container lesson-intro">
+      <div class="card lintro-card">
+        <h2>%(about)s</h2>
+        <p class="lintro-text">%(intro)s</p>
+      </div>
+      <div class="lintro-cta">
+        <h2>%(cta_h)s</h2>
+        <p>%(cta_p)s</p>
+        <div class="lintro-btns">
+          <a class="btn btn-gold" href="%(wa)s" target="_blank" rel="noopener">%(cta_join)s</a>
+          <a class="btn btn-outline" href="/join.html">%(cta_how)s</a>
+        </div>
+      </div>
+      <nav class="lesson-pager" aria-label="Lesson navigation">%(prev)s%(next)s</nav>
+      <p class="lesson-back"><a href="/courses.html#%(anchor)s">%(back)s</a></p>
+    </div>
+  </section>
+""" % {
+        "crumbs": crumbs,
+        "badge": bi((("Beginner · Lesson " + num_en) if L["course"] == "beginner" else ("Advanced · " + num_en),
+                     ("دورهٔ پایه · درس " + num_fa) if L["course"] == "beginner" else ("دورهٔ پیشرفته · " + num_fa))),
+        "h1": bi(L["title"]), "sub": bi(L["sub"]), "where": bi(where),
+        "live": bi(("Taught in our online classes", "در کلاس‌های آنلاین تدریس می‌شود")), "id": L["id"],
+        "about": bi(("About this lesson", "دربارهٔ این درس")), "intro": bi(intros.INTROS[L["id"]]),
+        "cover": bi(("What we cover in class", "آنچه در کلاس می‌آموزید")), "topics": topics,
+        "cta_h": bi(("Want the full lesson?", "درس کامل را می‌خواهید؟")),
+        "cta_p": bi(("The complete lesson — with worked examples, charts, homework and answers to your questions — is taught in our free online classes. Join the Forex School WhatsApp channel to take part.",
+                     "درس کامل — همراه با مثال‌های عملی، نمودارها، کارخانگی و پاسخ به پرسش‌های شما — در کلاس‌های آنلاین و رایگان ما تدریس می‌شود. برای شرکت، به کانال واتساپ مکتب فارکس بپیوندید.")),
+        "wa": WA, "cta_join": bi(("Join the online classes", "پیوستن به کلاس‌های آنلاین")),
+        "cta_how": bi(("How to join", "چگونه عضو شویم")),
+        "prev": prev_html, "next": next_html, "anchor": course["anchor"],
+        "back": bi(("↑ All lessons of the " + course["short"][0].lower(), "↑ همهٔ درس‌های " + course["short"][1])),
+    }
+
 def make_shell():
     src = read("courses.html")
     ver = re.search(r'global\.css\?v=([^"]+)"', src).group(1)
@@ -264,8 +322,9 @@ def make_shell():
     header = extract(src, '  <header class="nav">', '<div class="nav-backdrop"></div>\n')
     # the Courses nav link stays active on lesson pages (copied as-is)
     footer = extract(src, '  <!-- Disclaimer band -->', "</footer>\n")
-    footer = footer.replace("Join the WhatsApp channel to get the lessons", "Questions about this lesson? Ask in the WhatsApp channel")
-    footer = footer.replace("برای دریافت درس‌ها به کانال واتساپ بپیوند", "پرسشی دربارهٔ این درس دارید؟ در کانال واتساپ بپرسید")
+    if PUBLISH_FULL:
+        footer = footer.replace("Join the WhatsApp channel to get the lessons", "Questions about this lesson? Ask in the WhatsApp channel")
+        footer = footer.replace("برای دریافت درس‌ها به کانال واتساپ بپیوند", "پرسشی دربارهٔ این درس دارید؟ در کانال واتساپ بپرسید")
     head = """<!DOCTYPE html>
 <html lang="en" dir="ltr"
       data-title-en="__TITLE_EN__"
@@ -301,11 +360,10 @@ def make_shell():
 
   <script src="/assets/vendor/ScrollTrigger.min.js" defer></script>
 
-  <script src="/assets/js/lessons.js?v=%(ver)s" defer></script>
-  <script src="/assets/js/site.js?v=%(ver)s" defer></script>
+%(lessons_js)s  <script src="/assets/js/site.js?v=%(ver)s" defer></script>
 </body>
 </html>
-""" % {"ver": ver}
+""" % {"ver": ver, "lessons_js": ('  <script src="/assets/js/lessons.js?v=%s" defer></script>\n' % ver) if PUBLISH_FULL else ""}
     return {"head": head, "header": header, "after": after}
 
 # --------------------------------------------------------------------------- courses.html links
@@ -317,7 +375,7 @@ def link_courses(all_lessons):
         # find the lesson row by its English title, then rewrite its button
         pat = re.compile(r'(<div class="lesson")(?: data-lesson="[^"]*")?(><div class="lesson-num">(?:(?!</div><a).)*?<span class="lang-en">%s</span>.*?</h4></div>)<a class="btn btn-gold" href="[^"]*"(?: target="_blank" rel="noopener")?><span class="lang-en">[^<]*</span><span class="lang-fa">[^<]*</span></a>'
                          % re.escape(en_t), re.S)
-        rep = (r'\1 data-lesson="%s"\2<a class="btn btn-gold" href="/%s"><span class="lang-en">Open Lesson</span><span class="lang-fa">باز کردن درس</span></a>'
+        rep = (r'\1 data-lesson="%s"\2<a class="btn btn-gold" href="/%s"><span class="lang-en">Lesson Overview</span><span class="lang-fa">معرفی درس</span></a>'
                % (L["id"], file_of(L)))
         src, k = pat.subn(rep, src, count=1)
         if not k:
@@ -337,6 +395,7 @@ def main():
         for i, L in enumerate(ls):
             assert L["id"] not in seen, L["id"]; seen.add(L["id"])
             assert len(L["quiz"]) == 3, (L["id"], "needs 3 quiz questions")
+            assert L["id"] in intros.INTROS, (L["id"], "needs an introduction in _lessons/intros.py")
             built.append(build_page(L, ls[i - 1] if i else None, ls[i + 1] if i + 1 < len(ls) else None, i + 1, len(ls), shell))
     # remove stale lesson pages
     for f in os.listdir("lessons"):

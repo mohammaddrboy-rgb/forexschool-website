@@ -23,7 +23,10 @@ Read `README.md` for how the site is built. Key rules:
 
 ## Improvement backlog (suggested to the owner 2026-10-12, in priority order)
 The owner asked: after finishing each item, remind them of the remaining ones in this order.
-1. ~~Lesson pages~~ — DONE 2026-10-12: all 13 beginner + 21 advanced lessons (`lessons/`, generated from the owner's PDFs via `_lessons/` + `build-lessons.py`).
+1. ~~Lesson pages~~ — DONE 2026-10-12: one page per lesson (`lessons/`, via `_lessons/` + `build-lessons.py`).
+   The owner wants ONLY a short introduction public (`_lessons/intros.py`) so students join the online classes.
+   The full lesson content (from the owner's PDFs, with diagrams + quizzes) is kept in `_lessons/` and on branch
+   `archive/full-lessons` — do not publish it unless the owner asks (`PUBLISH_FULL` in `build-lessons.py`).
 2. Fill the Articles page — weekly outlook, "5 beginner mistakes", "What is a pip" etc.
 3. ~~Student Stories page~~ — DONE 2026-10-12 (`students.html`, synced by `build-students.py`).
 4. ~~More tools~~ — DONE 2026-10-12: pip value calculator, margin & leverage calculator (the risk calculator already covers position size from stop-loss), market hours clock in Kabul time.
