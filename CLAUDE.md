@@ -4,6 +4,7 @@ Read `README.md` for how the site is built. Key rules:
 
 - **Bilingual:** English pages at the root are the source of truth; `/fa/` (Dari) is generated.
   After editing any root page run `python build-fa.py` then `python build-geo.py`.
+  Lessons: edit `_lessons/*.py` (never `lessons/*.html`), then run `python build-lessons.py` before build-fa.
   Testimonials: add them to the carousel in `index.html` only, then run `python build-students.py`
   (before build-fa) — it syncs `students.html` and all student/city counts.
   After editing CSS/JS run `python bump-assets.py` first. Every visible string needs both
@@ -22,7 +23,7 @@ Read `README.md` for how the site is built. Key rules:
 
 ## Improvement backlog (suggested to the owner 2026-10-12, in priority order)
 The owner asked: after finishing each item, remind them of the remaining ones in this order.
-1. Lesson pages — one page per beginner lesson (key points, diagram, 3-question quiz); needs the owner's lesson material.
+1. ~~Lesson pages~~ — DONE 2026-10-12: all 13 beginner + 21 advanced lessons (`lessons/`, generated from the owner's PDFs via `_lessons/` + `build-lessons.py`).
 2. Fill the Articles page — weekly outlook, "5 beginner mistakes", "What is a pip" etc.
 3. ~~Student Stories page~~ — DONE 2026-10-12 (`students.html`, synced by `build-students.py`).
 4. ~~More tools~~ — DONE 2026-10-12: pip value calculator, margin & leverage calculator (the risk calculator already covers position size from stop-loss), market hours clock in Kabul time.
