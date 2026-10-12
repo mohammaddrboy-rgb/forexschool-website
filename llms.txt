@@ -17,7 +17,41 @@
 
 ## Core pages (English)
 - [Home](https://forexschool.store/index.html): overview of the free Dari-and-English forex school.
-- [Courses](https://forexschool.store/courses.html): the 13-lesson beginner course and 21-lesson (6-module) advanced course.
+- [Courses](https://forexschool.store/courses.html): the 13-lesson beginner course and 21-lesson (6-module) advanced course. Every lesson has its own free page (key points, a diagram, homework and a 3-question quiz), in English and Dari (/fa/lessons/…):
+  - [Beginner 01 — Financial Literacy](https://forexschool.store/lessons/beginner-01-financial-literacy.html)
+  - [Beginner 02 — What is Forex](https://forexschool.store/lessons/beginner-02-what-is-forex.html)
+  - [Beginner 03 — Basic Terms](https://forexschool.store/lessons/beginner-03-basic-terms.html)
+  - [Beginner 04 — Leverage Risk](https://forexschool.store/lessons/beginner-04-leverage-risk.html)
+  - [Beginner 05 — Risk Management](https://forexschool.store/lessons/beginner-05-risk-management.html)
+  - [Beginner 06 — Technical Analysis](https://forexschool.store/lessons/beginner-06-technical-analysis.html)
+  - [Beginner 07 — Trend and Trendlines](https://forexschool.store/lessons/beginner-07-trend-and-trendlines.html)
+  - [Beginner 08 — Candlestick Patterns](https://forexschool.store/lessons/beginner-08-candlestick-patterns.html)
+  - [Beginner 09 — Indicators](https://forexschool.store/lessons/beginner-09-indicators.html)
+  - [Beginner 10 — Fundamental Analysis](https://forexschool.store/lessons/beginner-10-fundamental-analysis.html)
+  - [Beginner 11 — Trading Psychology](https://forexschool.store/lessons/beginner-11-trading-psychology.html)
+  - [Beginner 12 — Trading Plan Journal](https://forexschool.store/lessons/beginner-12-trading-plan-journal.html)
+  - [Beginner 13 — Demo to Live](https://forexschool.store/lessons/beginner-13-demo-to-live.html)
+  - [Advanced F1 — The Opportunity Framework in Forex](https://forexschool.store/lessons/advanced-f1-opportunity-framework.html)
+  - [Advanced F2 — Fixed and Floating Currency Regimes](https://forexschool.store/lessons/advanced-f2-currency-regimes.html)
+  - [Advanced F3 — Currency Bands and the Tradable World](https://forexschool.store/lessons/advanced-f3-currency-bands.html)
+  - [Advanced A1 — Multi-Timeframe Analysis](https://forexschool.store/lessons/advanced-a1-multi-timeframe-analysis.html)
+  - [Advanced A2 — Market Structure — Break of Structure & Change of Character](https://forexschool.store/lessons/advanced-a2-market-structure.html)
+  - [Advanced A3 — Supply & Demand — Institutional Zones](https://forexschool.store/lessons/advanced-a3-supply-and-demand.html)
+  - [Advanced AS1 — Order Blocks](https://forexschool.store/lessons/advanced-as1-order-blocks.html)
+  - [Advanced AS2 — Fair Value Gap](https://forexschool.store/lessons/advanced-as2-fair-value-gap.html)
+  - [Advanced AS3 — Liquidity Pools](https://forexschool.store/lessons/advanced-as3-liquidity-pools.html)
+  - [Advanced AS4 — Key Time Zones & the Judas Swing](https://forexschool.store/lessons/advanced-as4-killzones-judas-swing.html)
+  - [Advanced AS5 — The Power of Three](https://forexschool.store/lessons/advanced-as5-power-of-three.html)
+  - [Advanced AS6 — Optimal Entry Point](https://forexschool.store/lessons/advanced-as6-optimal-trade-entry.html)
+  - [Advanced B1 — Macro Drivers: Interest Rates & Central Banks](https://forexschool.store/lessons/advanced-b1-interest-rates-central-banks.html)
+  - [Advanced B2 — Intermarket Analysis](https://forexschool.store/lessons/advanced-b2-intermarket-analysis.html)
+  - [Advanced C1 — Writing a Trading Plan](https://forexschool.store/lessons/advanced-c1-trading-plan.html)
+  - [Advanced C2 — Advanced Risk](https://forexschool.store/lessons/advanced-c2-advanced-risk.html)
+  - [Advanced C3 — Trading Psychology 2](https://forexschool.store/lessons/advanced-c3-probabilistic-thinking.html)
+  - [Advanced C4 — Discipline in Drawdown](https://forexschool.store/lessons/advanced-c4-discipline-in-drawdown.html)
+  - [Advanced D1 — Backtesting Methodology](https://forexschool.store/lessons/advanced-d1-backtesting.html)
+  - [Advanced D2 — Choosing a Trading Style](https://forexschool.store/lessons/advanced-d2-trading-style.html)
+  - [Advanced D3 — Final Project (Capstone)](https://forexschool.store/lessons/advanced-d3-capstone.html)
 - [Tools](https://forexschool.store/tools.html): free risk, pip value and margin calculators, market hours clock and economic calendar.
 - [Student Stories](https://forexschool.store/students.html): testimonials from Forex School students, filterable by city.
 - [Podcast](https://forexschool.store/podcast.html): the Forex School podcast (episodes coming soon).

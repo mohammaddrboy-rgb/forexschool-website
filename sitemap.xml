@@ -252,4 +252,480 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://forexschool.store/tools.html"/>
     <priority>0.7</priority>
   </url>
+  <url>
+    <loc>https://forexschool.store/lessons/advanced-a1-multi-timeframe-analysis.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://forexschool.store/lessons/advanced-a1-multi-timeframe-analysis.html"/>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://forexschool.store/fa/lessons/advanced-a1-multi-timeframe-analysis.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://forexschool.store/lessons/advanced-a1-multi-timeframe-analysis.html"/>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://forexschool.store/fa/lessons/advanced-a1-multi-timeframe-analysis.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://forexschool.store/lessons/advanced-a1-multi-timeframe-analysis.html"/>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://forexschool.store/fa/lessons/advanced-a1-multi-timeframe-analysis.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://forexschool.store/lessons/advanced-a1-multi-timeframe-analysis.html"/>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://forexschool.store/lessons/advanced-a2-market-structure.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://forexschool.store/lessons/advanced-a2-market-structure.html"/>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://forexschool.store/fa/lessons/advanced-a2-market-structure.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://forexschool.store/lessons/advanced-a2-market-structure.html"/>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://forexschool.store/fa/lessons/advanced-a2-market-structure.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://forexschool.store/lessons/advanced-a2-market-structure.html"/>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://forexschool.store/fa/lessons/advanced-a2-market-structure.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://forexschool.store/lessons/advanced-a2-market-structure.html"/>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://forexschool.store/lessons/advanced-a3-supply-and-demand.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://forexschool.store/lessons/advanced-a3-supply-and-demand.html"/>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://forexschool.store/fa/lessons/advanced-a3-supply-and-demand.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://forexschool.store/lessons/advanced-a3-supply-and-demand.html"/>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://forexschool.store/fa/lessons/advanced-a3-supply-and-demand.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://forexschool.store/lessons/advanced-a3-supply-and-demand.html"/>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://forexschool.store/fa/lessons/advanced-a3-supply-and-demand.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://forexschool.store/lessons/advanced-a3-supply-and-demand.html"/>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://forexschool.store/lessons/advanced-as1-order-blocks.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://forexschool.store/lessons/advanced-as1-order-blocks.html"/>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://forexschool.store/fa/lessons/advanced-as1-order-blocks.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://forexschool.store/lessons/advanced-as1-order-blocks.html"/>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://forexschool.store/fa/lessons/advanced-as1-order-blocks.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://forexschool.store/lessons/advanced-as1-order-blocks.html"/>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://forexschool.store/fa/lessons/advanced-as1-order-blocks.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://forexschool.store/lessons/advanced-as1-order-blocks.html"/>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://forexschool.store/lessons/advanced-as2-fair-value-gap.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://forexschool.store/lessons/advanced-as2-fair-value-gap.html"/>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://forexschool.store/fa/lessons/advanced-as2-fair-value-gap.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://forexschool.store/lessons/advanced-as2-fair-value-gap.html"/>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://forexschool.store/fa/lessons/advanced-as2-fair-value-gap.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://forexschool.store/lessons/advanced-as2-fair-value-gap.html"/>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://forexschool.store/fa/lessons/advanced-as2-fair-value-gap.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://forexschool.store/lessons/advanced-as2-fair-value-gap.html"/>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://forexschool.store/lessons/advanced-as3-liquidity-pools.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://forexschool.store/lessons/advanced-as3-liquidity-pools.html"/>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://forexschool.store/fa/lessons/advanced-as3-liquidity-pools.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://forexschool.store/lessons/advanced-as3-liquidity-pools.html"/>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://forexschool.store/fa/lessons/advanced-as3-liquidity-pools.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://forexschool.store/lessons/advanced-as3-liquidity-pools.html"/>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://forexschool.store/fa/lessons/advanced-as3-liquidity-pools.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://forexschool.store/lessons/advanced-as3-liquidity-pools.html"/>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://forexschool.store/lessons/advanced-as4-killzones-judas-swing.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://forexschool.store/lessons/advanced-as4-killzones-judas-swing.html"/>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://forexschool.store/fa/lessons/advanced-as4-killzones-judas-swing.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://forexschool.store/lessons/advanced-as4-killzones-judas-swing.html"/>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://forexschool.store/fa/lessons/advanced-as4-killzones-judas-swing.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://forexschool.store/lessons/advanced-as4-killzones-judas-swing.html"/>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://forexschool.store/fa/lessons/advanced-as4-killzones-judas-swing.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://forexschool.store/lessons/advanced-as4-killzones-judas-swing.html"/>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://forexschool.store/lessons/advanced-as5-power-of-three.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://forexschool.store/lessons/advanced-as5-power-of-three.html"/>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://forexschool.store/fa/lessons/advanced-as5-power-of-three.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://forexschool.store/lessons/advanced-as5-power-of-three.html"/>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://forexschool.store/fa/lessons/advanced-as5-power-of-three.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://forexschool.store/lessons/advanced-as5-power-of-three.html"/>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://forexschool.store/fa/lessons/advanced-as5-power-of-three.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://forexschool.store/lessons/advanced-as5-power-of-three.html"/>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://forexschool.store/lessons/advanced-as6-optimal-trade-entry.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://forexschool.store/lessons/advanced-as6-optimal-trade-entry.html"/>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://forexschool.store/fa/lessons/advanced-as6-optimal-trade-entry.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://forexschool.store/lessons/advanced-as6-optimal-trade-entry.html"/>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://forexschool.store/fa/lessons/advanced-as6-optimal-trade-entry.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://forexschool.store/lessons/advanced-as6-optimal-trade-entry.html"/>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://forexschool.store/fa/lessons/advanced-as6-optimal-trade-entry.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://forexschool.store/lessons/advanced-as6-optimal-trade-entry.html"/>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://forexschool.store/lessons/advanced-b1-interest-rates-central-banks.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://forexschool.store/lessons/advanced-b1-interest-rates-central-banks.html"/>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://forexschool.store/fa/lessons/advanced-b1-interest-rates-central-banks.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://forexschool.store/lessons/advanced-b1-interest-rates-central-banks.html"/>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://forexschool.store/fa/lessons/advanced-b1-interest-rates-central-banks.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://forexschool.store/lessons/advanced-b1-interest-rates-central-banks.html"/>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://forexschool.store/fa/lessons/advanced-b1-interest-rates-central-banks.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://forexschool.store/lessons/advanced-b1-interest-rates-central-banks.html"/>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://forexschool.store/lessons/advanced-b2-intermarket-analysis.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://forexschool.store/lessons/advanced-b2-intermarket-analysis.html"/>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://forexschool.store/fa/lessons/advanced-b2-intermarket-analysis.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://forexschool.store/lessons/advanced-b2-intermarket-analysis.html"/>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://forexschool.store/fa/lessons/advanced-b2-intermarket-analysis.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://forexschool.store/lessons/advanced-b2-intermarket-analysis.html"/>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://forexschool.store/fa/lessons/advanced-b2-intermarket-analysis.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://forexschool.store/lessons/advanced-b2-intermarket-analysis.html"/>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://forexschool.store/lessons/advanced-c1-trading-plan.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://forexschool.store/lessons/advanced-c1-trading-plan.html"/>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://forexschool.store/fa/lessons/advanced-c1-trading-plan.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://forexschool.store/lessons/advanced-c1-trading-plan.html"/>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://forexschool.store/fa/lessons/advanced-c1-trading-plan.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://forexschool.store/lessons/advanced-c1-trading-plan.html"/>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://forexschool.store/fa/lessons/advanced-c1-trading-plan.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://forexschool.store/lessons/advanced-c1-trading-plan.html"/>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://forexschool.store/lessons/advanced-c2-advanced-risk.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://forexschool.store/lessons/advanced-c2-advanced-risk.html"/>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://forexschool.store/fa/lessons/advanced-c2-advanced-risk.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://forexschool.store/lessons/advanced-c2-advanced-risk.html"/>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://forexschool.store/fa/lessons/advanced-c2-advanced-risk.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://forexschool.store/lessons/advanced-c2-advanced-risk.html"/>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://forexschool.store/fa/lessons/advanced-c2-advanced-risk.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://forexschool.store/lessons/advanced-c2-advanced-risk.html"/>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://forexschool.store/lessons/advanced-c3-probabilistic-thinking.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://forexschool.store/lessons/advanced-c3-probabilistic-thinking.html"/>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://forexschool.store/fa/lessons/advanced-c3-probabilistic-thinking.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://forexschool.store/lessons/advanced-c3-probabilistic-thinking.html"/>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://forexschool.store/fa/lessons/advanced-c3-probabilistic-thinking.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://forexschool.store/lessons/advanced-c3-probabilistic-thinking.html"/>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://forexschool.store/fa/lessons/advanced-c3-probabilistic-thinking.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://forexschool.store/lessons/advanced-c3-probabilistic-thinking.html"/>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://forexschool.store/lessons/advanced-c4-discipline-in-drawdown.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://forexschool.store/lessons/advanced-c4-discipline-in-drawdown.html"/>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://forexschool.store/fa/lessons/advanced-c4-discipline-in-drawdown.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://forexschool.store/lessons/advanced-c4-discipline-in-drawdown.html"/>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://forexschool.store/fa/lessons/advanced-c4-discipline-in-drawdown.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://forexschool.store/lessons/advanced-c4-discipline-in-drawdown.html"/>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://forexschool.store/fa/lessons/advanced-c4-discipline-in-drawdown.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://forexschool.store/lessons/advanced-c4-discipline-in-drawdown.html"/>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://forexschool.store/lessons/advanced-d1-backtesting.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://forexschool.store/lessons/advanced-d1-backtesting.html"/>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://forexschool.store/fa/lessons/advanced-d1-backtesting.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://forexschool.store/lessons/advanced-d1-backtesting.html"/>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://forexschool.store/fa/lessons/advanced-d1-backtesting.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://forexschool.store/lessons/advanced-d1-backtesting.html"/>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://forexschool.store/fa/lessons/advanced-d1-backtesting.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://forexschool.store/lessons/advanced-d1-backtesting.html"/>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://forexschool.store/lessons/advanced-d2-trading-style.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://forexschool.store/lessons/advanced-d2-trading-style.html"/>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://forexschool.store/fa/lessons/advanced-d2-trading-style.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://forexschool.store/lessons/advanced-d2-trading-style.html"/>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://forexschool.store/fa/lessons/advanced-d2-trading-style.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://forexschool.store/lessons/advanced-d2-trading-style.html"/>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://forexschool.store/fa/lessons/advanced-d2-trading-style.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://forexschool.store/lessons/advanced-d2-trading-style.html"/>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://forexschool.store/lessons/advanced-d3-capstone.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://forexschool.store/lessons/advanced-d3-capstone.html"/>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://forexschool.store/fa/lessons/advanced-d3-capstone.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://forexschool.store/lessons/advanced-d3-capstone.html"/>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://forexschool.store/fa/lessons/advanced-d3-capstone.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://forexschool.store/lessons/advanced-d3-capstone.html"/>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://forexschool.store/fa/lessons/advanced-d3-capstone.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://forexschool.store/lessons/advanced-d3-capstone.html"/>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://forexschool.store/lessons/advanced-f1-opportunity-framework.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://forexschool.store/lessons/advanced-f1-opportunity-framework.html"/>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://forexschool.store/fa/lessons/advanced-f1-opportunity-framework.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://forexschool.store/lessons/advanced-f1-opportunity-framework.html"/>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://forexschool.store/fa/lessons/advanced-f1-opportunity-framework.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://forexschool.store/lessons/advanced-f1-opportunity-framework.html"/>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://forexschool.store/fa/lessons/advanced-f1-opportunity-framework.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://forexschool.store/lessons/advanced-f1-opportunity-framework.html"/>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://forexschool.store/lessons/advanced-f2-currency-regimes.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://forexschool.store/lessons/advanced-f2-currency-regimes.html"/>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://forexschool.store/fa/lessons/advanced-f2-currency-regimes.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://forexschool.store/lessons/advanced-f2-currency-regimes.html"/>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://forexschool.store/fa/lessons/advanced-f2-currency-regimes.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://forexschool.store/lessons/advanced-f2-currency-regimes.html"/>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://forexschool.store/fa/lessons/advanced-f2-currency-regimes.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://forexschool.store/lessons/advanced-f2-currency-regimes.html"/>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://forexschool.store/lessons/advanced-f3-currency-bands.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://forexschool.store/lessons/advanced-f3-currency-bands.html"/>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://forexschool.store/fa/lessons/advanced-f3-currency-bands.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://forexschool.store/lessons/advanced-f3-currency-bands.html"/>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://forexschool.store/fa/lessons/advanced-f3-currency-bands.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://forexschool.store/lessons/advanced-f3-currency-bands.html"/>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://forexschool.store/fa/lessons/advanced-f3-currency-bands.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://forexschool.store/lessons/advanced-f3-currency-bands.html"/>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://forexschool.store/lessons/beginner-01-financial-literacy.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://forexschool.store/lessons/beginner-01-financial-literacy.html"/>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://forexschool.store/fa/lessons/beginner-01-financial-literacy.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://forexschool.store/lessons/beginner-01-financial-literacy.html"/>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://forexschool.store/fa/lessons/beginner-01-financial-literacy.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://forexschool.store/lessons/beginner-01-financial-literacy.html"/>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://forexschool.store/fa/lessons/beginner-01-financial-literacy.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://forexschool.store/lessons/beginner-01-financial-literacy.html"/>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://forexschool.store/lessons/beginner-02-what-is-forex.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://forexschool.store/lessons/beginner-02-what-is-forex.html"/>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://forexschool.store/fa/lessons/beginner-02-what-is-forex.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://forexschool.store/lessons/beginner-02-what-is-forex.html"/>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://forexschool.store/fa/lessons/beginner-02-what-is-forex.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://forexschool.store/lessons/beginner-02-what-is-forex.html"/>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://forexschool.store/fa/lessons/beginner-02-what-is-forex.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://forexschool.store/lessons/beginner-02-what-is-forex.html"/>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://forexschool.store/lessons/beginner-03-basic-terms.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://forexschool.store/lessons/beginner-03-basic-terms.html"/>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://forexschool.store/fa/lessons/beginner-03-basic-terms.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://forexschool.store/lessons/beginner-03-basic-terms.html"/>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://forexschool.store/fa/lessons/beginner-03-basic-terms.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://forexschool.store/lessons/beginner-03-basic-terms.html"/>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://forexschool.store/fa/lessons/beginner-03-basic-terms.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://forexschool.store/lessons/beginner-03-basic-terms.html"/>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://forexschool.store/lessons/beginner-04-leverage-risk.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://forexschool.store/lessons/beginner-04-leverage-risk.html"/>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://forexschool.store/fa/lessons/beginner-04-leverage-risk.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://forexschool.store/lessons/beginner-04-leverage-risk.html"/>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://forexschool.store/fa/lessons/beginner-04-leverage-risk.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://forexschool.store/lessons/beginner-04-leverage-risk.html"/>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://forexschool.store/fa/lessons/beginner-04-leverage-risk.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://forexschool.store/lessons/beginner-04-leverage-risk.html"/>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://forexschool.store/lessons/beginner-05-risk-management.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://forexschool.store/lessons/beginner-05-risk-management.html"/>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://forexschool.store/fa/lessons/beginner-05-risk-management.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://forexschool.store/lessons/beginner-05-risk-management.html"/>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://forexschool.store/fa/lessons/beginner-05-risk-management.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://forexschool.store/lessons/beginner-05-risk-management.html"/>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://forexschool.store/fa/lessons/beginner-05-risk-management.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://forexschool.store/lessons/beginner-05-risk-management.html"/>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://forexschool.store/lessons/beginner-06-technical-analysis.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://forexschool.store/lessons/beginner-06-technical-analysis.html"/>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://forexschool.store/fa/lessons/beginner-06-technical-analysis.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://forexschool.store/lessons/beginner-06-technical-analysis.html"/>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://forexschool.store/fa/lessons/beginner-06-technical-analysis.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://forexschool.store/lessons/beginner-06-technical-analysis.html"/>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://forexschool.store/fa/lessons/beginner-06-technical-analysis.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://forexschool.store/lessons/beginner-06-technical-analysis.html"/>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://forexschool.store/lessons/beginner-07-trend-and-trendlines.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://forexschool.store/lessons/beginner-07-trend-and-trendlines.html"/>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://forexschool.store/fa/lessons/beginner-07-trend-and-trendlines.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://forexschool.store/lessons/beginner-07-trend-and-trendlines.html"/>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://forexschool.store/fa/lessons/beginner-07-trend-and-trendlines.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://forexschool.store/lessons/beginner-07-trend-and-trendlines.html"/>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://forexschool.store/fa/lessons/beginner-07-trend-and-trendlines.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://forexschool.store/lessons/beginner-07-trend-and-trendlines.html"/>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://forexschool.store/lessons/beginner-08-candlestick-patterns.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://forexschool.store/lessons/beginner-08-candlestick-patterns.html"/>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://forexschool.store/fa/lessons/beginner-08-candlestick-patterns.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://forexschool.store/lessons/beginner-08-candlestick-patterns.html"/>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://forexschool.store/fa/lessons/beginner-08-candlestick-patterns.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://forexschool.store/lessons/beginner-08-candlestick-patterns.html"/>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://forexschool.store/fa/lessons/beginner-08-candlestick-patterns.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://forexschool.store/lessons/beginner-08-candlestick-patterns.html"/>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://forexschool.store/lessons/beginner-09-indicators.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://forexschool.store/lessons/beginner-09-indicators.html"/>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://forexschool.store/fa/lessons/beginner-09-indicators.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://forexschool.store/lessons/beginner-09-indicators.html"/>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://forexschool.store/fa/lessons/beginner-09-indicators.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://forexschool.store/lessons/beginner-09-indicators.html"/>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://forexschool.store/fa/lessons/beginner-09-indicators.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://forexschool.store/lessons/beginner-09-indicators.html"/>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://forexschool.store/lessons/beginner-10-fundamental-analysis.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://forexschool.store/lessons/beginner-10-fundamental-analysis.html"/>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://forexschool.store/fa/lessons/beginner-10-fundamental-analysis.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://forexschool.store/lessons/beginner-10-fundamental-analysis.html"/>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://forexschool.store/fa/lessons/beginner-10-fundamental-analysis.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://forexschool.store/lessons/beginner-10-fundamental-analysis.html"/>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://forexschool.store/fa/lessons/beginner-10-fundamental-analysis.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://forexschool.store/lessons/beginner-10-fundamental-analysis.html"/>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://forexschool.store/lessons/beginner-11-trading-psychology.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://forexschool.store/lessons/beginner-11-trading-psychology.html"/>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://forexschool.store/fa/lessons/beginner-11-trading-psychology.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://forexschool.store/lessons/beginner-11-trading-psychology.html"/>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://forexschool.store/fa/lessons/beginner-11-trading-psychology.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://forexschool.store/lessons/beginner-11-trading-psychology.html"/>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://forexschool.store/fa/lessons/beginner-11-trading-psychology.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://forexschool.store/lessons/beginner-11-trading-psychology.html"/>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://forexschool.store/lessons/beginner-12-trading-plan-journal.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://forexschool.store/lessons/beginner-12-trading-plan-journal.html"/>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://forexschool.store/fa/lessons/beginner-12-trading-plan-journal.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://forexschool.store/lessons/beginner-12-trading-plan-journal.html"/>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://forexschool.store/fa/lessons/beginner-12-trading-plan-journal.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://forexschool.store/lessons/beginner-12-trading-plan-journal.html"/>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://forexschool.store/fa/lessons/beginner-12-trading-plan-journal.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://forexschool.store/lessons/beginner-12-trading-plan-journal.html"/>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://forexschool.store/lessons/beginner-13-demo-to-live.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://forexschool.store/lessons/beginner-13-demo-to-live.html"/>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://forexschool.store/fa/lessons/beginner-13-demo-to-live.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://forexschool.store/lessons/beginner-13-demo-to-live.html"/>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://forexschool.store/fa/lessons/beginner-13-demo-to-live.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://forexschool.store/lessons/beginner-13-demo-to-live.html"/>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://forexschool.store/fa/lessons/beginner-13-demo-to-live.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://forexschool.store/lessons/beginner-13-demo-to-live.html"/>
+    <priority>0.7</priority>
+  </url>
 </urlset>

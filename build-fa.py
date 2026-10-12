@@ -45,7 +45,7 @@ OLD_HEAD = ("<script>(function(){try{var l=localStorage.getItem('mf-lang');if(l!
 NEW_HEAD = ("<script>(function(){var fa=location.pathname.indexOf('/fa/')!==-1;"
             "var d=document.documentElement;d.lang=fa?'fa':'en';d.dir=fa?'rtl':'ltr';})();</script>")
 
-pages = sorted(f for f in glob.glob("*.html") if f != "404.html")
+pages = sorted(f for f in glob.glob("*.html") if f != "404.html") + sorted(glob.glob("lessons/*.html"))
 
 def en_url(fn):  return BASE + "/" if fn == "index.html" else BASE + "/" + fn
 def fa_url(fn):  return BASE + "/fa/" if fn == "index.html" else BASE + "/fa/" + fn
@@ -70,11 +70,15 @@ for fn in pages:
     io.open(fn, "w", encoding="utf-8").write(t)
 
 # ---- 3: generate /fa/ mirror ----
-os.makedirs("fa", exist_ok=True)
+os.makedirs("fa/lessons", exist_ok=True)
+for old in glob.glob("fa/lessons/*.html"):   # drop pages whose English source is gone
+    if old[3:] not in pages:
+        os.remove(old)
 for fn in pages:
     t = io.open(fn, encoding="utf-8").read()
     tf = title_fa(t)
-    desc = FA_DESC.get(fn, tf)
+    dm = re.search(r'data-desc-fa="([^"]*)"', t)   # lesson pages carry their own Dari description
+    desc = FA_DESC.get(fn) or (dm.group(1) if dm else tf)
     t = t.replace('<html lang="en" dir="ltr"', '<html lang="fa" dir="rtl"', 1)
     t = re.sub(r'<title>.*?</title>', '<title>' + tf + '</title>', t, count=1, flags=re.S)
     t = re.sub(r'(<meta name="description" content=")[^"]*(">)', lambda m: m.group(1) + desc + m.group(2), t, count=1)
@@ -83,7 +87,7 @@ for fn in pages:
     t = re.sub(r'(<meta property="og:url" content=")[^"]*(">)', lambda m: m.group(1) + fa_url(fn) + m.group(2), t, count=1)
     t = re.sub(r'(<link rel="canonical" href=")[^"]*(">)', lambda m: m.group(1) + fa_url(fn) + m.group(2), t, count=1)
     # rewrite internal page links to the /fa/ tree (assets & external links untouched)
-    t = re.sub(r'href="/([a-z0-9-]+\.html)', r'href="/fa/\1', t)
+    t = re.sub(r'href="/((?:lessons/)?[a-z0-9-]+\.html)', r'href="/fa/\1', t)
     io.open(os.path.join("fa", fn), "w", encoding="utf-8").write(t)
 
 # ---- 4: sitemap with hreflang alternates ----
@@ -93,7 +97,7 @@ def alts(fn):
             '    <xhtml:link rel="alternate" hreflang="x-default" href="%s"/>\n'
             % (en_url(fn), fa_url(fn), en_url(fn)))
 
-prio = {"index.html": "1.0", "landing.html": "0.9", "courses.html": "0.9"}
+prio = {"index.html": "1.0", "landing.html": "0.9", "courses.html": "0.9"}  # lessons/* default to 0.7
 sm = ['<?xml version="1.0" encoding="UTF-8"?>',
       '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">']
 for fn in pages:
