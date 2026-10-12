@@ -22,11 +22,12 @@ Added: `landing.html` · `faq.html` · `glossary.html` · `how-to-start.html` ·
 
 - **`landing.html`** — a catchy, conversion-focused landing page (animated gradient hero, gradient headline, benefit cards, stats, testimonial highlight, strong CTAs). Standalone; to make it the site's front door, rename it to `index.html` (rename the current home first) or point the domain root at it.
 
-- **Lesson pages** — `lessons/*.html`, one page per lesson (13 beginner + 21 advanced), each with key points,
-  the lesson itself, an inline SVG diagram, homework and a 3-question quiz (`assets/js/lessons.js`; a passed quiz marks
-  the lesson done on `courses.html`, saved in the visitor's browser only). They are **generated** by `build-lessons.py`
-  from the text in `_lessons/` (`beginner*.py`, `advanced*.py`, diagrams in `diagrams.py`) — edit those files, never the
-  HTML. The advanced modules always stay in the order F, A, AS, B, C, D. `build-fa.py` mirrors them to `fa/lessons/`.
+- **Lesson pages** — `lessons/*.html`, one page per lesson (13 beginner + 21 advanced). By the owner's decision they show
+  only a **short introduction** (`_lessons/intros.py`) and a call to join the online classes — the full lessons are taught in
+  class. Pages are **generated** by `build-lessons.py` (edit `_lessons/`, never the HTML); `build-fa.py` mirrors them to
+  `fa/lessons/`. The full lesson text, diagrams and quizzes are kept in `_lessons/` (`beginner*.py`, `advanced*.py`,
+  `diagrams.py`) and on branch `archive/full-lessons`; set `PUBLISH_FULL = True` in `build-lessons.py` to publish them again.
+  The advanced modules always stay in the order F, A, AS, B, C, D.
 - **Risk calculator** — a real, working tool (vanilla JS, computes lot size / risk amount / R:R live).
 - **Pip value, margin & leverage calculators and market-hours clock** — `assets/js/tools.js` (loaded only on those pages); the clock converts each session's local hours to Kabul time and handles daylight-saving changes automatically.
 - **Economic calendar** — embeds the free TradingView events widget (external script from `s3.tradingview.com`).
