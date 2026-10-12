@@ -18,7 +18,7 @@ No framework, no build step — plain HTML/CSS/JS. Based on `forextradechi-websi
 > The **Islamic Finance** section was removed on 2026-10-01 and archived — see `_archive/islamic-finance/RESTORE.md`.
 
 Core: `index.html` · `courses.html` · `tools.html` · `about.html` · `join.html` · `disclaimer.html`
-Added: `landing.html` · `faq.html` · `glossary.html` · `how-to-start.html` · `articles.html` · `podcast.html` · `risk-calculator.html` · `economic-calendar.html` · `404.html`
+Added: `landing.html` · `faq.html` · `glossary.html` · `how-to-start.html` · `articles.html` · `podcast.html` · `students.html` · `risk-calculator.html` · `economic-calendar.html` · `404.html`
 
 - **`landing.html`** — a catchy, conversion-focused landing page (animated gradient hero, gradient headline, benefit cards, stats, testimonial highlight, strong CTAs). Standalone; to make it the site's front door, rename it to `index.html` (rename the current home first) or point the domain root at it.
 
@@ -55,7 +55,7 @@ That rebuilds every `/fa/` page, injects hreflang into the English pages, and re
 `sitemap.xml`. (Farsi meta descriptions live in the `FA_DESC` dict inside `build-fa.py`.)
 
 **Full workflow after editing:** edit the English page(s) → `python normalize.py` *(only if you
-changed nav/footer)* → `python bump-assets.py` *(only if you changed CSS/JS)* → `python build-fa.py`
+changed nav/footer)* → `python bump-assets.py` *(only if you changed CSS/JS)* → `python build-students.py` *(only if you changed testimonials)* → `python build-fa.py`
 *(always)* → `python build-geo.py` *(always, last)*.
 
 ## GEO — Generative Engine Optimization (AI answer engines)
@@ -114,7 +114,7 @@ Footer of every page: WhatsApp, Telegram (`t.me/+Ek6wSd8_64Y1Nzg0`), Facebook (g
 ## Placeholders to fill before launch
 | Item | Where | Current |
 |------|-------|---------|
-| Student testimonials | `index.html` ("What learners say") | now a **carousel** (arrows + dots + swipe, RTL/LTR-aware); 22 real student testimonials (English + Dari) — add/remove `<article class="card testimonial">` blocks inside `.carousel-track` and the controls adjust automatically |
+| Student testimonials | `index.html` carousel (source) → `students.html` | 22 real student testimonials (English + Dari). Add new ones to the carousel in `index.html` only, then run `python build-students.py` — it copies them to the Student Stories page, builds the city filter and updates the counts |
 | Contact email | footer of every page | `mailto:info@forexschool.store` (change if different) |
 | Articles | `articles.html` | 3 placeholder "coming soon" cards |
 | Podcast episodes | `podcast.html` | "coming soon" note — replace the `.empty-state` block with the episodes |
