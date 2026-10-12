@@ -183,6 +183,20 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://forexschool.store/students.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://forexschool.store/students.html"/>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://forexschool.store/fa/students.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://forexschool.store/students.html"/>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://forexschool.store/fa/students.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://forexschool.store/students.html"/>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://forexschool.store/fa/students.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://forexschool.store/students.html"/>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://forexschool.store/tools.html</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://forexschool.store/tools.html"/>
     <xhtml:link rel="alternate" hreflang="fa" href="https://forexschool.store/fa/tools.html"/>

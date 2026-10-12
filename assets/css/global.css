@@ -1691,3 +1691,35 @@ body.menu-open { overflow: hidden; }
 
 /* Content directly under an interior page header doesn't need a full section gap */
 .page-head + .section, .page-head + .section-tight { padding-top: clamp(1rem, 3vw, 2rem); }
+
+/* ==========================================================================
+   Student Stories page (students.html)
+   ========================================================================== */
+.stories-stats { grid-template-columns: repeat(3, 1fr); margin-bottom: clamp(2rem, 5vw, 3rem); }
+.lead-num { color: var(--brand-2); font-weight: 800; }
+.story-filters { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.5rem; margin-bottom: clamp(1.5rem, 4vw, 2.5rem); }
+.filter-chip {
+  display: inline-flex; align-items: center; gap: 0.45rem;
+  padding: 0.5rem 1rem;
+  border-radius: 999px;
+  border: 1px solid var(--line-strong);
+  background: rgba(255, 255, 255, 0.03);
+  color: var(--muted);
+  font-weight: 700; font-size: 0.9rem;
+  cursor: pointer;
+  transition: background var(--transition), color var(--transition), border-color var(--transition);
+}
+.filter-chip:hover { color: var(--text); border-color: rgba(250, 153, 57, 0.5); }
+.filter-chip.active { background: var(--grad-brand); color: var(--brand-ink); border-color: transparent; }
+.filter-chip .fc-n {
+  min-width: 1.5em; padding: 0 0.4em;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.08);
+  font-size: 0.78rem; text-align: center;
+}
+.filter-chip.active .fc-n { background: rgba(10, 20, 36, 0.18); }
+.stories { columns: 3 300px; column-gap: var(--space-md); }
+.stories .testimonial { break-inside: avoid; display: flex; margin-bottom: var(--space-md); width: 100%; }
+.stories .testimonial .quote { -webkit-line-clamp: unset; display: block; }
+.stories .testimonial.is-hidden { display: none; }
+@media (max-width: 640px) { .stories-stats { grid-template-columns: repeat(3, 1fr); } .stories-stats .stat { padding-inline: 0.5rem; } }

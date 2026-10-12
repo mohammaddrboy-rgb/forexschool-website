@@ -215,6 +215,32 @@
     refresh();
   }
 
+  /* ---- Student Stories: filter by city ---- */
+  var chipsWrap = document.querySelector('.story-filters');
+  if (chipsWrap) {
+    var stories = Array.prototype.slice.call(document.querySelectorAll('.stories .testimonial'));
+    chipsWrap.addEventListener('click', function (e) {
+      var chip = e.target.closest('.filter-chip');
+      if (!chip) return;
+      var f = chip.getAttribute('data-filter');
+      chipsWrap.querySelectorAll('.filter-chip').forEach(function (c) {
+        var on = c === chip;
+        c.classList.toggle('active', on);
+        c.setAttribute('aria-pressed', on ? 'true' : 'false');
+      });
+      var shown = [];
+      stories.forEach(function (s) {
+        var show = f === 'all' || s.getAttribute('data-city') === f;
+        s.classList.toggle('is-hidden', !show);
+        if (show) shown.push(s);
+      });
+      if (window.gsap && !reduceMotion) {
+        window.gsap.fromTo(shown, { opacity: 0, y: 16, transition: 'none' }, { opacity: 1, y: 0, duration: 0.5, stagger: 0.04, ease: 'power3.out', overwrite: true, clearProps: 'transform,opacity,transition' });
+      }
+      if (window.ScrollTrigger) window.ScrollTrigger.refresh();
+    });
+  }
+
   setupReadMore();
   document.querySelectorAll('[data-carousel]').forEach(initCarousel);
   window.addEventListener('load', setupReadMore);
@@ -559,10 +585,10 @@
   });
 
   /* Staggered reveals for repeating blocks */
-  var batchSel = '.card:not(.testimonial), .bento, .lesson, .term, .step, .acc-item, .lp-feature, .stat, .path-step, .prose > *, .result-row, .calc-card, .founder, .table-wrap, .band-islamic, .article-card, .alert, .lp-stat, .embed-wrap';
+  var batchSel = '.stories .testimonial, .card:not(.testimonial), .bento, .lesson, .term, .step, .acc-item, .lp-feature, .stat, .path-step, .prose > *, .result-row, .calc-card, .founder, .table-wrap, .band-islamic, .article-card, .alert, .lp-stat, .embed-wrap';
   var batchEls = gsap.utils.toArray(batchSel).filter(function (el) { return !el.closest('.hero') && !el.closest('.carousel'); });
-  gsap.set(batchEls, { y: 40, opacity: 0, transition: 'none' });
-  ScrollTrigger.batch(batchEls, {
+  if (batchEls.length) gsap.set(batchEls, { y: 40, opacity: 0, transition: 'none' });
+  if (batchEls.length) ScrollTrigger.batch(batchEls, {
     start: 'top 92%',
     once: true,
     onEnter: function (els) {
