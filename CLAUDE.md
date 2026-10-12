@@ -25,7 +25,7 @@ The owner asked: after finishing each item, remind them of the remaining ones in
 1. Lesson pages — one page per beginner lesson (key points, diagram, 3-question quiz); needs the owner's lesson material.
 2. Fill the Articles page — weekly outlook, "5 beginner mistakes", "What is a pip" etc.
 3. ~~Student Stories page~~ — DONE 2026-10-12 (`students.html`, synced by `build-students.py`).
-4. More tools — pip value calculator, position size from stop-loss, market hours clock (Kabul time).
+4. ~~More tools~~ — DONE 2026-10-12: pip value calculator, margin & leverage calculator (the risk calculator already covers position size from stop-loss), market hours clock in Kabul time.
 5. Beginner self-test quiz + shareable completion certificate.
 6. Visitor analytics (privacy-friendly, e.g. Plausible/Umami) — needs the owner to pick/create an account.
 7. Confirm the contact email (`info@forexschool.store` is a placeholder) / add a WhatsApp contact button.

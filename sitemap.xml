@@ -155,6 +155,48 @@
     <priority>0.9</priority>
   </url>
   <url>
+    <loc>https://forexschool.store/margin-calculator.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://forexschool.store/margin-calculator.html"/>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://forexschool.store/fa/margin-calculator.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://forexschool.store/margin-calculator.html"/>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://forexschool.store/fa/margin-calculator.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://forexschool.store/margin-calculator.html"/>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://forexschool.store/fa/margin-calculator.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://forexschool.store/margin-calculator.html"/>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://forexschool.store/market-hours.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://forexschool.store/market-hours.html"/>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://forexschool.store/fa/market-hours.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://forexschool.store/market-hours.html"/>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://forexschool.store/fa/market-hours.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://forexschool.store/market-hours.html"/>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://forexschool.store/fa/market-hours.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://forexschool.store/market-hours.html"/>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://forexschool.store/pip-calculator.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://forexschool.store/pip-calculator.html"/>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://forexschool.store/fa/pip-calculator.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://forexschool.store/pip-calculator.html"/>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://forexschool.store/fa/pip-calculator.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://forexschool.store/pip-calculator.html"/>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://forexschool.store/fa/pip-calculator.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://forexschool.store/pip-calculator.html"/>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://forexschool.store/podcast.html</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://forexschool.store/podcast.html"/>
     <xhtml:link rel="alternate" hreflang="fa" href="https://forexschool.store/fa/podcast.html"/>

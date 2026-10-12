@@ -18,11 +18,14 @@
 ## Core pages (English)
 - [Home](https://forexschool.store/index.html): overview of the free Dari-and-English forex school.
 - [Courses](https://forexschool.store/courses.html): the 13-lesson beginner course and 21-lesson (6-module) advanced course.
-- [Tools](https://forexschool.store/tools.html): free risk calculator and economic calendar.
+- [Tools](https://forexschool.store/tools.html): free risk, pip value and margin calculators, market hours clock and economic calendar.
 - [Student Stories](https://forexschool.store/students.html): testimonials from Forex School students, filterable by city.
 - [Podcast](https://forexschool.store/podcast.html): the Forex School podcast (episodes coming soon).
 - [Risk Calculator](https://forexschool.store/risk-calculator.html): compute position size, amount at risk and risk-to-reward.
 - [Economic Calendar](https://forexschool.store/economic-calendar.html): the week's high-impact economic events.
+- [Pip Value Calculator](https://forexschool.store/pip-calculator.html): what one pip is worth in USD for a pair and lot size.
+- [Margin & Leverage Calculator](https://forexschool.store/margin-calculator.html): required margin, position value and effective leverage.
+- [Forex Market Hours](https://forexschool.store/market-hours.html): live clock of open trading sessions, shown in Kabul time.
 - [FAQ](https://forexschool.store/faq.html): is it free, how to start, how much is needed, is it risky.
 - [Glossary](https://forexschool.store/glossary.html): key forex terms (pip, lot, leverage, margin, spread…) in Dari and English.
 - [How to Start](https://forexschool.store/how-to-start.html): a safe step-by-step path for beginners.
