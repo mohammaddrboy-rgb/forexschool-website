@@ -1,6 +1,6 @@
 /* Live price ticker under the home-page menu.
    Prices come from TradingView's free "Ticker Tape" widget (real-time/delayed per exchange).
-   Symbol titles are bilingual: Dari on /fa/ pages, English elsewhere. */
+   Symbol titles: names on English pages, international codes on /fa/ (see note below). */
 (function () {
   'use strict';
   var bar = document.querySelector('.tickerbar');
@@ -8,34 +8,38 @@
   var host = bar.querySelector('.tradingview-widget-container');
   var fa = document.documentElement.lang === 'fa';
 
-  // [TradingView symbol, English title, Dari title]
+  // [TradingView symbol, English-page title, Dari-page title]
+  // The widget is a TradingView iframe, so our fonts cannot reach inside it: Persian text there falls
+  // back to the visitor's default Arabic-script font. On /fa/ we therefore show the standard
+  // international codes (XAU/USD, WTI, AAPL…) — no Persian letters inside the iframe; all Dari text
+  // around the ticker uses the site's Vazirmatn font.
   var SYMBOLS = [
-    ['FX_IDC:EURUSD', 'EUR/USD', 'یورو/دلار'],
-    ['FX_IDC:GBPUSD', 'GBP/USD', 'پوند/دلار'],
-    ['FX_IDC:USDJPY', 'USD/JPY', 'دلار/ین'],
-    ['OANDA:XAUUSD', 'Gold', 'طلا'],
-    ['FOREXCOM:SPXUSD', 'S&P 500', 'اس‌اندپی ۵۰۰'],
-    ['TVC:USOIL', 'Crude Oil (WTI)', 'نفت خام WTI'],
-    ['BITSTAMP:BTCUSD', 'Bitcoin', 'بیت‌کوین'],
-    ['FX_IDC:USDCHF', 'USD/CHF', 'دلار/فرانک'],
-    ['FX_IDC:AUDUSD', 'AUD/USD', 'دلار استرالیا/دلار'],
-    ['FX_IDC:USDCAD', 'USD/CAD', 'دلار/دلار کانادا'],
-    ['FX_IDC:NZDUSD', 'NZD/USD', 'دلار نیوزیلند/دلار'],
-    ['FX_IDC:EURJPY', 'EUR/JPY', 'یورو/ین'],
-    ['FX_IDC:GBPJPY', 'GBP/JPY', 'پوند/ین'],
-    ['OANDA:XAGUSD', 'Silver', 'نقره'],
-    ['OANDA:XPTUSD', 'Platinum', 'پلاتین'],
-    ['TVC:DXY', 'US Dollar Index', 'شاخص دلار'],
-    ['FOREXCOM:NSXUSD', 'Nasdaq 100', 'نزدک ۱۰۰'],
-    ['FOREXCOM:DJI', 'Dow Jones', 'داوجونز'],
-    ['TVC:UKOIL', 'Brent Oil', 'نفت برنت'],
-    ['NASDAQ:AAPL', 'Apple', 'اپل'],
-    ['NASDAQ:NVDA', 'Nvidia', 'انویدیا'],
-    ['NASDAQ:MSFT', 'Microsoft', 'مایکروسافت'],
-    ['NASDAQ:TSLA', 'Tesla', 'تسلا'],
-    ['NASDAQ:AMZN', 'Amazon', 'آمازون'],
-    ['NASDAQ:GOOGL', 'Alphabet (Google)', 'گوگل'],
-    ['BITSTAMP:ETHUSD', 'Ethereum', 'اتریوم']
+    ['FX_IDC:EURUSD', 'EUR/USD', 'EUR/USD'],
+    ['FX_IDC:GBPUSD', 'GBP/USD', 'GBP/USD'],
+    ['FX_IDC:USDJPY', 'USD/JPY', 'USD/JPY'],
+    ['OANDA:XAUUSD', 'Gold', 'XAU/USD'],
+    ['FOREXCOM:SPXUSD', 'S&P 500', 'S&P 500'],
+    ['TVC:USOIL', 'Crude Oil (WTI)', 'WTI'],
+    ['BITSTAMP:BTCUSD', 'Bitcoin', 'BTC/USD'],
+    ['FX_IDC:USDCHF', 'USD/CHF', 'USD/CHF'],
+    ['FX_IDC:AUDUSD', 'AUD/USD', 'AUD/USD'],
+    ['FX_IDC:USDCAD', 'USD/CAD', 'USD/CAD'],
+    ['FX_IDC:NZDUSD', 'NZD/USD', 'NZD/USD'],
+    ['FX_IDC:EURJPY', 'EUR/JPY', 'EUR/JPY'],
+    ['FX_IDC:GBPJPY', 'GBP/JPY', 'GBP/JPY'],
+    ['OANDA:XAGUSD', 'Silver', 'XAG/USD'],
+    ['OANDA:XPTUSD', 'Platinum', 'XPT/USD'],
+    ['TVC:DXY', 'US Dollar Index', 'DXY'],
+    ['FOREXCOM:NSXUSD', 'Nasdaq 100', 'NASDAQ 100'],
+    ['FOREXCOM:DJI', 'Dow Jones', 'DOW 30'],
+    ['TVC:UKOIL', 'Brent Oil', 'BRENT'],
+    ['NASDAQ:AAPL', 'Apple', 'AAPL'],
+    ['NASDAQ:NVDA', 'Nvidia', 'NVDA'],
+    ['NASDAQ:MSFT', 'Microsoft', 'MSFT'],
+    ['NASDAQ:TSLA', 'Tesla', 'TSLA'],
+    ['NASDAQ:AMZN', 'Amazon', 'AMZN'],
+    ['NASDAQ:GOOGL', 'Alphabet (Google)', 'GOOGL'],
+    ['BITSTAMP:ETHUSD', 'Ethereum', 'ETH/USD']
   ];
 
   var cfg = {
