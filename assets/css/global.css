@@ -2032,3 +2032,68 @@ html[dir="rtl"] .lfig figcaption { direction: rtl; }
 .lintro-cta h2 { font-size: clamp(1.4rem, 3vw, 1.8rem); margin-bottom: 0.6rem; }
 .lintro-cta p { color: var(--muted); max-width: 56ch; margin: 0 auto 1.4rem; }
 .lintro-btns { display: flex; flex-wrap: wrap; gap: 0.75rem; justify-content: center; }
+
+/* ==========================================================================
+   Live price ticker (home page, under the menu) — TradingView ticker tape
+   ========================================================================== */
+.tickerbar {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: stretch;
+  height: 52px;
+  margin-top: 0.25rem;
+  background: linear-gradient(90deg, rgba(250, 153, 57, 0.07), rgba(14, 26, 45, 0.85) 18%, rgba(14, 26, 45, 0.85) 82%, rgba(37, 208, 160, 0.06)), var(--bg-2);
+  border-block: 1px solid var(--line);
+  box-shadow: 0 10px 30px -18px rgba(0, 0, 0, 0.8);
+  overflow: hidden;
+}
+.tickerbar::after {                      /* glowing brand line along the bottom edge */
+  content: "";
+  position: absolute; inset-inline: 0; bottom: -1px; height: 1px;
+  background: linear-gradient(90deg, transparent, var(--brand) 30%, var(--bull) 70%, transparent);
+  opacity: 0.7;
+}
+.tickerbar-label {
+  flex: none;
+  display: flex; align-items: center; gap: 0.55rem;
+  padding-inline: clamp(0.75rem, 2.5vw, 1.4rem);
+  background: linear-gradient(135deg, rgba(37, 208, 160, 0.16), rgba(37, 208, 160, 0.04));
+  border-inline-end: 1px solid var(--line-strong);
+  position: relative; z-index: 2;
+}
+.tickerbar-label .live-dot { width: 18px; height: 18px; }
+.tb-live { color: var(--bull); font-weight: 800; font-size: 0.8rem; letter-spacing: 0.12em; text-transform: uppercase; }
+.tb-sub { color: var(--muted); font-weight: 600; font-size: 0.8rem; }
+html[lang="fa"] .tb-live { letter-spacing: 0; font-size: 0.9rem; }
+html[lang="fa"] .tb-sub { font-size: 0.88rem; }
+.tickerbar-track {
+  position: relative; flex: 1; min-width: 0;
+  direction: ltr;                       /* prices always read left-to-right */
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 4%, #000 96%, transparent);
+  mask-image: linear-gradient(90deg, transparent, #000 4%, #000 96%, transparent);
+}
+.tickerbar .tradingview-widget-container { position: absolute; inset: 0; opacity: 0; transition: opacity 0.6s var(--ease-out); }
+.tickerbar .tradingview-widget-container iframe { height: 100% !important; }
+.tickerbar.is-ready .tradingview-widget-container { opacity: 1; }
+/* placeholder: symbol names scroll while the live widget loads */
+.tickerbar-ph { position: absolute; inset: 0; display: flex; align-items: center; overflow: hidden; transition: opacity 0.4s; }
+.tickerbar.is-ready .tickerbar-ph { opacity: 0; pointer-events: none; }
+.tb-ph-run { display: flex; flex: none; gap: 2.25rem; padding-inline-start: 1.5rem; animation: tb-run 40s linear infinite; white-space: nowrap; }
+.tb-ph-item { display: inline-flex; align-items: center; gap: 0.7rem; color: var(--text); font-weight: 700; font-size: 0.88rem; }
+.tb-ph-item i { width: 56px; height: 9px; border-radius: 6px; background: linear-gradient(90deg, rgba(255,255,255,0.06), rgba(255,255,255,0.16), rgba(255,255,255,0.06)); background-size: 200% 100%; animation: tb-shimmer 1.4s linear infinite; }
+html[lang="fa"] .tb-ph-item { font-family: var(--font-dari); }
+@keyframes tb-run { to { transform: translateX(-50%); } }
+@keyframes tb-shimmer { to { background-position: -200% 0; } }
+.tickerbar-off { display: none; position: absolute; inset: 0; align-items: center; padding-inline: 1.25rem; color: var(--muted); font-size: 0.88rem; }
+html[lang="fa"] .tickerbar-off { direction: rtl; }
+.tickerbar.is-offline .tickerbar-ph, .tickerbar.is-offline .tradingview-widget-container { display: none; }
+.tickerbar.is-offline .tickerbar-off { display: flex; }
+/* the hero normally slides under the transparent menu; with the ticker it starts below it */
+.tickerbar + .hero { margin-top: 0; padding-top: clamp(2.5rem, 7vw, 5rem); }
+@media (max-width: 640px) {
+  .tickerbar { height: 46px; }
+  .tb-sub { display: none; }
+  .tickerbar-track { -webkit-mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent); mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent); }
+}
+@media (prefers-reduced-motion: reduce) { .tb-ph-run, .tb-ph-item i { animation: none; } }
