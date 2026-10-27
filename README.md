@@ -29,7 +29,8 @@ Added: `landing.html` · `faq.html` · `glossary.html` · `how-to-start.html` ·
   `diagrams.py`) and on branch `archive/full-lessons`; set `PUBLISH_FULL = True` in `build-lessons.py` to publish them again.
   The advanced modules always stay in the order F, A, AS, B, C, D.
 - **Live price ticker** (home page, under the menu) — TradingView's free ticker-tape widget, loaded by `assets/js/ticker.js`
-  (symbol list + English/Dari titles live there). Shows a scrolling placeholder while loading and a short message if
+  (symbol list lives there). On /fa/ the symbols use international codes (XAU/USD, WTI…): the widget is a
+  cross-origin iframe, so Persian text inside it cannot use the site's Vazirmatn font. Shows a scrolling placeholder while loading and a short message if
   TradingView is unreachable. Needs `s3.tradingview.com` / `tradingview-widget.com` to be allowed if a CSP is ever added.
 - **Risk calculator** — a real, working tool (vanilla JS, computes lot size / risk amount / R:R live).
 - **Pip value, margin & leverage calculators and market-hours clock** — `assets/js/tools.js` (loaded only on those pages); the clock converts each session's local hours to Kabul time and handles daylight-saving changes automatically.
