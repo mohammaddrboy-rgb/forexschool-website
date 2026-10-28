@@ -32,7 +32,9 @@ The owner asked: after finishing each item, remind them of the remaining ones in
 4. ~~More tools~~ — DONE 2026-10-12: pip value calculator, margin & leverage calculator (the risk calculator already covers position size from stop-loss), market hours clock in Kabul time.
 5. Beginner self-test quiz + shareable completion certificate.
 6. Visitor analytics (privacy-friendly, e.g. Plausible/Umami) — needs the owner to pick/create an account.
-7. Confirm the contact email (`info@forexschool.store` is a placeholder) / add a WhatsApp contact button.
+7. Contact: WhatsApp chat DONE 2026-10-28 (+98 905 723 0266 → floating button on every page, footer, FAQ, Join).
+   Email `info@forexschool.store` is still a placeholder — owner must set up mail for the domain (see chat: forwarding
+   via Cloudflare Email Routing / ImprovMX, or a mailbox via Zoho Mail free plan).
 8. "Next class dates" on the Join page, if courses run in groups.
 
 ## Pending / upcoming
