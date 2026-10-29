@@ -32,6 +32,10 @@ Added: `landing.html` · `faq.html` · `glossary.html` · `how-to-start.html` ·
   (symbol list lives there). On /fa/ the symbols use international codes (XAU/USD, WTI…): the widget is a
   cross-origin iframe, so Persian text inside it cannot use the site's Vazirmatn font. Shows a scrolling placeholder while loading and a short message if
   TradingView is unreachable. Needs `s3.tradingview.com` / `tradingview-widget.com` to be allowed if a CSP is ever added.
+- **Brokers** — `brokers.html` ("Brokers / بروکرها" in the menu): intro, choosing tips, and one accordion row per broker
+  with grouped details (company & regulation, accounts & costs, platforms, deposits & withdrawals), pros/cons and the
+  official link. **Generated** by `build-brokers.py` from `_brokers/brokers.py` — edit the data file (and its `CHECKED`
+  date), never the HTML. Link straight to a broker with `/brokers.html#exness`.
 - **Risk calculator** — a real, working tool (vanilla JS, computes lot size / risk amount / R:R live).
 - **Pip value, margin & leverage calculators and market-hours clock** — `assets/js/tools.js` (loaded only on those pages); the clock converts each session's local hours to Kabul time and handles daylight-saving changes automatically.
 - **Economic calendar** — embeds the free TradingView events widget (external script from `s3.tradingview.com`).
@@ -66,7 +70,7 @@ That rebuilds every `/fa/` page, injects hreflang into the English pages, and re
 `sitemap.xml`. (Farsi meta descriptions live in the `FA_DESC` dict inside `build-fa.py`.)
 
 **Full workflow after editing:** edit the English page(s) → `python normalize.py` *(only if you
-changed nav/footer)* → `python bump-assets.py` *(only if you changed CSS/JS)* → `python build-students.py` *(only if you changed testimonials)* → `python build-lessons.py` *(if you changed a lesson, or the nav/footer)* → `python build-fa.py`
+changed nav/footer)* → `python bump-assets.py` *(only if you changed CSS/JS)* → `python build-students.py` *(only if you changed testimonials)* → `python build-lessons.py` *(if you changed a lesson, or the nav/footer)* → `python build-brokers.py` *(if you changed broker data, or the nav/footer)* → `python build-fa.py`
 *(always)* → `python build-geo.py` *(always, last)*.
 
 ## GEO — Generative Engine Optimization (AI answer engines)

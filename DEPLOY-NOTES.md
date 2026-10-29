@@ -6,6 +6,7 @@ files; it does **not** delete pages that were removed from the repo. Check this 
 ## Do not upload
 - `_archive/` (archived content, not part of the live site)
 - `_lessons/` (lesson source text used by `build-lessons.py`; the built pages are `lessons/` and `fa/lessons/` — DO upload those)
+- `_brokers/` (broker data used by `build-brokers.py`; the built page is `brokers.html` — DO upload that)
 - `*.md`, `*.py`, `.git*` (docs and build scripts)
 
 ## Files to DELETE from the server
