@@ -34,8 +34,11 @@ Added: `landing.html` · `faq.html` · `glossary.html` · `how-to-start.html` ·
   TradingView is unreachable. Needs `s3.tradingview.com` / `tradingview-widget.com` to be allowed if a CSP is ever added.
 - **Brokers** — `brokers.html` ("Brokers / بروکرها" in the menu): intro, choosing tips, and one accordion row per broker
   with grouped details (company & regulation, accounts & costs, platforms, deposits & withdrawals), pros/cons and the
-  official link. **Generated** by `build-brokers.py` from `_brokers/brokers.py` — edit the data file (and its `CHECKED`
-  date), never the HTML. Link straight to a broker with `/brokers.html#exness`.
+  official link. A broker with a `register_url` also gets an always-visible **"Open an account / افتتاح حساب"** button
+  under its row. **Generated** by `build-brokers.py` from `_brokers/brokers.py` — edit the data file (and its `CHECKED`
+  date), never the HTML. Link straight to a broker with `/brokers.html#exness`. While `BROKERS` is empty the page shows
+  a "coming soon" box (current state, owner's request 2026-10-29); the first 8 profiles are kept in
+  `_brokers/archive_2026-10.py` and on branch `archive/brokers-v1`.
 - **Risk calculator** — a real, working tool (vanilla JS, computes lot size / risk amount / R:R live).
 - **Pip value, margin & leverage calculators and market-hours clock** — `assets/js/tools.js` (loaded only on those pages); the clock converts each session's local hours to Kabul time and handles daylight-saving changes automatically.
 - **Economic calendar** — embeds the free TradingView events widget (external script from `s3.tradingview.com`).

@@ -4,7 +4,10 @@
 
 Each broker is an accordion row (name + plus sign); opening it shows its details grouped
 into boxes (company & regulation, accounts & costs, platforms, deposits & withdrawals),
-pros/cons and a link to the official website. The page shell (head, nav, footer) is copied
+pros/cons and a link to the official website. If a broker has a `register_url`, an
+"Open an account" strip stays visible under its row (open or closed), so visitors can sign up
+in one click. With no brokers in the list, the page shows a "coming soon" box instead.
+The page shell (head, nav, footer) is copied
 from courses.html so it always matches the rest of the site.
 
 Run after editing _brokers/brokers.py (or the nav/footer), BEFORE build-fa.py:
@@ -46,6 +49,14 @@ def broker_item(b, i):
         dl = "".join('<div class="bk-row"><dt>%s</dt><dd>%s</dd></div>' % (bi(k), bi(v)) for k, v in rows)
         boxes.append('<section class="bk-box"><h4>%s%s</h4><dl>%s</dl></section>' % (icon(ic), bi(title), dl))
     pros = "".join("<li>%s</li>" % bi(p) for p in b["pros"])
+    reg = ""
+    if b.get("register_url"):
+        reg = """
+          <div class="bk-reg">
+            <p>%s</p>
+            <a class="btn btn-gold bk-reg-btn" href="%s" target="_blank" rel="noopener sponsored">%s <span aria-hidden="true">↗</span></a>
+          </div>""" % (bi(("Ready to start with <span class=\"latin\">%s</span>?" % b["name"], "آماده‌اید با <span class=\"latin\">%s</span> شروع کنید؟" % b["name"])),
+                       b["register_url"], bi(("Open an account", "افتتاح حساب")))
     cons = "".join("<li>%s</li>" % bi(c) for c in b["cons"])
     return """
         <div class="acc-item bk-item" id="%(id)s">
@@ -69,9 +80,9 @@ def broker_item(b, i):
                 <a class="btn btn-outline bk-site" href="%(url)s" target="_blank" rel="nofollow noopener">%(visit)s <span aria-hidden="true">↗</span></a>
               </div>
             </div>
-          </div>
+          </div>%(reg)s
         </div>""" % {
-        "id": b["id"], "color": b["color"], "ink": b["ink"], "initials": initials, "name": b["name"],
+        "reg": reg, "id": b["id"], "color": b["color"], "ink": b["ink"], "initials": initials, "name": b["name"],
         "tagline": bi(b["tagline"]), "tier": b["tier"], "tierlabel": bi((tier_en, tier_fa)), "chips": chips,
         "boxes": "".join(boxes), "pros_t": bi(("Strengths", "نقاط قوت")), "cons_t": bi(("Watch out for", "نکات قابل توجه")),
         "pros": pros, "cons": cons, "best_t": bi(("Best for:", "مناسب برای:")), "best": bi(b["best"]),
@@ -86,7 +97,7 @@ TIPS = [
     ("coins", ("Compare the real cost", "هزینهٔ واقعی را مقایسه کنید"),
      ("Look at spread + commission together, and check swap and inactivity fees.", "اسپرد و کمیسیون را با هم ببینید و کارمزد سواپ و عدم فعالیت را بررسی کنید.")),
     ("screen", ("Practise on demo", "روی دمو تمرین کنید"),
-     ("Every broker here offers a free demo. Try the platform before you send real money.", "همهٔ این بروکرها حساب دموی رایگان دارند. پیش از واریز پول واقعی، پلتفرم را امتحان کنید.")),
+     ("Open a free demo account and try the platform before you send real money.", "یک حساب دموی رایگان باز کنید و پیش از واریز پول واقعی، پلتفرم را امتحان کنید.")),
 ]
 
 def build():
@@ -118,6 +129,34 @@ def build():
     items = "".join(broker_item(b, i) for i, b in enumerate(B.BROKERS))
     n = len(B.BROKERS)
 
+    if n:
+        listing = """
+      <div class="bk-listhead">
+        <h2 class="section-title">%(list_h)s</h2>
+        <button type="button" class="btn btn-outline bk-toggle-all" aria-pressed="false">%(expand)s</button>
+      </div>
+      <p class="bk-hint">%(hint)s</p>
+      <div class="accordion bk-list">%(items)s
+      </div>
+      <div class="alert alert-warn bk-note"><span class="a-icon" aria-hidden="true">⚠️</span><p>%(note)s</p></div>""" % {
+            "list_h": bi(("Compare %d brokers" % n, "مقایسهٔ %s بروکر" % str(n).translate(FA_DIGITS))),
+            "expand": bi(("Expand all", "باز کردن همه")),
+            "hint": bi(("Tap a broker's name (or the + sign) to see its full details.", "روی نام هر بروکر (یا علامت +) بزنید تا جزئیات کامل آن را ببینید.")),
+            "items": items,
+            "note": bi(("<strong>Please read:</strong> this information is for education only and is not a recommendation or financial advice. Details were checked in %s, but brokers change their conditions often, and leverage, protection and payment methods depend on which of the broker's companies you are opened under — that depends on your country. Not every broker accepts clients from every country: always confirm on the official website before you deposit. Forex trading carries a high risk of losing money." % B.CHECKED[0],
+                         "<strong>لطفاً بخوانید:</strong> این اطلاعات فقط جنبهٔ آموزشی دارد و توصیه یا مشاورهٔ مالی نیست. جزئیات در %s بررسی شده‌اند، اما بروکرها شرایط خود را زیاد تغییر می‌دهند و لیوریج، میزان حمایت و روش‌های پرداخت بستگی دارد که زیر کدام شرکتِ بروکر ثبت شوید — که آن هم به کشور شما بستگی دارد. همهٔ بروکرها مشتریان همهٔ کشورها را نمی‌پذیرند: پیش از واریز، همیشه در وب‌سایت رسمی بررسی کنید. معامله در فارکس با ریسک بالای از دست دادن پول همراه است." % B.CHECKED[1])),
+        }
+    else:
+        # no brokers published yet: a "coming soon" box in place of the accordion
+        listing = """
+      <div class="empty-state bk-empty">
+        <span class="empty-ic" aria-hidden="true">🏦</span>
+        <h2>%s</h2>
+        <p>%s</p>
+      </div>""" % (bi(("Broker profiles are coming soon", "معرفی بروکرها به‌زودی")),
+                   bi(("We are preparing clear, side-by-side profiles of brokers that Afghan traders can use — regulation, costs, platforms, deposits and withdrawals, plus a direct link to open an account. Until then, ask us before you choose.",
+                       "در حال آماده‌سازی معرفی روشن و مقایسه‌ای بروکرهایی هستیم که معامله‌گران افغان می‌توانند از آن‌ها استفاده کنند — نظارت، هزینه‌ها، پلتفرم‌ها، واریز و برداشت، همراه با لینک مستقیم افتتاح حساب. تا آن زمان، پیش از انتخاب از ما بپرسید.")))
+
     body = """
   <section class="page-head">
     <div class="container">
@@ -133,15 +172,7 @@ def build():
   </section>
 
   <section class="section band" id="brokers">
-    <div class="container bk-wrap">
-      <div class="bk-listhead">
-        <h2 class="section-title">%(list_h)s</h2>
-        <button type="button" class="btn btn-outline bk-toggle-all" aria-pressed="false">%(expand)s</button>
-      </div>
-      <p class="bk-hint">%(hint)s</p>
-      <div class="accordion bk-list">%(items)s
-      </div>
-      <div class="alert alert-warn bk-note"><span class="a-icon" aria-hidden="true">⚠️</span><p>%(note)s</p></div>
+    <div class="container bk-wrap">%(listing)s
       <div class="bk-ask">
         <p>%(ask)s</p>
         <a class="btn btn-gold lang-en" href="%(wa_en)s" target="_blank" rel="noopener">Ask us on WhatsApp</a>
@@ -152,15 +183,10 @@ def build():
 
 """ % {
         "h1": bi(('Forex <span class="accent">Brokers</span>', 'بروکرهای <span class="accent">فارکس</span>')),
-        "intro": bi(("The broker you choose holds your money, so choosing well matters as much as learning to trade. This section is here to help and guide Afghan traders choose a reliable broker: below you can compare well-known brokers side by side — how they are regulated, what it costs to trade, which platforms they offer and how deposits and withdrawals work.",
-                     "بروکری که انتخاب می‌کنید نگهدارندهٔ پول شماست؛ پس انتخاب درست به اندازهٔ یادگیری معامله‌گری اهمیت دارد. هدف این بخش، کمک و راهنمایی معامله‌گران افغان برای انتخاب یک بروکر معتبر است: در پایین می‌توانید بروکرهای شناخته‌شده را کنار هم مقایسه کنید — نحوهٔ نظارت بر آن‌ها، هزینهٔ معامله، پلتفرم‌هایی که ارائه می‌دهند و نحوهٔ واریز و برداشت.")),
+        "intro": bi(("The broker you choose holds your money, so choosing well matters as much as learning to trade. This section is here to help and guide Afghan traders choose a reliable broker: here we introduce well-known brokers and compare them side by side — how they are regulated, what it costs to trade, which platforms they offer and how deposits and withdrawals work.",
+                     "بروکری که انتخاب می‌کنید نگهدارندهٔ پول شماست؛ پس انتخاب درست به اندازهٔ یادگیری معامله‌گری اهمیت دارد. هدف این بخش، کمک و راهنمایی معامله‌گران افغان برای انتخاب یک بروکر معتبر است: در اینجا بروکرهای شناخته‌شده را معرفی می‌کنیم و کنار هم مقایسه می‌کنیم — نحوهٔ نظارت بر آن‌ها، هزینهٔ معامله، پلتفرم‌هایی که ارائه می‌دهند و نحوهٔ واریز و برداشت.")),
         "tips": tips,
-        "list_h": bi(("Compare %d brokers" % n, "مقایسهٔ %s بروکر" % str(n).translate(FA_DIGITS))),
-        "expand": bi(("Expand all", "باز کردن همه")),
-        "hint": bi(("Tap a broker's name (or the + sign) to see its full details.", "روی نام هر بروکر (یا علامت +) بزنید تا جزئیات کامل آن را ببینید.")),
-        "items": items,
-        "note": bi(("<strong>Please read:</strong> this information is for education only and is not a recommendation or financial advice; Forex School is not paid by these brokers. Details were checked in %s, but brokers change their conditions often, and leverage, protection and payment methods depend on which of the broker's companies you are opened under — that depends on your country. Not every broker accepts clients from every country: always confirm on the official website before you deposit. Forex trading carries a high risk of losing money." % B.CHECKED[0],
-                     "<strong>لطفاً بخوانید:</strong> این اطلاعات فقط جنبهٔ آموزشی دارد و توصیه یا مشاورهٔ مالی نیست؛ مکتب فارکس از این بروکرها پولی دریافت نمی‌کند. جزئیات در %s بررسی شده‌اند، اما بروکرها شرایط خود را زیاد تغییر می‌دهند و لیوریج، میزان حمایت و روش‌های پرداخت بستگی دارد که زیر کدام شرکتِ بروکر ثبت شوید — که آن هم به کشور شما بستگی دارد. همهٔ بروکرها مشتریان همهٔ کشورها را نمی‌پذیرند: پیش از واریز، همیشه در وب‌سایت رسمی بررسی کنید. معامله در فارکس با ریسک بالای از دست دادن پول همراه است." % B.CHECKED[1])),
+        "listing": listing,
         "ask": bi(("Not sure which broker suits you? Ask us — we are happy to help.", "مطمئن نیستید کدام بروکر برای شما مناسب است؟ از ما بپرسید — با کمال میل کمک می‌کنیم.")),
         "wa_en": WA_CHAT_EN, "wa_fa": WA_CHAT_FA,
     }
@@ -197,7 +223,7 @@ def build():
 </body>"""
     bottom = bottom.replace("</body>", script, 1)
     write("brokers.html", top + body + bottom)
-    print("Built brokers.html with %d brokers." % n)
+    print("Built brokers.html with %d brokers%s." % (n, "" if n else " (\"coming soon\" box shown)"))
 
 if __name__ == "__main__":
     build()

@@ -6,6 +6,9 @@ Read `README.md` for how the site is built. Key rules:
   After editing any root page run `python build-fa.py` then `python build-geo.py`.
   Lessons: edit `_lessons/*.py` (never `lessons/*.html`), then run `python build-lessons.py` before build-fa.
   Brokers: edit `_brokers/brokers.py`, then run `python build-brokers.py` before build-fa.
+  The live list is EMPTY on purpose (owner, 2026-10-29) — the page shows "coming soon" until the owner sends broker
+  info; then add each broker (template in the file) with its `register_url` for the "Open an account" button.
+  Old profiles (8 brokers) are in `_brokers/archive_2026-10.py` / branch `archive/brokers-v1` — don't republish unasked.
   Testimonials: add them to the carousel in `index.html` only, then run `python build-students.py`
   (before build-fa) — it syncs `students.html` and all student/city counts.
   After editing CSS/JS run `python bump-assets.py` first. Every visible string needs both

@@ -2189,6 +2189,12 @@ html[lang="fa"] .wa-fab { font-family: var(--font-dari); }
 .bk-best { color: var(--muted); flex: 1 1 320px; }
 .bk-best strong { color: var(--brand-2); }
 .bk-site { flex: none; padding: 0.6rem 1.15rem; font-size: 0.9rem; }
+/* "Open an account" strip under a broker row — only when the broker has a register_url */
+.bk-reg { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 0.6rem 1rem; padding: 0.75rem 1.2rem; border-top: 1px solid rgba(250, 153, 57, 0.25); background: linear-gradient(90deg, rgba(250, 153, 57, 0.1), transparent 70%); }
+.bk-reg p { color: var(--text); font-weight: 600; font-size: 0.95rem; }
+.bk-reg-btn { padding: 0.6rem 1.3rem; font-size: 0.92rem; }
+.bk-empty { margin-inline: auto; max-width: 720px; }
+.bk-empty p { margin-bottom: 0; }
 .bk-note { margin-top: 1.75rem; }
 .bk-note p { line-height: 1.75; }
 .bk-ask { margin-top: 1.5rem; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 1rem; padding: 1.2rem 1.4rem; border-radius: var(--radius); border: 1px solid rgba(43, 224, 122, 0.3); background: linear-gradient(135deg, rgba(43, 224, 122, 0.08), transparent 60%), var(--surface); }
@@ -2200,6 +2206,7 @@ html[lang="fa"] .wa-fab { font-family: var(--font-dari); }
   .bk-head .acc-icon { position: absolute; top: 1.15rem; inset-inline-end: 1rem; }
   .bk-meta { max-width: none; justify-content: flex-start; padding-inline-start: calc(48px + 0.9rem); }
   .bk-grid { grid-template-columns: 1fr; }
+  .bk-reg-btn { flex: 1 1 100%; justify-content: center; }
   .bk-row { grid-template-columns: 1fr; gap: 0.15rem; }
 }
 @media (max-width: 480px) { .bk-tips { grid-template-columns: 1fr; } .bk-tag { display: none; } }
