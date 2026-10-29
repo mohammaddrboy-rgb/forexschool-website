@@ -17,7 +17,7 @@
 
 ## Core pages (English)
 - [Home](https://forexschool.store/index.html): overview of the free Dari-and-English forex school.
-- [Brokers](https://forexschool.store/brokers.html): a guide for Afghan traders to well-known forex brokers — regulation, minimum deposit, costs, platforms and withdrawals (educational, not a recommendation).
+- [Brokers](https://forexschool.store/brokers.html): a guide for Afghan traders to choosing a forex broker — tips now; broker profiles (regulation, costs, platforms, withdrawals, account opening) coming soon (educational, not a recommendation).
 - [Courses](https://forexschool.store/courses.html): the 13-lesson beginner course and 21-lesson (6-module) advanced course. Every lesson has its own page with a short introduction, in English and Dari (/fa/lessons/…); the full lessons are taught in the free online classes:
   - [Beginner 01 — Financial Literacy](https://forexschool.store/lessons/beginner-01-financial-literacy.html)
   - [Beginner 02 — What is Forex](https://forexschool.store/lessons/beginner-02-what-is-forex.html)
