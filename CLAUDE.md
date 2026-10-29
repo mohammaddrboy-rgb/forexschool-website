@@ -5,6 +5,7 @@ Read `README.md` for how the site is built. Key rules:
 - **Bilingual:** English pages at the root are the source of truth; `/fa/` (Dari) is generated.
   After editing any root page run `python build-fa.py` then `python build-geo.py`.
   Lessons: edit `_lessons/*.py` (never `lessons/*.html`), then run `python build-lessons.py` before build-fa.
+  Brokers: edit `_brokers/brokers.py`, then run `python build-brokers.py` before build-fa.
   Testimonials: add them to the carousel in `index.html` only, then run `python build-students.py`
   (before build-fa) — it syncs `students.html` and all student/city counts.
   After editing CSS/JS run `python bump-assets.py` first. Every visible string needs both
