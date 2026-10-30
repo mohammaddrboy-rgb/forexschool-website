@@ -10,6 +10,10 @@ files; it does **not** delete pages that were removed from the repo. Check this 
   Since 2026-10-29 they show a "coming soon" box instead of the broker profiles — overwrite the old copies on the server)
 - `*.md`, `*.py`, `.git*` (docs and build scripts)
 
+## New pages (2026-10-30)
+- `services.html` and `fa/services.html` — new Services page. Every HTML page changed too (menu/footer link and
+  asset version `?v=20261030`), so upload all `*.html`, `fa/`, `lessons/`, `fa/lessons/`, `sitemap.xml` and `assets/css/global.css`.
+
 ## Files to DELETE from the server
 | Since | File(s) | Why |
 |---|---|---|

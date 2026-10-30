@@ -32,6 +32,10 @@ Added: `landing.html` · `faq.html` · `glossary.html` · `how-to-start.html` ·
   (symbol list lives there). On /fa/ the symbols use international codes (XAU/USD, WTI…): the widget is a
   cross-origin iframe, so Persian text inside it cannot use the site's Vazirmatn font. Shows a scrolling placeholder while loading and a short message if
   TradingView is unreachable. Needs `s3.tradingview.com` / `tradingview-widget.com` to be allowed if a CSP is ever added.
+- **Services** — `services.html` ("Services / خدمات" in the menu, after Courses): four service cards in two groups —
+  *open to everyone* (Trade History Analysis, Trading Consultation Session) and *for Advanced students* (Weekly Economic
+  News Analysis, Weekly Trading Book Reading Session) — each with a WhatsApp button that opens a ready-made request
+  message for that service, plus a 3-step "How it works". A normal root page: edit it directly, then build-fa.
 - **Brokers** — `brokers.html` ("Brokers / بروکرها" in the menu): intro, choosing tips, and one accordion row per broker
   with grouped details (company & regulation, accounts & costs, platforms, deposits & withdrawals), pros/cons and the
   official link. A broker with a `register_url` also gets an always-visible **"Open an account / افتتاح حساب"** button
