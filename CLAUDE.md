@@ -25,21 +25,14 @@ Read `README.md` for how the site is built. Key rules:
   branch `archive/islamic-finance` (full site before removal) and `_archive/islamic-finance/`
   (`RESTORE.md` explains exactly what was removed and how to put it back).
 
-## Improvement backlog (suggested to the owner 2026-10-12, in priority order)
-The owner asked: after finishing each item, remind them of the remaining ones in this order.
-1. ~~Lesson pages~~ — DONE 2026-10-12: one page per lesson (`lessons/`, via `_lessons/` + `build-lessons.py`).
-   The owner wants ONLY a short introduction public (`_lessons/intros.py`) so students join the online classes.
-   The full lesson content (from the owner's PDFs, with diagrams + quizzes) is kept in `_lessons/` and on branch
-   `archive/full-lessons` — do not publish it unless the owner asks (`PUBLISH_FULL` in `build-lessons.py`).
-2. Fill the Articles page — weekly outlook, "5 beginner mistakes", "What is a pip" etc.
-3. ~~Student Stories page~~ — DONE 2026-10-12 (`students.html`, synced by `build-students.py`).
-4. ~~More tools~~ — DONE 2026-10-12: pip value calculator, margin & leverage calculator (the risk calculator already covers position size from stop-loss), market hours clock in Kabul time.
-5. Beginner self-test quiz + shareable completion certificate.
-6. Visitor analytics (privacy-friendly, e.g. Plausible/Umami) — needs the owner to pick/create an account.
-7. Contact: WhatsApp chat DONE 2026-10-28 (+98 905 723 0266 → floating button on every page, footer, FAQ, Join).
-   Email `info@forexschool.store` is still a placeholder — owner must set up mail for the domain (see chat: forwarding
-   via Cloudflare Email Routing / ImprovMX, or a mailbox via Zoho Mail free plan).
-8. "Next class dates" on the Join page, if courses run in groups.
+## Improvement backlog
+The owner asked (2026-10-30): after EVERY completed task, remind them of these two remaining items:
+1. Fill the Articles page — weekly outlook, "5 beginner mistakes", "What is a pip" etc.
+2. "Next class dates" on the Join page, if courses run in groups.
+Dropped by the owner 2026-10-30 — do NOT suggest again: beginner self-test quiz + certificate, visitor analytics,
+setting up the email address (`info@forexschool.store` in the footer is still a placeholder).
+Done: lesson pages (intro-only, full content archived — see README), Student Stories, more tools, WhatsApp contact,
+Brokers section (profiles on hold), Services page (2026-10-30).
 
 ## Pending / upcoming
 - Podcast page (`podcast.html`) is a "coming soon" placeholder; the owner will supply episode files.
