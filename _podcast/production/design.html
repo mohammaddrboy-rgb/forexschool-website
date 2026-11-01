@@ -93,6 +93,15 @@
   .reel .wavezone { display: block; bottom: 420px; height: 170px; top: auto; }
   .reel .bar { display: block; bottom: 390px; }
   .reel .listen { display: block; }
+  /* Reel cover (static): content inside Instagram's 3:4 grid crop (y 222–1556 css px), no progress track */
+  .rc { padding-top: 262px !important; }
+  .rc .title { margin-top: 70px; }
+  .rc .host { top: 945px; }
+  .rc .host .ph { width: 170px; height: 170px; }
+  .rc .wavezone { bottom: 395px; height: 165px; }
+  .rc .bar { display: none !important; }
+  .rc .handles { bottom: 238px; }
+  .rc .listen { bottom: 135px; }
   .listen { display: none; position: absolute; z-index: 3; left: 0; right: 0; bottom: 120px; text-align: center; font-size: 30px; font-weight: 800; color: var(--navy); }
   .listen span { display: inline-block; padding: 18px 34px; border-radius: 999px; background: var(--brand); }
 </style>
@@ -140,7 +149,7 @@
   // mode from hash: cover | show | vsq | reel
   var mode = (location.hash || '#cover').slice(1);
   var card = document.getElementById('card');
-  if (mode !== 'cover') card.classList.add(mode);
+  if (mode === 'reelcover') { card.classList.add('reel'); card.classList.add('rc'); } else if (mode !== 'cover') card.classList.add(mode);
   if (mode === 'show') document.querySelector('.listen').remove();
   // falling candlestick chart (beginners losing) with a late recovery
   var svg = document.getElementById('chart');
