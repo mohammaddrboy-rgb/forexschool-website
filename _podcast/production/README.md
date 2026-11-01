@@ -12,7 +12,9 @@ Needs ffmpeg, Python 3 with numpy + scipy, and Node + Playwright (Chromium) for 
    with the cover attached and ID3 tags.
 5. **Artwork**: edit the title/episode texts in `design.html`, then `node render.js` → 3000² cover, show cover,
    1080² and 1080×1920 video backgrounds.
-6. **Videos**: `./mkvideo.sh BG AUDIO OUT WX WY WW WH BX BY BW FPS`
+6. **Videos** (social): `CRF=24 ./mkvideo3.sh BG AUDIO OUT WX WY WW WH BX BY BW 20` — scrolling level-bars
+   visualiser (`bars.py`, piped in as raw frames), x264 veryslow, AAC 128 kbps. ~1.7 MB/min, about 5x smaller than the
+   old raw-waveform version (`mkvideo.sh`, kept for reference) at the same sharpness — the owner wanted small uploads.
    - square: `100 706 880 110 73 840 933` · reel: `100 1300 880 150 73 1490 933`
    - teaser = first ~75 s cut at a pause + the outro's final chord.
 7. **Website**: copy MP3 + 1400² cover JPG to `assets/podcast/`, add the episode to `_podcast/episodes.py`,
