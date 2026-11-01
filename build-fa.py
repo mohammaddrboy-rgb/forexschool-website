@@ -32,7 +32,7 @@ FA_DESC = {
     "faq.html": "پرسش‌های متداول مکتب فارکس — آیا آموزش رایگان است؟ چگونه شروع کنیم و چقدر سرمایه لازم است؟",
     "glossary.html": "واژه‌نامهٔ فارکس به زبان دری — پیپ، لات، اهرم، مارجین و اسپرد به زبان ساده.",
     "how-to-start.html": "چگونه فارکس را شروع کنیم — مسیری ساده و امن از مبانی و حساب دمو تا مدیریت ریسک و جامعه.",
-    "articles.html": "مقالات و تحلیل هفتگی مکتب فارکس — به زبان دری و انگلیسی.",
+    "articles.html": "مقالات مکتب فارکس — راهنماهای کاربردی فارکس به زبان دری: پیپ، لیوریج و مارجین، حجم معامله، زمان معامله به وقت کابل، تقویم اقتصادی و اشتباهات رایج.",
     "students.html": "تجربهٔ شاگردان مکتب فارکس — سخنان واقعی یادگیرندگان از کابل، هرات، بامیان و فراتر، به زبان خودشان.",
     "brokers.html": "بروکرهای فارکس — راهنمای معامله‌گران افغان برای انتخاب بروکر: نظارت، حداقل واریز، هزینه‌ها، پلتفرم‌ها و برداشت.",
     "podcast.html": "پادکست مکتب فارکس — گفتگو دربارهٔ فارکس، روانشناسی معامله‌گری و مدیریت ریسک برای معامله‌گران افغان. به‌زودی.",
@@ -47,7 +47,7 @@ OLD_HEAD = ("<script>(function(){try{var l=localStorage.getItem('mf-lang');if(l!
 NEW_HEAD = ("<script>(function(){var fa=location.pathname.indexOf('/fa/')!==-1;"
             "var d=document.documentElement;d.lang=fa?'fa':'en';d.dir=fa?'rtl':'ltr';})();</script>")
 
-pages = sorted(f for f in glob.glob("*.html") if f != "404.html") + sorted(glob.glob("lessons/*.html"))
+pages = sorted(f for f in glob.glob("*.html") if f != "404.html") + sorted(glob.glob("lessons/*.html")) + sorted(glob.glob("articles/*.html"))
 
 def en_url(fn):  return BASE + "/" if fn == "index.html" else BASE + "/" + fn
 def fa_url(fn):  return BASE + "/fa/" if fn == "index.html" else BASE + "/fa/" + fn
@@ -73,7 +73,8 @@ for fn in pages:
 
 # ---- 3: generate /fa/ mirror ----
 os.makedirs("fa/lessons", exist_ok=True)
-for old in glob.glob("fa/lessons/*.html"):   # drop pages whose English source is gone
+os.makedirs("fa/articles", exist_ok=True)
+for old in glob.glob("fa/lessons/*.html") + glob.glob("fa/articles/*.html"):   # drop pages whose English source is gone
     if old[3:] not in pages:
         os.remove(old)
 for fn in pages:
@@ -89,7 +90,7 @@ for fn in pages:
     t = re.sub(r'(<meta property="og:url" content=")[^"]*(">)', lambda m: m.group(1) + fa_url(fn) + m.group(2), t, count=1)
     t = re.sub(r'(<link rel="canonical" href=")[^"]*(">)', lambda m: m.group(1) + fa_url(fn) + m.group(2), t, count=1)
     # rewrite internal page links to the /fa/ tree (assets & external links untouched)
-    t = re.sub(r'href="/((?:lessons/)?[a-z0-9-]+\.html)', r'href="/fa/\1', t)
+    t = re.sub(r'href="/((?:lessons/|articles/)?[a-z0-9-]+\.html)', r'href="/fa/\1', t)
     io.open(os.path.join("fa", fn), "w", encoding="utf-8").write(t)
 
 # ---- 4: sitemap with hreflang alternates ----
