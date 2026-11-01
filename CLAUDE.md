@@ -43,6 +43,6 @@ Brokers section (profiles on hold), Services page (2026-10-30).
 - Episode 1 (2026-11-01) «چرا اکثر معامله‌گران تازه‌کار ضرر می‌کنند؟». Production recipe used (owner liked a "catchy" package):
   voice: highpass 75 Hz, light afftdn, EQ (−2.5 dB @200 Hz, +2.5 dB @3.2 kHz, +2 dB shelf @9 kHz), de-esser,
   compressor 3:1, long pauses trimmed to ~0.6 s; original synthesised intro/outro jingle (112 BPM, Am–F–C–G);
-  podcast MP3 at −16 LUFS / 128 kbps with cover + ID3 tags; social versions at −14 LUFS: 9:16 Reel teaser and 1:1
+  podcast MP3 at −16 LUFS / 96 kbps joint stereo (owner wanted smaller files; no audible loss) with cover + ID3 tags; social versions at −14 LUFS: 9:16 Reel teaser and 1:1
   teaser (first ~75 s + outro chord) and a full 1:1 episode video (cover + live orange waveform + progress bar).
   Brand: navy #060C17, orange #FA9939; Vazirmatn/Jakarta fonts; host photo assets/img/founder.jpg.

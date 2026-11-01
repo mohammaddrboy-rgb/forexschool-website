@@ -8,7 +8,7 @@ Needs ffmpeg, Python 3 with numpy + scipy, and Node + Playwright (Chromium) for 
 2. **Music**: `python synth.py` → `intro.wav`, `outro.wav` (original jingle, 112 BPM — same every episode).
 3. **Loudness**: two-pass `loudnorm` (linear) — voice to −16 LUFS (mono), intro/outro to −17 LUFS → `*_n.wav`.
 4. **Assemble**: `python assemble.py` → `episode_mix.wav` (voice enters over the intro's final chord, outro after).
-   Social master: `alimiter=limit=0.84` → ≈ −14 LUFS. Podcast master: `volume=-2.3dB` + limiter → −16 LUFS, MP3 128 kbps
+   Social master: `alimiter=limit=0.84` → ≈ −14 LUFS. Podcast master: `volume=-2.3dB` + limiter → −16 LUFS, MP3 96 kbps joint stereo (`-b:a 96k -joint_stereo 1`)
    with the cover attached and ID3 tags.
 5. **Artwork**: edit the title/episode texts in `design.html`, then `node render.js` → 3000² cover, show cover,
    1080² and 1080×1920 video backgrounds.

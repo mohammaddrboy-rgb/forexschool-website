@@ -26,7 +26,7 @@ files; it does **not** delete pages that were removed from the repo. Check this 
   `market-hours.html`, `articles.html`, `articles/` and the matching `fa/` pages (or simply all `*.html` + `fa/` + `articles/`).
 
 ## Podcast (2026-11-01)
-- New folder `assets/podcast/` (episode MP3 ~18 MB + cover JPGs) — upload it. `podcast.html` / `fa/podcast.html` now show
+- New folder `assets/podcast/` (episode MP3 ~13.6 MB at 96 kbps — replaced 2026-11-01 from the first 18 MB upload, overwrite it — + cover JPGs) — upload it. `podcast.html` / `fa/podcast.html` now show
   Episode 1 with an audio player; every HTML page has asset version `?v=20261101c` (upload all `*.html`, `fa/`, `lessons/`,
   `articles/`, `fa/lessons/`, `fa/articles/`, `sitemap.xml`, `assets/css/global.css`).
 - The web server must serve `.mp3` with byte-range support (nginx/Apache do this by default) so listeners can skip/seek.
