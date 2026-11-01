@@ -9,6 +9,7 @@ files; it does **not** delete pages that were removed from the repo. Check this 
 - `_brokers/` (broker data used by `build-brokers.py`; the built pages are `brokers.html` and `fa/brokers.html` — DO upload those.
   Since 2026-10-29 they show a "coming soon" box instead of the broker profiles — overwrite the old copies on the server)
 - `_articles/` (article source text used by `build-articles.py`; the built pages are `articles/` and `fa/articles/` — DO upload those)
+- `_podcast/` (episode data used by `build-podcast.py`; the media lives in `assets/podcast/` — DO upload that)
 - `*.md`, `*.py`, `.git*` (docs and build scripts)
 
 ## New pages (2026-10-30)
@@ -23,6 +24,14 @@ files; it does **not** delete pages that were removed from the repo. Check this 
 ## Wording update (2026-11-01)
 - Dari «جلسه» → «سشن» across the site: upload `index.html`, `students.html`, `services.html`, `tools.html`,
   `market-hours.html`, `articles.html`, `articles/` and the matching `fa/` pages (or simply all `*.html` + `fa/` + `articles/`).
+
+## Podcast (2026-11-01)
+- New folder `assets/podcast/` (episode MP3 ~18 MB + cover JPGs) — upload it. `podcast.html` / `fa/podcast.html` now show
+  Episode 1 with an audio player; every HTML page has asset version `?v=20261101c` (upload all `*.html`, `fa/`, `lessons/`,
+  `articles/`, `fa/lessons/`, `fa/articles/`, `sitemap.xml`, `assets/css/global.css`).
+- The web server must serve `.mp3` with byte-range support (nginx/Apache do this by default) so listeners can skip/seek.
+  Check after deploy: `curl -sI -H "Range: bytes=0-99" https://forexschool.store/assets/podcast/forex-school-podcast-e01.mp3`
+  should answer `206 Partial Content`.
 
 ## Files to DELETE from the server
 | Since | File(s) | Why |

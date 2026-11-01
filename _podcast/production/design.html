@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<style>
+  @font-face { font-family: "Vazirmatn"; src: url("file:///home/user/forexschool-website/assets/fonts/vazirmatn-arabic.woff2") format("woff2"); font-weight: 100 900; }
+  @font-face { font-family: "Jakarta"; src: url("file:///home/user/forexschool-website/assets/fonts/jakarta-latin.woff2") format("woff2"); font-weight: 200 800; }
+  :root { --bg: #060C17; --navy: #0A1424; --brand: #FA9939; --brand2: #FFBE5C; --deep: #E3761A; --bear: #F2555E; --bull: #25D0A0; --text: #F4F6FA; --muted: #A9B4C8; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { background: var(--bg); }
+  body { font-family: "Jakarta", "Vazirmatn", sans-serif; color: var(--text); overflow: hidden; }
+  .fa { font-family: "Vazirmatn", sans-serif; }
+  .en { font-family: "Jakarta", sans-serif; direction: ltr; }
+  #card { position: relative; overflow: hidden; width: 1000px; height: 1000px; padding: 64px 68px;
+          background:
+            radial-gradient(900px 700px at 88% 2%, rgba(250,153,57,.32), transparent 60%),
+            radial-gradient(700px 600px at 0% 100%, rgba(250,153,57,.14), transparent 60%),
+            linear-gradient(160deg, #0B1628 0%, #060C17 55%, #04080F 100%); }
+  /* subtle grid */
+  #card::before { content: ""; position: absolute; inset: 0; opacity: .5;
+    background-image: linear-gradient(rgba(255,255,255,.035) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.035) 1px, transparent 1px);
+    background-size: 50px 50px; mask-image: radial-gradient(circle at 70% 30%, #000 0%, transparent 75%); }
+  #chart { position: absolute; left: 0; right: 0; bottom: 0; height: 52%; opacity: .55; }
+  .z { position: relative; z-index: 2; }
+
+  .top { display: flex; align-items: center; justify-content: space-between; }
+  .brand { display: flex; align-items: center; gap: 22px; }
+  .brand img { width: 112px; height: 112px; border-radius: 26px; box-shadow: 0 18px 40px -14px rgba(250,153,57,.6); }
+  .brand .t1 { font-size: 21px; font-weight: 800; letter-spacing: .32em; color: var(--brand); }
+  .brand .t2 { font-size: 40px; font-weight: 900; line-height: 1.15; }
+  .brand .t3 { font-size: 20px; font-weight: 600; color: var(--muted); letter-spacing: .04em; }
+  .ep { display: flex; flex-direction: column; align-items: center; justify-content: center; width: 150px; height: 150px; border-radius: 50%;
+        background: conic-gradient(from 200deg, var(--brand2), var(--deep), var(--brand2)); color: var(--navy);
+        box-shadow: 0 0 0 10px rgba(250,153,57,.15), 0 20px 50px -10px rgba(250,153,57,.55); }
+  .ep .k { font-size: 17px; font-weight: 800; letter-spacing: .2em; }
+  .ep .n { font-size: 64px; font-weight: 900; line-height: .95; }
+  .ep .f { font-size: 20px; font-weight: 800; }
+
+  .title { margin-top: 70px; font-size: 92px; font-weight: 900; line-height: 1.32; letter-spacing: -.5px; }
+  .title .hl { color: var(--bear); position: relative; white-space: nowrap; }
+  .title .hl::after { content: ""; position: absolute; right: -4px; left: -4px; bottom: 8px; height: 16px; border-radius: 8px; background: rgba(242,85,94,.25); z-index: -1; }
+  .sub { margin-top: 22px; display: flex; align-items: center; gap: 18px; }
+  .three { flex: none; display: grid; place-items: center; width: 74px; height: 74px; border-radius: 20px; background: var(--brand); color: var(--navy); font-size: 48px; font-weight: 900; }
+  .sub p { font-size: 33px; font-weight: 600; color: #E7ECF4; line-height: 1.55; }
+  .entitle { margin-top: 26px; font-size: 28px; font-weight: 700; color: var(--brand2); text-align: right; }
+
+  .host { position: absolute; z-index: 3; left: 68px; bottom: 64px; display: flex; align-items: center; gap: 22px; direction: ltr; }
+  .host .ph { width: 170px; height: 170px; border-radius: 50%; padding: 6px; background: conic-gradient(var(--brand2), var(--deep), var(--brand2)); box-shadow: 0 20px 50px -12px rgba(0,0,0,.7); }
+  .host .ph img { width: 100%; height: 100%; border-radius: 50%; object-fit: cover; display: block; border: 5px solid var(--bg); }
+  .host .who { display: flex; flex-direction: column; gap: 2px; }
+  .host .who .fa { font-size: 30px; font-weight: 800; direction: rtl; text-align: left; }
+  .host .who .en { font-size: 21px; font-weight: 600; color: var(--muted); }
+  .handles { position: absolute; z-index: 3; right: 68px; bottom: 76px; text-align: right; direction: ltr; }
+  .handles div { font-size: 22px; font-weight: 700; color: var(--muted); }
+  .handles div b { color: var(--brand); }
+  .handles .site { font-size: 30px; color: var(--text); font-weight: 800; margin-bottom: 6px; }
+  .mic { display: inline-flex; align-items: center; gap: 10px; padding: 10px 20px; border-radius: 999px; border: 2px solid rgba(250,153,57,.45); background: rgba(250,153,57,.1); color: var(--brand2); font-size: 22px; font-weight: 800; margin-bottom: 14px; }
+  .mic svg { width: 26px; height: 26px; fill: currentColor; }
+
+  /* ---------- variants ---------- */
+  /* show cover (no episode) */
+  .show .ep, .show .sub, .show .entitle, .show .title { display: none; }
+  .show .showtitle { display: block !important; }
+  .showtitle { display: none; margin-top: 64px; }
+  .showtitle .a { font-size: 128px; font-weight: 900; line-height: 1.15; }
+  .showtitle .a span { color: var(--brand); }
+  .showtitle .b { font-size: 44px; font-weight: 800; color: var(--muted); margin-top: 6px; }
+  .showtitle .c { font-size: 28px; font-weight: 600; color: #DDE3EE; margin-top: 22px; line-height: 1.6; max-width: 860px; }
+
+  /* video square: leave room for live waveform + progress bar (drawn by ffmpeg) */
+  .vsq .host, .vsq .handles { bottom: 52px; }
+  .vsq .host .ph { width: 140px; height: 140px; }
+  .vsq .title { margin-top: 40px; font-size: 72px; }
+  .vsq .sub { margin-top: 14px; } .vsq .three { width: 60px; height: 60px; font-size: 38px; }
+  .vsq .entitle { margin-top: 14px; font-size: 24px; }
+  .vsq .sub p { font-size: 28px; }
+  .vsq #chart { opacity: .28; }
+  .vsq .wavezone { display: block; }
+  .wavezone { display: none; position: absolute; z-index: 1; left: 68px; right: 68px; bottom: 236px; height: 120px; border-radius: 24px;
+              background: linear-gradient(180deg, rgba(255,255,255,.035), rgba(255,255,255,.01)); border: 1px solid rgba(255,255,255,.07); }
+  .vsq .bar { display: block; }
+  .bar { display: none; position: absolute; z-index: 1; left: 68px; right: 68px; bottom: 214px; height: 8px; border-radius: 4px; background: rgba(255,255,255,.12); }
+
+  /* reel 9:16 (1000 x 1778 css px -> 1080 x 1920) */
+  .reel { height: 1778px !important; padding-top: 150px !important; }
+  .reel .title { margin-top: 110px; font-size: 96px; }
+  .reel .sub p { font-size: 31px; }
+  .reel #chart { height: 40%; opacity: .3; }
+  .reel .host { bottom: auto; top: 870px; left: 50%; transform: translateX(-50%); flex-direction: column; text-align: center; }
+  .reel .host .ph { width: 190px; height: 190px; }
+  .reel .host .who .fa, .reel .host .who .en { text-align: center; }
+  .reel .handles { right: 0; left: 0; bottom: 210px; text-align: center; }
+  .reel .wavezone { display: block; bottom: 420px; height: 170px; top: auto; }
+  .reel .bar { display: block; bottom: 390px; }
+  .reel .listen { display: block; }
+  .listen { display: none; position: absolute; z-index: 3; left: 0; right: 0; bottom: 120px; text-align: center; font-size: 30px; font-weight: 800; color: var(--navy); }
+  .listen span { display: inline-block; padding: 18px 34px; border-radius: 999px; background: var(--brand); }
+</style>
+</head>
+<body>
+<div id="card">
+  <svg id="chart" preserveAspectRatio="none"></svg>
+  <div class="wavezone"></div><div class="bar"></div>
+  <div class="z">
+    <div class="top">
+      <div class="brand">
+        <img src="file:///home/user/forexschool-website/assets/img/logo-forex-school.png" alt="">
+        <div>
+          <div class="t1 en">PODCAST</div>
+          <div class="t2 fa">پادکست مکتب فارکس</div>
+          <div class="t3 en">Forex School Podcast</div>
+        </div>
+      </div>
+      <div class="ep"><span class="k en">EPISODE</span><span class="n en">01</span><span class="f fa">قسمت اول</span></div>
+    </div>
+
+    <h1 class="title fa">چرا اکثر معامله‌گران تازه‌کار <span class="hl">ضرر</span> می‌کنند؟</h1>
+    <div class="sub fa"><span class="three">۳</span><p>سه علت اصلی ضرر‌ده بودن تریدرهای تازه‌کار در بازار فارکس</p></div>
+    <p class="entitle en">Why do most beginner traders lose money? 3 reasons</p>
+
+    <div class="showtitle fa">
+      <div class="a">پادکست<br><span>مکتب فارکس</span></div>
+      <div class="b en">Forex School Podcast</div>
+      <div class="c">گفتگوهای کوتاه و کاربردی دربارهٔ فارکس، مدیریت ریسک و روانشناسی معامله، به زبان دری</div>
+    </div>
+  </div>
+
+  <div class="host">
+    <div class="ph"><img src="file:///home/user/forexschool-website/assets/img/founder.jpg" alt=""></div>
+    <div class="who"><span class="fa">با محمد آخوندزاده</span><span class="en">with Mohammad Akhondzadeh</span></div>
+  </div>
+  <div class="handles">
+    <div class="mic fa"><svg viewBox="0 0 24 24"><path d="M12 15a3 3 0 0 0 3-3V5a3 3 0 0 0-6 0v7a3 3 0 0 0 3 3zm5-3a5 5 0 0 1-10 0H5a7 7 0 0 0 6 6.92V21h2v-2.08A7 7 0 0 0 19 12h-2z"/></svg>بشنوید</div>
+    <div class="site">forexschool.store</div>
+    <div>Instagram <b>@forexmaktab</b></div>
+  </div>
+  <div class="listen fa"><span>قسمت کامل را در forexschool.store بشنوید</span></div>
+</div>
+<script>
+  // mode from hash: cover | show | vsq | reel
+  var mode = (location.hash || '#cover').slice(1);
+  var card = document.getElementById('card');
+  if (mode !== 'cover') card.classList.add(mode);
+  if (mode === 'show') document.querySelector('.listen').remove();
+  // falling candlestick chart (beginners losing) with a late recovery
+  var svg = document.getElementById('chart');
+  var W = 1000, H = 520, n = 34, p = 120, pts = [];
+  var seed = 11; function rnd() { seed = (seed * 9301 + 49297) % 233280; return seed / 233280; }
+  for (var i = 0; i < n; i++) {
+    var drift = i < 26 ? 2.6 : -4.2;               // down, then a recovery
+    var o = p, c = p + drift + (rnd() - 0.5) * 9;
+    var hi = Math.max(o, c) + rnd() * 5, lo = Math.min(o, c) - rnd() * 5;
+    pts.push([o, c, hi, lo]); p = c;
+  }
+  var all = pts.flat(), mn = Math.min.apply(null, all), mx = Math.max.apply(null, all);
+  function y(v) { return 30 + (v - mn) / (mx - mn) * (H - 60); }   // larger value = lower on screen (falling price)
+  var cw = W / n, html = '';
+  pts.forEach(function (q, i) {
+    var x = i * cw + cw / 2, down = q[1] > q[0];    // value grows = price falls
+    var col = down ? '#F2555E' : '#25D0A0';
+    html += '<line x1="' + x + '" x2="' + x + '" y1="' + y(q[3]) + '" y2="' + y(q[2]) + '" stroke="' + col + '" stroke-width="2" opacity=".55"/>';
+    var t = y(Math.min(q[0], q[1])), b = y(Math.max(q[0], q[1]));
+    html += '<rect x="' + (x - cw * 0.3) + '" y="' + t + '" width="' + (cw * 0.6) + '" height="' + Math.max(3, b - t) + '" rx="2" fill="' + col + '" opacity=".5"/>';
+  });
+  svg.setAttribute('viewBox', '0 0 ' + W + ' ' + H);
+  svg.innerHTML = '<defs><linearGradient id="fade" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".0"/><stop offset=".35" stop-color="#fff" stop-opacity="1"/></linearGradient><mask id="m"><rect width="' + W + '" height="' + H + '" fill="url(#fade)"/></mask></defs><g mask="url(#m)">' + html + '</g>';
+</script>
+</body>
+</html>
