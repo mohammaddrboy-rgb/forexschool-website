@@ -29,14 +29,15 @@ Read `README.md` for how the site is built. Key rules:
   (`RESTORE.md` explains exactly what was removed and how to put it back).
 
 ## Improvement backlog
-The owner asked (2026-10-30): after EVERY completed task, remind them of the remaining item(s):
-1. "Next class dates" on the Join page, if courses run in groups.
-(Articles DONE 2026-11-01: 6 evergreen articles. A weekly market outlook needs the owner's own weekly view — offer to
-publish it as an article whenever they send one.)
+- Owner (2026-11-01): do NOT remind them of suggestions after each task any more.
+- Parked idea — "Next class dates" on the Join page (if courses run in groups): not to be built now. Mention it ONLY
+  when the owner explicitly asks what could make the website better, together with any other suggestions.
+- Weekly market outlook: needs the owner's own weekly view — publish it as an article whenever they send one.
 Dropped by the owner 2026-10-30 — do NOT suggest again: beginner self-test quiz + certificate, visitor analytics,
 setting up the email address (`info@forexschool.store` in the footer is still a placeholder).
 Done: lesson pages (intro-only, full content archived — see README), Student Stories, more tools, WhatsApp contact,
-Brokers section (profiles on hold), Services page (2026-10-30).
+Brokers section (profiles on hold), Services page (2026-10-30), Articles (2026-11-01, 6 evergreen articles),
+Podcast Episode 1 (2026-11-01).
 
 ## Podcast — STANDING INSTRUCTIONS (owner, 2026-11-01): every new episode = exactly the Episode 1 package
 Full step-by-step + scripts: `_podcast/production/README.md` (synth.py, assemble.py, design.html, render.js,
