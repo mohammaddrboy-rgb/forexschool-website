@@ -20,6 +20,10 @@ files; it does **not** delete pages that were removed from the repo. Check this 
   and every HTML page has the new asset version `?v=20261101b` — upload all `*.html`, `fa/`, `lessons/`, `fa/lessons/`,
   `articles/`, `fa/articles/`, `sitemap.xml` and `assets/css/global.css`.
 
+## Wording update (2026-11-01)
+- Dari «جلسه» → «سشن» across the site: upload `index.html`, `students.html`, `services.html`, `tools.html`,
+  `market-hours.html`, `articles.html`, `articles/` and the matching `fa/` pages (or simply all `*.html` + `fa/` + `articles/`).
+
 ## Files to DELETE from the server
 | Since | File(s) | Why |
 |---|---|---|

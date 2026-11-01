@@ -298,7 +298,7 @@ dict(
             ("warn", None, ("During big news, spreads can widen several times over and price can jump past your stop-loss (slippage). Trading the news itself is for experienced traders only.",
                             "در زمان اخبار مهم، اسپرد می‌تواند چند برابر شود و قیمت ممکن است از روی حد ضرر شما بپرد (اسلیپیج). معامله روی خودِ خبر فقط برای معامله‌گران باتجربه است.")),
             ("tip", ("Go deeper", "عمیق‌تر شوید"), ("Our Advanced students analyse the week's key events together in the Weekly Economic News Analysis session — see Services.",
-                                                   "شاگردان دورهٔ پیشرفتهٔ ما رویدادهای مهم هر هفته را در جلسهٔ «تحلیل هفتگی اخبار اقتصادی» با هم بررسی می‌کنند — بخش خدمات را ببینید.")),
+                                                   "شاگردان دورهٔ پیشرفتهٔ ما رویدادهای مهم هر هفته را در سشن «تحلیل هفتگی اخبار اقتصادی» با هم بررسی می‌کنند — بخش خدمات را ببینید.")),
         ]),
     ],
     tool=("/economic-calendar.html", ("Economic Calendar", "تقویم اقتصادی"), ("This week's events, with impact level, forecast and actual numbers.", "رویدادهای این هفته، با سطح اهمیت، پیش‌بینی و اعداد واقعی.")),

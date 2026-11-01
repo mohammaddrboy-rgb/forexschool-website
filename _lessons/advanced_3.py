@@ -209,7 +209,7 @@ dict(
     ],
     homework=[("Using this lesson's five-step template, write the first version of your personal trading plan.", "با استفاده از الگوی ۵ مرحله‌ای این درس، اولین نسخهٔ پلان معاملاتی شخصی خود را بنویسید."),
               ("For each rule, check whether someone else could follow it without you — if not, make it more precise.", "برای هر قانون در پلان خود، بررسی کنید آیا فردی دیگر می‌تواند بدون شما آن را اجرا کند — اگر نه، آن را دقیق‌تر بنویسید."),
-              ("Prepare your plan for discussion in the Q&amp;A session.", "پلان خود را برای بحث در جلسهٔ پرسش و پاسخ آماده کنید.")],
+              ("Prepare your plan for discussion in the Q&amp;A session.", "پلان خود را برای بحث در سشن پرسش و پاسخ آماده کنید.")],
     quiz=[
         (("Which is a properly written rule?", "کدام یک قانون درست نوشته‌شده است؟"),
          [("“I enter when the chart looks good.”", "«وقتی چارت خوب به نظر می‌رسد وارد می‌شوم.»"), ("“Enter only after a 1H CHoCH in line with the daily bias.”", "«ورود فقط پس از CHoCH در ۱ ساعته، هم‌راستا با بایاس روزانه.»"), ("“I trade more when I feel confident.”", "«وقتی مطمئنم بیشتر معامله می‌کنم.»"), ("“I put the stop where it feels right.”", "«حد ضرر را جایی می‌گذارم که درست به نظر برسد.»")], 1,
@@ -606,7 +606,7 @@ dict(
                 [("Risk rules and circuit breakers", "قوانین ریسک و توقف از پیش تعیین‌شده"), ("Yes / No", "بله / خیر")],
                 [("Trading style, backtest and commitment", "سبک معاملاتی، بک‌تست و تعهدنامه"), ("Yes / No", "بله / خیر")]]),
             ("ol", [("<strong>Write a complete first version</strong> following this lesson's seven sections.", "<strong>نوشتن نسخهٔ اول کامل:</strong> طبق ۷ بخش این درس، پلان خود را به‌طور کامل بنویسید."),
-                    ("<strong>Submit it for review</strong> following the submission guide in the Forex School WhatsApp channel.", "<strong>ارسال برای جلسهٔ بازبینی:</strong> پلان خود را طبق راهنمای ارسال کانال واتساپ مکتب فارکس ارسال کنید."),
+                    ("<strong>Submit it for review</strong> following the submission guide in the Forex School WhatsApp channel.", "<strong>ارسال برای سشن بازبینی:</strong> پلان خود را طبق راهنمای ارسال کانال واتساپ مکتب فارکس ارسال کنید."),
                     ("<strong>Get feedback:</strong> feedback is on the clarity of your rules — not on whether your choices are “right”.", "<strong>دریافت بازخورد:</strong> بازخورد بر اساس وضوح قوانین (نه لزوماً «درستی» انتخاب‌های شما) ارائه می‌شود."),
                     ("<strong>Run a 30-trade trial:</strong> trade the finalised plan for at least 30 trades (live or demo) without changing it.", "<strong>اجرای آزمایشی ۳۰ معامله‌ای:</strong> پلان نهایی‌شده را برای حداقل ۳۰ معامله (زنده یا دمو) بدون تغییر اجرا کنید.")]),
             ("case", ("A sample completed capstone plan (for inspiration — not for copying)", "نمونهٔ خلاصهٔ یک پلان کپستون تکمیل‌شده (برای الهام گرفتن — نه برای کپی کردن)"), [
@@ -623,7 +623,7 @@ dict(
     ],
     homework=[("Write your complete personal trading plan following this lesson's seven sections (in a Word document or your trading journal).", "پلان معاملاتی شخصی کامل خود را طبق ۷ بخش این درس بنویسید (در قالب سند Word یا در دفتر معاملاتی خود)."),
               ("Complete this lesson's self-check and make sure every section gets a “yes”.", "چک‌لیست خودارزیابی این درس را تکمیل کنید و مطمئن شوید هر بخش پاسخ «بله» گرفته است."),
-              ("Submit your plan for the final Forex School review and start your 30-trade trial. This is the last homework of the advanced course — the starting point of your systematic trading journey.", "پلان خود را برای جلسهٔ بازبینی نهایی مکتب فارکس ارسال کنید و برنامهٔ اجرای آزمایشی ۳۰ معامله‌ای خود را آغاز کنید. این آخرین کارخانگی دورهٔ پیشرفته است — نقطهٔ شروع مسیر معامله‌گری نظام‌مند شما.")],
+              ("Submit your plan for the final Forex School review and start your 30-trade trial. This is the last homework of the advanced course — the starting point of your systematic trading journey.", "پلان خود را برای سشن بازبینی نهایی مکتب فارکس ارسال کنید و برنامهٔ اجرای آزمایشی ۳۰ معامله‌ای خود را آغاز کنید. این آخرین کارخانگی دورهٔ پیشرفته است — نقطهٔ شروع مسیر معامله‌گری نظام‌مند شما.")],
     quiz=[
         (("How many sections should your capstone plan have?", "پلان کپستون شما چند بخش باید داشته باشد؟"),
          [("3", "۳"), ("5", "۵"), ("7", "۷"), ("10", "۱۰")], 2,
