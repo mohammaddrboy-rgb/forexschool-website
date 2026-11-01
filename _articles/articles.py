@@ -221,19 +221,19 @@ dict(
     slug="best-time-to-trade-forex-kabul", cat="timing", date="2026-11-01", mins=5, icon="🕐",
     title=("The Best Time to Trade Forex From Afghanistan (Kabul Time)", "بهترین زمان معامله در فارکس از افغانستان (به وقت کابل)"),
     sub=("The forex market is open 24 hours on weekdays — but not every hour is worth trading. Here are the sessions in Kabul time.",
-         "بازار فارکس در روزهای کاری ۲۴ ساعته باز است — اما هر ساعتی ارزش معامله ندارد. در اینجا جلسه‌های معاملاتی را به وقت کابل می‌بینید."),
+         "بازار فارکس در روزهای کاری ۲۴ ساعته باز است — اما هر ساعتی ارزش معامله ندارد. در اینجا سشن‌های معاملاتی را به وقت کابل می‌بینید."),
     desc=("Forex trading sessions in Kabul time: when Sydney, Tokyo, London and New York open and close, the London–New York overlap, and the best hours to trade from Afghanistan.",
-          "جلسه‌های معاملاتی فارکس به وقت کابل: زمان باز و بسته شدن سیدنی، توکیو، لندن و نیویورک، هم‌پوشانی لندن و نیویورک، و بهترین ساعات معامله از افغانستان."),
+          "سشن‌های معاملاتی فارکس به وقت کابل: زمان باز و بسته شدن سیدنی، توکیو، لندن و نیویورک، هم‌پوشانی لندن و نیویورک، و بهترین ساعات معامله از افغانستان."),
     summary=("Sydney, Tokyo, London and New York sessions in Kabul time — and why the evening is the busiest time to trade.",
-             "جلسه‌های سیدنی، توکیو، لندن و نیویورک به وقت کابل — و اینکه چرا شب پرتحرک‌ترین زمان معامله است."),
+             "سشن‌های سیدنی، توکیو، لندن و نیویورک به وقت کابل — و اینکه چرا شب پرتحرک‌ترین زمان معامله است."),
     key=[("The market opens Monday after midnight and closes early Saturday morning, Kabul time.", "بازار دوشنبه پس از نیمه‌شب باز می‌شود و صبح زود شنبه به وقت کابل بسته می‌شود."),
          ("The busiest hours are the London–New York overlap: about 17:30–21:30 Kabul time in winter.", "پرتحرک‌ترین ساعات، هم‌پوشانی لندن و نیویورک است: در زمستان حدود ۱۷:۳۰ تا ۲۱:۳۰ به وقت کابل."),
-         ("Europe and the US change their clocks; Kabul doesn't — so session times shift by one hour twice a year.", "اروپا و امریکا ساعت‌های خود را تغییر می‌دهند؛ کابل نه — پس زمان جلسه‌ها سالی دو بار یک ساعت جابه‌جا می‌شود.")],
+         ("Europe and the US change their clocks; Kabul doesn't — so session times shift by one hour twice a year.", "اروپا و امریکا ساعت‌های خود را تغییر می‌دهند؛ کابل نه — پس زمان سشن‌ها سالی دو بار یک ساعت جابه‌جا می‌شود.")],
     sections=[
-        (("Four sessions, one market", "چهار جلسه، یک بازار"), [
+        (("Four sessions, one market", "چهار سشن، یک بازار"), [
             ("p", "Forex has no single exchange. Trading moves around the world with the banks' working day: from Sydney and Tokyo, to London, then New York. Afghanistan sits in the middle, which makes the busiest sessions fall in the afternoon and evening — convenient if you work or study during the day.",
-                  "فارکس بورس واحدی ندارد. معامله با روز کاری بانک‌ها دور دنیا می‌چرخد: از سیدنی و توکیو، به لندن، و سپس نیویورک. افغانستان در میانه قرار دارد؛ به همین دلیل پرتحرک‌ترین جلسه‌ها در بعدازظهر و شب می‌افتند — که برای کسی که روزها کار می‌کند یا درس می‌خواند مناسب است."),
-            ("table", [("Session (Kabul time)", "جلسه (وقت کابل)"), ("Winter", "زمستان"), ("Summer", "تابستان")], [
+                  "فارکس بورس واحدی ندارد. معامله با روز کاری بانک‌ها دور دنیا می‌چرخد: از سیدنی و توکیو، به لندن، و سپس نیویورک. افغانستان در میانه قرار دارد؛ به همین دلیل پرتحرک‌ترین سشن‌ها در بعدازظهر و شب می‌افتند — که برای کسی که روزها کار می‌کند یا درس می‌خواند مناسب است."),
+            ("table", [("Session (Kabul time)", "سشن (وقت کابل)"), ("Winter", "زمستان"), ("Summer", "تابستان")], [
                 [("Sydney", "سیدنی"), (NW % "00:30 – 09:30", NW % "۰۰:۳۰ – ۰۹:۳۰"), (NW % "01:30 – 10:30", NW % "۰۱:۳۰ – ۱۰:۳۰")],
                 [("Tokyo", "توکیو"), (NW % "04:30 – 13:30", NW % "۰۴:۳۰ – ۱۳:۳۰"), (NW % "04:30 – 13:30", NW % "۰۴:۳۰ – ۱۳:۳۰")],
                 [("London", "لندن"), (NW % "12:30 – 21:30", NW % "۱۲:۳۰ – ۲۱:۳۰"), (NW % "11:30 – 20:30", NW % "۱۱:۳۰ – ۲۰:۳۰")],
@@ -243,19 +243,19 @@ dict(
                                                               "«زمستان» در اینجا یعنی از اوایل نومبر تا اواسط مارچ، وقتی امریکا و بریتانیا در ساعت استاندارد هستند. سیدنی برعکس است: ساعت تابستانی آن از اکتوبر تا اپریل است. ابزار ساعات بازار همیشه زمان‌های لحظه‌ای را نشان می‌دهد.")),
         ]),
         (("When to trade — and when to wait", "چه زمانی معامله کنیم — و چه زمانی صبر کنیم"), [
-            ("cmp", [("good", ("Good times", "زمان‌های خوب"), [("London session — the biggest session; EUR, GBP and CHF pairs move most", "جلسهٔ لندن — بزرگ‌ترین جلسه؛ جفت‌ارزهای EUR، GBP و CHF بیشترین حرکت را دارند"),
+            ("cmp", [("good", ("Good times", "زمان‌های خوب"), [("London session — the biggest session; EUR, GBP and CHF pairs move most", "سشن لندن — بزرگ‌ترین سشن؛ جفت‌ارزهای EUR، GBP و CHF بیشترین حرکت را دارند"),
                                                                   ("London–New York overlap — highest volume and tightest spreads", "هم‌پوشانی لندن و نیویورک — بیشترین حجم و کمترین اسپرد"),
-                                                                  ("Tokyo session for JPY, AUD and NZD pairs (Kabul morning)", "جلسهٔ توکیو برای جفت‌ارزهای JPY، AUD و NZD (صبح کابل)")]),
+                                                                  ("Tokyo session for JPY, AUD and NZD pairs (Kabul morning)", "سشن توکیو برای جفت‌ارزهای JPY، AUD و NZD (صبح کابل)")]),
                      ("bad", ("Be careful", "احتیاط کنید"), [("Late night after New York closes — thin market, wide spreads", "نیمه‌شب پس از بسته شدن نیویورک — بازار کم‌حجم، اسپرد بالا"),
                                                              ("Monday's first hours — prices can open with a gap", "ساعات اول دوشنبه — قیمت ممکن است با گپ باز شود"),
                                                              ("Minutes before and after high-impact news", "چند دقیقه پیش و پس از اخبار پراهمیت")])]),
             ("p", "Note for Afghan traders: Friday is a full trading day for the market, even though it is our weekend — and US jobs data (NFP), one of the most volatile releases of the month, usually comes out on the first Friday evening. The market is closed on Saturday and Sunday.",
                   "نکته برای معامله‌گران افغان: جمعه برای بازار یک روز کامل معاملاتی است، با اینکه تعطیلی آخر هفتهٔ ماست — و گزارش اشتغال امریکا (NFP)، یکی از پرنوسان‌ترین اخبار ماه، معمولاً شام اولین جمعهٔ هر ماه منتشر می‌شود. بازار شنبه و یکشنبه بسته است."),
             ("tip", ("Pick your hours", "ساعت‌های خود را انتخاب کنید"), ("You don't need to watch the market all day. Choose one session that fits your life — for most of our students that is the London–New York overlap in the evening — and trade only then.",
-                                                                     "لازم نیست تمام روز بازار را تماشا کنید. یک جلسه را که با زندگی شما سازگار است انتخاب کنید — برای بیشتر شاگردان ما این همان هم‌پوشانی لندن و نیویورک در شب است — و فقط در همان زمان معامله کنید.")),
+                                                                     "لازم نیست تمام روز بازار را تماشا کنید. یک سشن را که با زندگی شما سازگار است انتخاب کنید — برای بیشتر شاگردان ما این همان هم‌پوشانی لندن و نیویورک در شب است — و فقط در همان زمان معامله کنید.")),
         ]),
     ],
-    tool=("/market-hours.html", ("Market Hours (Kabul time)", "ساعات بازار (به وقت کابل)"), ("A live clock showing which sessions are open right now.", "ساعتی زنده که نشان می‌دهد همین حالا کدام جلسه‌ها باز هستند.")),
+    tool=("/market-hours.html", ("Market Hours (Kabul time)", "ساعات بازار (به وقت کابل)"), ("A live clock showing which sessions are open right now.", "ساعتی زنده که نشان می‌دهد همین حالا کدام سشن‌ها باز هستند.")),
 ),
 # ---------------------------------------------------------------------------------------------
 dict(
