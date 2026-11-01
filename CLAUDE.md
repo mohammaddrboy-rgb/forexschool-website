@@ -5,6 +5,7 @@ Read `README.md` for how the site is built. Key rules:
 - **Bilingual:** English pages at the root are the source of truth; `/fa/` (Dari) is generated.
   After editing any root page run `python build-fa.py` then `python build-geo.py`.
   Lessons: edit `_lessons/*.py` (never `lessons/*.html`), then run `python build-lessons.py` before build-fa.
+  Articles: edit `_articles/articles.py` (newest first), then run `python build-articles.py` before build-fa.
   Brokers: edit `_brokers/brokers.py`, then run `python build-brokers.py` before build-fa.
   The live list is EMPTY on purpose (owner, 2026-10-29) — the page shows "coming soon" until the owner sends broker
   info; then add each broker (template in the file) with its `register_url` for the "Open an account" button.
@@ -26,9 +27,10 @@ Read `README.md` for how the site is built. Key rules:
   (`RESTORE.md` explains exactly what was removed and how to put it back).
 
 ## Improvement backlog
-The owner asked (2026-10-30): after EVERY completed task, remind them of these two remaining items:
-1. Fill the Articles page — weekly outlook, "5 beginner mistakes", "What is a pip" etc.
-2. "Next class dates" on the Join page, if courses run in groups.
+The owner asked (2026-10-30): after EVERY completed task, remind them of the remaining item(s):
+1. "Next class dates" on the Join page, if courses run in groups.
+(Articles DONE 2026-11-01: 6 evergreen articles. A weekly market outlook needs the owner's own weekly view — offer to
+publish it as an article whenever they send one.)
 Dropped by the owner 2026-10-30 — do NOT suggest again: beginner self-test quiz + certificate, visitor analytics,
 setting up the email address (`info@forexschool.store` in the footer is still a placeholder).
 Done: lesson pages (intro-only, full content archived — see README), Student Stories, more tools, WhatsApp contact,
