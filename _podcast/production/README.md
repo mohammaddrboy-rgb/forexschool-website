@@ -19,3 +19,22 @@ Needs ffmpeg, Python 3 with numpy + scipy, and Node + Playwright (Chromium) for 
    - teaser = first ~75 s cut at a pause + the outro's final chord.
 7. **Website**: copy MP3 + 1400² cover JPG to `assets/podcast/`, add the episode to `_podcast/episodes.py`,
    run `python build-podcast.py && python build-fa.py && python build-geo.py`.
+
+8. **Deliver** to the owner in the chat (`display: "render"`): Reel teaser, square teaser, full-episode video, MP3,
+   episode cover, Instagram image — plus the caption below.
+
+## Caption template (Instagram + Facebook group) — always send one with each episode
+```
+🎙️ قسمت [اول/دوم/…] پادکست مکتب فارکس
+[Dari title — as a hook question if possible]
+[1–2 short lines: what the listener will learn]
+🎧 قسمت کامل را در وب‌سایت بشنوید: forexschool.store (لینک در بیو)
+#فارکس #مکتب_فارکس #پادکست #ترید #معامله_گری #مدیریت_ریسک #افغانستان #forex #trading [+ 2–4 topic tags]
+```
+Episode 1 example:
+```
+🎙️ قسمت اول پادکست مکتب فارکس
+چرا اکثر معامله‌گران تازه‌کار ضرر می‌کنند؟ سه علت اصلی ضرر‌ده بودن تریدرهای تازه‌کار در بازار فارکس
+🎧 قسمت کامل را در وب‌سایت بشنوید: forexschool.store (لینک در بیو)
+#فارکس #مکتب_فارکس #پادکست #ترید #معامله_گری #مدیریت_ریسک #افغانستان #forex #trading
+```

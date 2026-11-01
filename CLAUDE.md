@@ -38,12 +38,25 @@ setting up the email address (`info@forexschool.store` in the footer is still a 
 Done: lesson pages (intro-only, full content archived — see README), Student Stories, more tools, WhatsApp contact,
 Brokers section (profiles on hold), Services page (2026-10-30).
 
-## Podcast
-- Episodes: `_podcast/episodes.py` → `python build-podcast.py` (before build-fa). Media in `assets/podcast/`.
-- Episode 1 (2026-11-01) «چرا اکثر معامله‌گران تازه‌کار ضرر می‌کنند؟». Production recipe used (owner liked a "catchy" package):
-  voice: highpass 75 Hz, light afftdn, EQ (−2.5 dB @200 Hz, +2.5 dB @3.2 kHz, +2 dB shelf @9 kHz), de-esser,
-  compressor 3:1, long pauses trimmed to ~0.6 s; original synthesised intro/outro jingle (112 BPM, Am–F–C–G);
-  podcast MP3 at −16 LUFS / 96 kbps joint stereo (owner wanted smaller files; no audible loss) with cover + ID3 tags; social versions at −14 LUFS: 9:16 Reel teaser and 1:1
-  teaser (first ~75 s + outro chord) and a full 1:1 episode video (cover + scrolling orange level-bars + progress bar; `mkvideo3.sh` — small files,
-  owner wants uploads small with no visible quality loss; full 19-min video ≈ 30 MB).
-  Brand: navy #060C17, orange #FA9939; Vazirmatn/Jakarta fonts; host photo assets/img/founder.jpg.
+## Podcast — STANDING INSTRUCTIONS (owner, 2026-11-01): every new episode = exactly the Episode 1 package
+Full step-by-step + scripts: `_podcast/production/README.md` (synth.py, assemble.py, design.html, render.js,
+bars.py, mkvideo3.sh). Episode data: `_podcast/episodes.py` → `python build-podcast.py` (before build-fa). Media: `assets/podcast/`.
+For each new recording the owner sends (they give the Dari title + subtitle; ask if missing):
+1. **Audio**: voice chain (highpass 75 Hz, light afftdn, EQ −2.5 dB@200 Hz / +2.5 dB@3.2 kHz / +2 dB shelf@9 kHz, de-esser,
+   compressor 3:1, long pauses trimmed to ~0.6 s) + the SAME original jingle (synth.py: 112 BPM, Am–F–C–G) as intro/outro.
+2. **Website MP3**: −16 LUFS, **96 kbps joint stereo**, cover + ID3 tags → `assets/podcast/forex-school-podcast-eNN.mp3`,
+   1400² cover JPG, new dict in `episodes.py` (newest first), build-podcast → build-fa → build-geo, PR + merge, DEPLOY-NOTES.
+3. **Artwork** (design.html, same layout): 3000² episode cover, 1080² Instagram image, 1080² + 1080×1920 video backgrounds.
+   Episode number in the ring («قسمت دوم», …), Dari title with one key word highlighted, English title, host photo.
+4. **Social videos** (−14 LUFS, `mkvideo3.sh`, CRF 24, 20 fps, AAC 128 kbps — scrolling orange level-bars, NOT the raw
+   waveform; owner wants SMALL files with no visible quality loss): 9:16 Reel teaser + 1:1 teaser (first ~60–80 s, cut at a
+   natural pause, + outro final chord) and the full episode 1:1 (≈ 1.7 MB/min). The Episode-1 sizes were 2.4 / 2.2 / 30.8 MB.
+5. **Deliver** the files in the chat with SendUserFile `display: "render"` (owner: "in the chat, not in the outputs").
+6. **Always give a ready-to-paste caption + hashtags** (Dari first, short English line optional) for Instagram and the
+   Facebook group — hook question/title, 1–2 lines on what the episode covers, "listen on forexschool.store (link in bio)",
+   then hashtags, e.g. #فارکس #مکتب_فارکس #پادکست #ترید #معامله_گری #مدیریت_ریسک #افغانستان #forex #trading
+   plus 2–4 topic-specific tags. Template in `_podcast/production/README.md`.
+Episodes so far: E01 (2026-11-01) «چرا اکثر معامله‌گران تازه‌کار ضرر می‌کنند؟» — سه علت اصلی ضرر‌ده بودن تریدرهای تازه‌کار.
+Brand: navy #060C17, orange #FA9939, Vazirmatn/Jakarta fonts, host photo assets/img/founder.jpg (480², keep it small).
+Note: speech-to-text models can't be downloaded here (HuggingFace blocked), so ask the owner for title/topic; pick
+the teaser cut from silences, and tell the owner to check the teaser hook.
