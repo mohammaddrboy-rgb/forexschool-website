@@ -15,7 +15,7 @@ SHOW = {
 
 EPISODES = [
 dict(
-    num=1, date="2026-11-01", seconds=1125, bytes=18130175,
+    num=1, date="2026-11-01", seconds=1125, bytes=13634775,
     audio="/assets/podcast/forex-school-podcast-e01.mp3",
     cover="/assets/podcast/e01-cover.jpg",
     title=("Why do most beginner traders lose money?", "چرا اکثر معامله‌گران تازه‌کار ضرر می‌کنند؟"),
