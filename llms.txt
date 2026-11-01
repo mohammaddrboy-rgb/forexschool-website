@@ -63,7 +63,7 @@
   - [How to Read the Economic Calendar](https://forexschool.store/articles/how-to-read-the-economic-calendar.html)
 - [Tools](https://forexschool.store/tools.html): free risk, pip value and margin calculators, market hours clock and economic calendar.
 - [Student Stories](https://forexschool.store/students.html): testimonials from Forex School students, filterable by city.
-- [Podcast](https://forexschool.store/podcast.html): the Forex School podcast (episodes coming soon).
+- [Podcast](https://forexschool.store/podcast.html): the Forex School podcast in Dari, hosted by Mohammad Akhondzadeh. Episode 1: "Why do most beginner traders lose money?" — the three main reasons new forex traders lose.
 - [Risk Calculator](https://forexschool.store/risk-calculator.html): compute position size, amount at risk and risk-to-reward.
 - [Economic Calendar](https://forexschool.store/economic-calendar.html): the week's high-impact economic events.
 - [Pip Value Calculator](https://forexschool.store/pip-calculator.html): what one pip is worth in USD for a pair and lot size.

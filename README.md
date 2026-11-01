@@ -81,7 +81,7 @@ That rebuilds every `/fa/` page, injects hreflang into the English pages, and re
 `sitemap.xml`. (Farsi meta descriptions live in the `FA_DESC` dict inside `build-fa.py`.)
 
 **Full workflow after editing:** edit the English page(s) → `python normalize.py` *(only if you
-changed nav/footer)* → `python bump-assets.py` *(only if you changed CSS/JS)* → `python build-students.py` *(only if you changed testimonials)* → `python build-lessons.py` *(if you changed a lesson, or the nav/footer)* → `python build-brokers.py` *(if you changed broker data, or the nav/footer)* → `python build-articles.py` *(if you changed an article, or the nav/footer)* → `python build-fa.py`
+changed nav/footer)* → `python bump-assets.py` *(only if you changed CSS/JS)* → `python build-students.py` *(only if you changed testimonials)* → `python build-lessons.py` *(if you changed a lesson, or the nav/footer)* → `python build-brokers.py` *(if you changed broker data, or the nav/footer)* → `python build-articles.py` *(if you changed an article, or the nav/footer)* → `python build-podcast.py` *(if you added a podcast episode)* → `python build-fa.py`
 *(always)* → `python build-geo.py` *(always, last)*.
 
 ## GEO — Generative Engine Optimization (AI answer engines)
@@ -143,7 +143,7 @@ Footer of every page: WhatsApp, Telegram (`t.me/+Ek6wSd8_64Y1Nzg0`), Facebook (g
 | Student testimonials | `index.html` carousel (source) → `students.html` | 22 real student testimonials (English + Dari). Add new ones to the carousel in `index.html` only, then run `python build-students.py` — it copies them to the Student Stories page, builds the city filter and updates the counts |
 | Contact email | footer of every page | `mailto:info@forexschool.store` (change if different) |
 | Articles | `articles.html` + `articles/*.html` | 6 bilingual articles, built by `build-articles.py` |
-| Podcast episodes | `podcast.html` | "coming soon" note — replace the `.empty-state` block with the episodes |
+| Podcast episodes | `podcast.html` + `assets/podcast/` | Episode list with a custom audio player, **generated** by `build-podcast.py` from `_podcast/episodes.py` (newest first). Add an episode: mastered MP3 + 1400×1400 cover JPG in `assets/podcast/`, a new dict in `episodes.py`, then build-podcast → build-fa → build-geo |
 | Lesson PDFs | `courses.html` | all buttons link to the WhatsApp channel |
 
 Done: Founder section (photo `assets/img/founder.jpg` + bio, EN/FA); Telegram/Facebook/Instagram links; economic calendar and risk calculator are real pages.
