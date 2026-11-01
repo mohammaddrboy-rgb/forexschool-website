@@ -17,11 +17,14 @@ Needs ffmpeg, Python 3 with numpy + scipy, and Node + Playwright (Chromium) for 
    old raw-waveform version (`mkvideo.sh`, kept for reference) at the same sharpness — the owner wanted small uploads.
    - square: `100 706 880 110 73 840 933` · reel: `100 1300 880 150 73 1490 933`
    - teaser = first ~75 s cut at a pause + the outro's final chord.
+6b. **Reel cover** (1080×1920 JPG): `node render-rc.js` → `rc-bg.png` (design.html `#reelcover`: content inside Instagram's
+   3:4 grid crop, no progress track); take one lively bars frame (`python bars.py teaser.wav 20 880 150 | ffmpeg … select=eq(n\,520)`)
+   and overlay it with the same glow at x=100, y=1329 (`gblur=sigma=5`, alpha 0.55).
 7. **Website**: copy MP3 + 1400² cover JPG to `assets/podcast/`, add the episode to `_podcast/episodes.py`,
    run `python build-podcast.py && python build-fa.py && python build-geo.py`.
 
 8. **Deliver** to the owner in the chat (`display: "render"`): Reel teaser, square teaser, full-episode video, MP3,
-   episode cover, Instagram image — plus the caption below.
+   Reel cover, episode cover, Instagram image — plus the caption below.
 
 ## Caption template (Instagram + Facebook group) — always send one with each episode
 ```

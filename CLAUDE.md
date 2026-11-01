@@ -47,7 +47,8 @@ For each new recording the owner sends (they give the Dari title + subtitle; ask
    compressor 3:1, long pauses trimmed to ~0.6 s) + the SAME original jingle (synth.py: 112 BPM, Am–F–C–G) as intro/outro.
 2. **Website MP3**: −16 LUFS, **96 kbps joint stereo**, cover + ID3 tags → `assets/podcast/forex-school-podcast-eNN.mp3`,
    1400² cover JPG, new dict in `episodes.py` (newest first), build-podcast → build-fa → build-geo, PR + merge, DEPLOY-NOTES.
-3. **Artwork** (design.html, same layout): 3000² episode cover, 1080² Instagram image, 1080² + 1080×1920 video backgrounds.
+3. **Artwork** (design.html, same layout): 3000² episode cover, 1080² Instagram image, **1080×1920 Reel cover** (render-rc.js,
+   static bars, fits the 3:4 grid crop), 1080² + 1080×1920 video backgrounds.
    Episode number in the ring («قسمت دوم», …), Dari title with one key word highlighted, English title, host photo.
 4. **Social videos** (−14 LUFS, `mkvideo3.sh`, CRF 24, 20 fps, AAC 128 kbps — scrolling orange level-bars, NOT the raw
    waveform; owner wants SMALL files with no visible quality loss): 9:16 Reel teaser + 1:1 teaser (first ~60–80 s, cut at a
