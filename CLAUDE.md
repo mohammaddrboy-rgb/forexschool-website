@@ -15,6 +15,8 @@ Read `README.md` for how the site is built. Key rules:
   After editing CSS/JS run `python bump-assets.py` first. Every visible string needs both
   `<span class="lang-en">` and `<span class="lang-fa">`.
 - **Brand names:** "Forex School" in English, «مکتب فارکس» in Dari.
+- **Wording (owner, 2026-11-01):** in Dari use «سشن», never «جلسه», for sessions (market sessions and class/service
+  sessions alike). Only a central bank's *meeting* (e.g. FOMC) may stay «جلسه».
 - **Workflow agreed with the owner:** make changes on the working branch, open a PR and merge it into
   `main`; a separate Claude session deploys `main` to the server when the owner asks.
   Keep `DEPLOY-NOTES.md` up to date whenever a page/file is removed, so the server copy gets cleaned up.

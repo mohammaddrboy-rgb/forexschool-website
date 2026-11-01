@@ -330,7 +330,7 @@ dict(
     ],
     homework=[("For 3 days in a row, identify the three AMD phases on your favourite pair and note them in your trading journal.", "برای ۳ روز متوالی، سه مرحلهٔ AMD را روی یک جفت‌ارز مورد علاقهٔ خود شناسایی و در دفتر معاملاتی یادداشت کنید."),
               ("For each day, note whether the manipulation phase matched a liquidity pool (AS3).", "برای هر روز مشخص کنید آیا مرحلهٔ دستکاری با یک استخر نقدینگی (درس AS3) هم‌خوانی داشته است."),
-              ("Prepare one complete example where all three phases were clear, for discussion in the Q&amp;A session.", "یک نمونهٔ کامل که در آن هر سه مرحله به‌وضوح قابل تشخیص بوده را برای بحث در جلسهٔ پرسش و پاسخ آماده کنید.")],
+              ("Prepare one complete example where all three phases were clear, for discussion in the Q&amp;A session.", "یک نمونهٔ کامل که در آن هر سه مرحله به‌وضوح قابل تشخیص بوده را برای بحث در سشن پرسش و پاسخ آماده کنید.")],
     quiz=[
         (("In the daily AMD model, which session is usually accumulation?", "در مدل روزانهٔ AMD، کدام سشن معمولاً مرحلهٔ تجمیع است؟"),
          [("Asia", "آسیا"), ("London open", "باز شدن لندن"), ("New York open", "باز شدن نیویورک"), ("Friday close", "بستن جمعه")], 0,

@@ -100,7 +100,7 @@ dict(
     ],
     homework=[("For each of the four groups (floating/pegged × with/without commodities), give at least three example currencies.", "برای هر یک از ۴ دسته (شناور/ثابت × با/بدون کامودیتی)، حداقل ۳ ارز مثال بزنید."),
               ("Research which group the currency of your country or a neighbour (e.g. Afghanistan, Iran, Pakistan) belongs to — and why.", "برای ارز کشور خودتان یا یک کشور همسایه (مثلاً افغانستان، ایران، پاکستان) تحقیق کنید که در کدام دسته قرار می‌گیرد و چرا."),
-              ("Choose a cross pair (not involving the dollar) and note its current rate from a reliable platform. Keep your answers ready for the Q&amp;A session.", "یک جفت‌ارز کراس (غیر از دلار) انتخاب کنید و نرخ فعلی آن را از یک پلتفرم قابل اعتماد یادداشت کنید. پاسخ‌های خود را برای بحث در جلسهٔ پرسش و پاسخ آماده نگه دارید.")],
+              ("Choose a cross pair (not involving the dollar) and note its current rate from a reliable platform. Keep your answers ready for the Q&amp;A session.", "یک جفت‌ارز کراس (غیر از دلار) انتخاب کنید و نرخ فعلی آن را از یک پلتفرم قابل اعتماد یادداشت کنید. پاسخ‌های خود را برای بحث در سشن پرسش و پاسخ آماده نگه دارید.")],
     quiz=[
         (("How do professional traders mainly organise currencies?", "معامله‌گران حرفه‌ای ارزها را عمدتاً چگونه سازمان‌دهی می‌کنند؟"),
          [("By geography", "بر اساس جغرافیا"), ("By opportunity — regime and commodity dependence", "بر اساس فرصت — نظام ارزی و وابستگی کالایی"), ("Alphabetically", "بر اساس حروف الفبا"), ("By the size of the country", "بر اساس اندازهٔ کشور")], 1,
