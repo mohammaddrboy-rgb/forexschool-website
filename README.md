@@ -36,6 +36,10 @@ Added: `landing.html` · `faq.html` · `glossary.html` · `how-to-start.html` ·
   *open to everyone* (Trade History Analysis, Trading Consultation Session) and *for Advanced students* (Weekly Economic
   News Analysis, Weekly Trading Book Reading Session) — each with a WhatsApp button that opens a ready-made request
   message for that service, plus a 3-step "How it works". A normal root page: edit it directly, then build-fa.
+- **Books** — `books.html` ("Books / کتاب‌ها" in the footer under Resources): one card per trading book — cover, title,
+  author, chips (main focus, level, pages, year), "About the book", a short summary and a download button (file in
+  `assets/books/`) or a link to the official page. **Generated** by `build-books.py` from `_books/books.py` (template in the
+  file); shows a "coming soon" box while the list is empty. Direct link to a book: `/books.html#<id>`.
 - **Brokers** — `brokers.html` ("Brokers / بروکرها" in the menu): intro, choosing tips, and one accordion row per broker
   with grouped details (company & regulation, accounts & costs, platforms, deposits & withdrawals), pros/cons and the
   official link. A broker with a `register_url` also gets an always-visible **"Open an account / افتتاح حساب"** button
@@ -81,7 +85,7 @@ That rebuilds every `/fa/` page, injects hreflang into the English pages, and re
 `sitemap.xml`. (Farsi meta descriptions live in the `FA_DESC` dict inside `build-fa.py`.)
 
 **Full workflow after editing:** edit the English page(s) → `python normalize.py` *(only if you
-changed nav/footer)* → `python bump-assets.py` *(only if you changed CSS/JS)* → `python build-students.py` *(only if you changed testimonials)* → `python build-lessons.py` *(if you changed a lesson, or the nav/footer)* → `python build-brokers.py` *(if you changed broker data, or the nav/footer)* → `python build-articles.py` *(if you changed an article, or the nav/footer)* → `python build-podcast.py` *(if you added a podcast episode)* → `python build-fa.py`
+changed nav/footer)* → `python bump-assets.py` *(only if you changed CSS/JS)* → `python build-students.py` *(only if you changed testimonials)* → `python build-lessons.py` *(if you changed a lesson, or the nav/footer)* → `python build-brokers.py` *(if you changed broker data, or the nav/footer)* → `python build-articles.py` *(if you changed an article, or the nav/footer)* → `python build-books.py` *(if you changed a book, or the nav/footer)* → `python build-podcast.py` *(if you added a podcast episode)* → `python build-fa.py`
 *(always)* → `python build-geo.py` *(always, last)*.
 
 ## GEO — Generative Engine Optimization (AI answer engines)

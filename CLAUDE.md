@@ -6,6 +6,9 @@ Read `README.md` for how the site is built. Key rules:
   After editing any root page run `python build-fa.py` then `python build-geo.py`.
   Lessons: edit `_lessons/*.py` (never `lessons/*.html`), then run `python build-lessons.py` before build-fa.
   Articles: edit `_articles/articles.py` (newest first), then run `python build-articles.py` before build-fa.
+  Books: edit `_books/books.py` (template inside; book file + cover in `assets/books/`), then `python build-books.py`
+  before build-fa. List is EMPTY until the owner sends the first book (owner, 2026-11-02): intro (main focus, author…),
+  a couple of summary paragraphs, download link. Only publish files Forex School may share (else use `link`).
   Brokers: edit `_brokers/brokers.py`, then run `python build-brokers.py` before build-fa.
   The live list is EMPTY on purpose (owner, 2026-10-29) — the page shows "coming soon" until the owner sends broker
   info; then add each broker (template in the file) with its `register_url` for the "Open an account" button.

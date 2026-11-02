@@ -10,6 +10,7 @@ files; it does **not** delete pages that were removed from the repo. Check this 
   Since 2026-10-29 they show a "coming soon" box instead of the broker profiles — overwrite the old copies on the server)
 - `_articles/` (article source text used by `build-articles.py`; the built pages are `articles/` and `fa/articles/` — DO upload those)
 - `_podcast/` (episode data used by `build-podcast.py`; the media lives in `assets/podcast/` — DO upload that)
+- `_books/` (book data used by `build-books.py`; the built pages are `books.html` / `fa/books.html`, files go in `assets/books/` — DO upload those)
 - `*.md`, `*.py`, `.git*` (docs and build scripts)
 
 ## New pages (2026-10-30)
@@ -38,6 +39,11 @@ files; it does **not** delete pages that were removed from the repo. Check this 
   (It was first published as `…/tradechi-15-triple-central-bank-week.html` — see the delete list below.)
   `articles.html` / `fa/articles.html` and all article pages changed; every HTML page has asset version `?v=20261102`
   — upload all `*.html`, `fa/`, `lessons/`, `articles/`, `fa/lessons/`, `fa/articles/`, `sitemap.xml`, `assets/css/global.css`.
+
+## New page (2026-11-02): Books
+- `books.html` and `fa/books.html` (new, "coming soon" for now) + a "Books / کتاب‌ها" footer link on every page; asset
+  version `?v=20261102b` — upload all `*.html`, `fa/`, `lessons/`, `articles/`, `fa/lessons/`, `fa/articles/`, `sitemap.xml`,
+  `assets/css/global.css`. Later, book files will be added under `assets/books/`.
 
 ## Files to DELETE from the server
 | Since | File(s) | Why |

@@ -29,6 +29,20 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://forexschool.store/books.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://forexschool.store/books.html"/>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://forexschool.store/fa/books.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://forexschool.store/books.html"/>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://forexschool.store/fa/books.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://forexschool.store/books.html"/>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://forexschool.store/fa/books.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://forexschool.store/books.html"/>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://forexschool.store/brokers.html</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://forexschool.store/brokers.html"/>
     <xhtml:link rel="alternate" hreflang="fa" href="https://forexschool.store/fa/brokers.html"/>
