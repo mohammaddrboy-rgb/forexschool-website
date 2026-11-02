@@ -32,10 +32,12 @@ Read `README.md` for how the site is built. Key rules:
 - Owner (2026-11-01): do NOT remind them of suggestions after each task any more.
 - Parked idea — "Next class dates" on the Join page (if courses run in groups): not to be built now. Mention it ONLY
   when the owner explicitly asks what could make the website better, together with any other suggestions.
-- Weekly market outlook = the owner's **Forex TradeChi** editions (bilingual .md files). Publish each one as an article:
-  `cat="outlook"`, `series=("Forex TradeChi · Edition N", "Forex TradeChi · شمارهٔ N")`, newest first, keep the owner's
-  wording (incl. «دالر»), swap "[WHATSAPP CHANNEL LINK]" for the real channel (`wa` block), "comments" → Instagram/Facebook
-  group, sources as a `links` block, hashtags left off the page. Edition 15 (2026-11-02) = `tradechi-15-triple-central-bank-week`.
+- Weekly market outlook = the owner's weekly bilingual .md files. Publish each one as an article: `cat="outlook"`,
+  newest first, keep the owner's wording (incl. «دالر»), swap "[WHATSAPP CHANNEL LINK]" for the real channel (`wa` block),
+  "comments" → Instagram/Facebook group, sources as a `links` block, hashtags left off the page.
+  **NEVER mention "Forex TradeChi" or an edition number anywhere on the website** (owner, 2026-11-02) — not in the title,
+  label/series chip, slug/URL, description, hashtags or body; drop such headers from the owner's file.
+  First one (2026-11-02): `triple-central-bank-week-november-2026`.
 Dropped by the owner 2026-10-30 — do NOT suggest again: beginner self-test quiz + certificate, visitor analytics,
 setting up the email address (`info@forexschool.store` in the footer is still a placeholder).
 Done: lesson pages (intro-only, full content archived — see README), Student Stories, more tools, WhatsApp contact,
