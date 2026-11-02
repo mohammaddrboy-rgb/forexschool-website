@@ -43,6 +43,17 @@ def shell():
     s["after"] = s["after"].replace("برای دریافت درس‌ها به کانال واتساپ بپیوند", "هر مقالهٔ جدید را دریافت کنید — به کانال واتساپ بپیوندید")
     return s
 
+def block(b):
+    """Article blocks: the lesson blocks plus h3 sub-headings and a list of source links."""
+    if b[0] == "h3":
+        return "<h3>%s</h3>" % bi((b[1], b[2]))
+    if b[0] == "links":   # [(label_en, label_fa, url)]
+        return '<ul class="bullets art-sources">%s</ul>' % "".join(
+            '<li><a href="%s" target="_blank" rel="nofollow noopener">%s</a></li>' % (html.escape(u), bi((en, f))) for en, f, u in b[1])
+    if b[0] == "wa":      # WhatsApp channel button
+        return '<p><a class="btn btn-gold" href="%s" target="_blank" rel="noopener">%s</a></p>' % (WA, bi(b[1]))
+    return render_block(b)
+
 def build_page(a, prev, nxt, sh):
     fn = file_of(a)
     cat = A.CATEGORIES[a["cat"]]
@@ -50,7 +61,7 @@ def build_page(a, prev, nxt, sh):
     title_fa = "%s | مکتب فارکس" % plain(a["title"][1])
     keys = '<ul class="check">%s</ul>' % "".join("<li>%s</li>" % bi(k) for k in a["key"])
     secs = "".join('<section class="lsec art-sec"><h2>%s</h2><div class="prose">%s</div></section>'
-                   % (bi(h), "".join(render_block(b) for b in blocks)) for h, blocks in a["sections"])
+                   % (bi(h), "".join(block(b) for b in blocks)) for h, blocks in a["sections"])
     tool = ""
     if a.get("tool"):
         href, name, desc = a["tool"]
@@ -85,7 +96,7 @@ def build_page(a, prev, nxt, sh):
       <span class="badge">%(badge)s</span>
       <h1>%(h1)s</h1>
       <p>%(sub)s</p>
-      <div class="lmeta"><span class="chip-lite">%(date)s</span><span class="chip-lite">%(mins)s</span></div>
+      <div class="lmeta">%(series)s<span class="chip-lite">%(date)s</span><span class="chip-lite">%(mins)s</span></div>
     </div>
   </section>
 
@@ -113,7 +124,8 @@ def build_page(a, prev, nxt, sh):
     </div>
   </section>
 """ % {
-        "crumbs": crumbs, "badge": bi(cat), "h1": bi(a["title"]), "sub": bi(a["sub"]),
+        "crumbs": crumbs, "badge": bi(cat),
+        "series": ('<span class="chip-lite chip-series">%s</span>' % bi(a["series"])) if a.get("series") else "", "h1": bi(a["title"]), "sub": bi(a["sub"]),
         "date": bi(date_pair(a["date"])), "mins": bi(mins_pair(a["mins"])),
         "keys_t": bi(("In short", "به‌طور خلاصه")), "keys": keys, "secs": secs, "tool": tool,
         "cta_h": bi(("Learn it properly — in our classes", "این را درست بیاموزید — در کلاس‌های ما")),

@@ -33,6 +33,11 @@ files; it does **not** delete pages that were removed from the repo. Check this 
   Check after deploy: `curl -sI -H "Range: bytes=0-99" https://forexschool.store/assets/podcast/forex-school-podcast-e01.mp3`
   should answer `206 Partial Content`.
 
+## New article (2026-11-02)
+- `articles/tradechi-15-triple-central-bank-week.html` + `fa/articles/…` (Forex TradeChi Edition 15, weekly outlook).
+  `articles.html` / `fa/articles.html` and all article pages changed; every HTML page has asset version `?v=20261102`
+  — upload all `*.html`, `fa/`, `lessons/`, `articles/`, `fa/lessons/`, `fa/articles/`, `sitemap.xml`, `assets/css/global.css`.
+
 ## Files to DELETE from the server
 | Since | File(s) | Why |
 |---|---|---|
