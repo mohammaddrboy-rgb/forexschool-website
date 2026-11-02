@@ -18,14 +18,13 @@ CATEGORIES = {
     "risk": ("Risk management", "مدیریت ریسک"),
     "timing": ("Market timing", "زمان‌بندی بازار"),
     "news": ("News & fundamentals", "اخبار و تحلیل بنیادی"),
-    "outlook": ("Weekly outlook", "چشم‌انداز هفتگی"),   # Forex TradeChi weekly editions (owner's own analysis)
+    "outlook": ("Weekly outlook", "چشم‌انداز هفتگی"),   # the owner's weekly market analysis
 }
 
 ARTICLES = [
 # ---------------------------------------------------------------------------------------------
 dict(
-    slug="tradechi-15-triple-central-bank-week", cat="outlook", date="2026-11-02", mins=8, icon="🏦",
-    series=("Forex TradeChi · Edition 15", "Forex TradeChi · شمارهٔ ۱۵"),
+    slug="triple-central-bank-week-november-2026", cat="outlook", date="2026-11-02", mins=8, icon="🏦",
     title=("The Week No Forex Trader Can Afford to Sleep Through", "هفته‌ای که هیچ معامله‌گر فارکس نباید از آن غافل شود"),
     sub=("Three central banks decide this week. Then Friday's jobs report lands. Your trades have nowhere to hide.",
          "این هفته سه بانک مرکزی تصمیم می‌گیرند. بعد گزارش کار روز جمعه می‌رسد. معاملات شما جایی برای پنهان شدن ندارند."),

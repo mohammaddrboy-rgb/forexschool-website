@@ -34,7 +34,8 @@ files; it does **not** delete pages that were removed from the repo. Check this 
   should answer `206 Partial Content`.
 
 ## New article (2026-11-02)
-- `articles/tradechi-15-triple-central-bank-week.html` + `fa/articles/…` (Forex TradeChi Edition 15, weekly outlook).
+- `articles/triple-central-bank-week-november-2026.html` + `fa/articles/…` (weekly outlook).
+  (It was first published as `…/tradechi-15-triple-central-bank-week.html` — see the delete list below.)
   `articles.html` / `fa/articles.html` and all article pages changed; every HTML page has asset version `?v=20261102`
   — upload all `*.html`, `fa/`, `lessons/`, `articles/`, `fa/lessons/`, `fa/articles/`, `sitemap.xml`, `assets/css/global.css`.
 
@@ -42,5 +43,6 @@ files; it does **not** delete pages that were removed from the repo. Check this 
 | Since | File(s) | Why |
 |---|---|---|
 | 2026-10-01 | `islamic-finance.html`, `fa/islamic-finance.html` | Islamic Finance section removed (archived in `_archive/islamic-finance/`) |
+| 2026-11-02 | `articles/tradechi-15-triple-central-bank-week.html`, `fa/articles/tradechi-15-triple-central-bank-week.html` | Article renamed to `triple-central-bank-week-november-2026.html` (owner: no brand/edition in URLs) — delete if it was uploaded |
 
 After deleting, the old URLs should return the site's 404 page.
