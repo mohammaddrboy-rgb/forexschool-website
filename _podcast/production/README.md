@@ -16,15 +16,15 @@ Needs ffmpeg, Python 3 with numpy + scipy, and Node + Playwright (Chromium) for 
    visualiser (`bars.py`, piped in as raw frames), x264 veryslow, AAC 128 kbps. ~1.7 MB/min, about 5x smaller than the
    old raw-waveform version (`mkvideo.sh`, kept for reference) at the same sharpness — the owner wanted small uploads.
    - square: `100 706 880 110 73 840 933` · reel: `100 1300 880 150 73 1490 933`
-   - teaser = first ~75 s cut at a pause + the outro's final chord.
+   - (E01 only) teaser = first ~75 s cut at a pause + the outro's final chord. **No teasers from E02 on** (owner).
 6b. **Reel cover** (1080×1920 JPG): `node render-rc.js` → `rc-bg.png` (design.html `#reelcover`: content inside Instagram's
-   3:4 grid crop, no progress track); take one lively bars frame (`python bars.py teaser.wav 20 880 150 | ffmpeg … select=eq(n\,520)`)
+   3:4 grid crop, no progress track); take one lively bars frame (`python bars.py episode_master.wav 20 880 150 | ffmpeg … select=eq(n\,520)`)
    and overlay it with the same glow at x=100, y=1329 (`gblur=sigma=5`, alpha 0.55).
 7. **Website**: copy MP3 + 1400² cover JPG to `assets/podcast/`, add the episode to `_podcast/episodes.py`,
    run `python build-podcast.py && python build-fa.py && python build-geo.py`.
 
-8. **Deliver** to the owner in the chat (`display: "render"`): Reel teaser, square teaser, full-episode video, MP3,
-   Reel cover, episode cover, Instagram image — plus the caption below.
+8. **Deliver** to the owner in the chat (`display: "render"`): full-episode video, MP3, Reel cover, episode cover,
+   Instagram image — plus the caption below. (No teasers from E02 on — owner, 2026-11-02.)
 
 ## Caption template (Instagram + Facebook group) — always send one with each episode
 ```

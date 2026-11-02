@@ -32,7 +32,10 @@ Read `README.md` for how the site is built. Key rules:
 - Owner (2026-11-01): do NOT remind them of suggestions after each task any more.
 - Parked idea — "Next class dates" on the Join page (if courses run in groups): not to be built now. Mention it ONLY
   when the owner explicitly asks what could make the website better, together with any other suggestions.
-- Weekly market outlook: needs the owner's own weekly view — publish it as an article whenever they send one.
+- Weekly market outlook = the owner's **Forex TradeChi** editions (bilingual .md files). Publish each one as an article:
+  `cat="outlook"`, `series=("Forex TradeChi · Edition N", "Forex TradeChi · شمارهٔ N")`, newest first, keep the owner's
+  wording (incl. «دالر»), swap "[WHATSAPP CHANNEL LINK]" for the real channel (`wa` block), "comments" → Instagram/Facebook
+  group, sources as a `links` block, hashtags left off the page. Edition 15 (2026-11-02) = `tradechi-15-triple-central-bank-week`.
 Dropped by the owner 2026-10-30 — do NOT suggest again: beginner self-test quiz + certificate, visitor analytics,
 setting up the email address (`info@forexschool.store` in the footer is still a placeholder).
 Done: lesson pages (intro-only, full content archived — see README), Student Stories, more tools, WhatsApp contact,
@@ -50,9 +53,9 @@ For each new recording the owner sends (they give the Dari title + subtitle; ask
 3. **Artwork** (design.html, same layout): 3000² episode cover, 1080² Instagram image, **1080×1920 Reel cover** (render-rc.js,
    static bars, fits the 3:4 grid crop), 1080² + 1080×1920 video backgrounds.
    Episode number in the ring («قسمت دوم», …), Dari title with one key word highlighted, English title, host photo.
-4. **Social videos** (−14 LUFS, `mkvideo3.sh`, CRF 24, 20 fps, AAC 128 kbps — scrolling orange level-bars, NOT the raw
-   waveform; owner wants SMALL files with no visible quality loss): 9:16 Reel teaser + 1:1 teaser (first ~60–80 s, cut at a
-   natural pause, + outro final chord) and the full episode 1:1 (≈ 1.7 MB/min). The Episode-1 sizes were 2.4 / 2.2 / 30.8 MB.
+4. **Social video** (−14 LUFS, `mkvideo3.sh`, CRF 24, 20 fps, AAC 128 kbps — scrolling orange level-bars, NOT the raw
+   waveform; owner wants SMALL files with no visible quality loss): the full episode 1:1 (≈ 1.7 MB/min; E01 was 30.8 MB).
+   **NO teasers** for future episodes (owner, 2026-11-02) — E01 had a Reel + square teaser, don't make them again.
 5. **Deliver** the files in the chat with SendUserFile `display: "render"` (owner: "in the chat, not in the outputs").
 6. **Always give a ready-to-paste caption + hashtags** (Dari first, short English line optional) for Instagram and the
    Facebook group — hook question/title, 1–2 lines on what the episode covers, "listen on forexschool.store (link in bio)",
@@ -60,5 +63,4 @@ For each new recording the owner sends (they give the Dari title + subtitle; ask
    plus 2–4 topic-specific tags. Template in `_podcast/production/README.md`.
 Episodes so far: E01 (2026-11-01) «چرا اکثر معامله‌گران تازه‌کار ضرر می‌کنند؟» — سه علت اصلی ضرر‌ده بودن تریدرهای تازه‌کار.
 Brand: navy #060C17, orange #FA9939, Vazirmatn/Jakarta fonts, host photo assets/img/founder.jpg (480², keep it small).
-Note: speech-to-text models can't be downloaded here (HuggingFace blocked), so ask the owner for title/topic; pick
-the teaser cut from silences, and tell the owner to check the teaser hook.
+Note: speech-to-text models can't be downloaded here (HuggingFace blocked), so ask the owner for the title/topic.
