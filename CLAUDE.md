@@ -41,10 +41,13 @@ Read `README.md` for how the site is built. Key rules:
   **NEVER mention "Forex TradeChi" or an edition number anywhere on the website** (owner, 2026-11-02) — not in the title,
   label/series chip, slug/URL, description, hashtags or body; drop such headers from the owner's file.
   First one (2026-11-02): `triple-central-bank-week-november-2026`.
+Article topics the owner declined (2026-11-12) — don't write unless asked: demo vs. live account, how to keep a trading
+journal, how to spot a forex scam.
 Dropped by the owner 2026-10-30 — do NOT suggest again: beginner self-test quiz + certificate, visitor analytics,
 setting up the email address (`info@forexschool.store` in the footer is still a placeholder).
 Done: lesson pages (intro-only, full content archived — see README), Student Stories, more tools, WhatsApp contact,
-Brokers section (profiles on hold), Services page (2026-10-30), Articles (2026-11-01, 6 evergreen articles),
+Brokers section (profiles on hold), Services page (2026-10-30), Articles (2026-11-01: 6 evergreen; 2026-11-12: +4 —
+support & resistance, stop-loss/take-profit & R:R, trading costs, gold for beginners),
 Podcast Episode 1 (2026-11-01).
 
 ## Podcast — STANDING INSTRUCTIONS (owner, 2026-11-01): every new episode = exactly the Episode 1 package
