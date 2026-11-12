@@ -45,6 +45,12 @@ files; it does **not** delete pages that were removed from the repo. Check this 
   version `?v=20261102b` — upload all `*.html`, `fa/`, `lessons/`, `articles/`, `fa/lessons/`, `fa/articles/`, `sitemap.xml`,
   `assets/css/global.css`. Later, book files will be added under `assets/books/`.
 
+## New articles (2026-11-12)
+- 4 new pages in `articles/` and `fa/articles/`: `support-and-resistance`, `stop-loss-take-profit-risk-reward`,
+  `spreads-commissions-swaps-trading-costs`, `gold-xauusd-for-beginners` (.html). `articles.html`, `fa/articles.html`,
+  every article page (prev/next links) and `sitemap.xml` changed — upload `articles/`, `fa/articles/`, `articles.html`,
+  `fa/articles.html`, `sitemap.xml`. No CSS/JS change.
+
 ## Files to DELETE from the server
 | Since | File(s) | Why |
 |---|---|---|

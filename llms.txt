@@ -56,6 +56,10 @@
   - [Advanced D3 — Final Project (Capstone)](https://forexschool.store/lessons/advanced-d3-capstone.html)
 - [Articles](https://forexschool.store/articles.html): practical forex guides for Afghan traders, in English and Dari (/fa/articles/…):
   - [5 Beginner Mistakes That Empty Trading Accounts](https://forexschool.store/articles/5-beginner-mistakes.html)
+  - [Support and Resistance: How to Find the Levels That Matter](https://forexschool.store/articles/support-and-resistance.html)
+  - [How to Set a Stop-Loss and Take-Profit (Risk-to-Reward Explained)](https://forexschool.store/articles/stop-loss-take-profit-risk-reward.html)
+  - [Spreads, Commissions and Swaps: What Trading Really Costs](https://forexschool.store/articles/spreads-commissions-swaps-trading-costs.html)
+  - [Gold (XAU/USD) for Beginners: Why It Moves and How to Trade It Carefully](https://forexschool.store/articles/gold-xauusd-for-beginners.html)
   - [What Is a Pip? A Simple Guide With Examples](https://forexschool.store/articles/what-is-a-pip.html)
   - [How Much Should You Risk? Position Size and the 1% Rule](https://forexschool.store/articles/position-size-1-percent-rule.html)
   - [Leverage and Margin Explained Simply](https://forexschool.store/articles/leverage-and-margin-explained.html)
