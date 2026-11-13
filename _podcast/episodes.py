@@ -15,6 +15,15 @@ SHOW = {
 
 EPISODES = [
 dict(
+    num=2, date="2026-11-13", seconds=417, bytes=5127858,
+    audio="/assets/podcast/forex-school-podcast-e02.mp3",
+    cover="/assets/podcast/e02-cover.jpg",
+    title=("The 1–2% risk rule", "قانون ریسک ۱ تا ۲ درصد"),
+    sub=("Why this rule can save your trading account", "چرا این قانون نجات‌دهنده هست"),
+    desc=("At the start, your goal isn't growth — it's survival. If you survive, there will always be a chance to grow. In this episode of the Forex School Podcast, Mohammad Akhondzadeh explains the 1–2% risk rule and why it can save your trading account.",
+          "هدف شما در ابتدا، رشد نیست — بقا است. اگر زنده بمانید، فرصت رشد همیشه هست. در این قسمت از پادکست مکتب فارکس، محمد آخوندزاده قانون ریسک ۱ تا ۲ درصد را توضیح می‌دهد و اینکه چرا این قانون می‌تواند حساب معاملاتی شما را نجات دهد."),
+),
+dict(
     num=1, date="2026-11-01", seconds=1125, bytes=13634775,
     audio="/assets/podcast/forex-school-podcast-e01.mp3",
     cover="/assets/podcast/e01-cover.jpg",

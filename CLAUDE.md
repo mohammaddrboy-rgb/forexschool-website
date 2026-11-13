@@ -70,5 +70,6 @@ For each new recording the owner sends (they give the Dari title + subtitle; ask
    then hashtags, e.g. #فارکس #مکتب_فارکس #پادکست #ترید #معامله_گری #مدیریت_ریسک #افغانستان #forex #trading
    plus 2–4 topic-specific tags. Template in `_podcast/production/README.md`.
 Episodes so far: E01 (2026-11-01) «چرا اکثر معامله‌گران تازه‌کار ضرر می‌کنند؟» — سه علت اصلی ضرر‌ده بودن تریدرهای تازه‌کار.
+  E02 (2026-11-13) «قانون ریسک ۱ تا ۲ درصد» — چرا این قانون نجات‌دهنده هست (6:57; cover badge «٪»; title split «قانون ریسک» / «۱ تا ۲ درصد»).
 Brand: navy #060C17, orange #FA9939, Vazirmatn/Jakarta fonts, host photo assets/img/founder.jpg (480², keep it small).
 Note: speech-to-text models can't be downloaded here (HuggingFace blocked), so ask the owner for the title/topic.

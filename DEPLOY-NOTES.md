@@ -51,6 +51,10 @@ files; it does **not** delete pages that were removed from the repo. Check this 
   every article page (prev/next links) and `sitemap.xml` changed — upload `articles/`, `fa/articles/`, `articles.html`,
   `fa/articles.html`, `sitemap.xml`. No CSS/JS change.
 
+## Podcast Episode 2 (2026-11-13)
+- New files `assets/podcast/forex-school-podcast-e02.mp3` (5.1 MB) and `assets/podcast/e02-cover.jpg`;
+  `podcast.html` and `fa/podcast.html` changed (Episode 2 on top) — upload those four files. No CSS/JS change.
+
 ## Files to DELETE from the server
 | Since | File(s) | Why |
 |---|---|---|
